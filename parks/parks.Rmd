@@ -1,0 +1,374 @@
+---
+title: "U.S. National Parks Recreational Visits Analysis"
+author: "Stephen Savoia"
+date: "2023-03-07"
+output:
+  html_document:
+    theme: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, fig.align="center", fig.width = 8, fig.height = 6)
+```
+
+```{css, echo=FALSE}
+h1 {color: #000;}
+h1.title { font-size: 36px;}
+h3 {margin-top: 22px; margin-bottom: 15px; color: #222;}
+h4 {color: #666;}
+p {margin: 15px 0 15px 0;}
+a { color: #0074D0;}
+
+```
+
+My goal for this project was to practice using R for data analysis. This is why I chose to explore a rather obvious hypothesis: more people will visit U.S. national parks when the weather is warm. The following analysis confirms that, when the temperature is warmer, U.S. national parks tend to receive a higher number of visitors. This effect is more highly pronounced in states that have colder average temperatures.
+
+The following project follows the data analysis process taught in the Google Data Analytics Professional Certificate program on Coursera: ask, prepare, process, analyse, share, act. If you only view one section of this project, I recommend that it be the [Share](#share) section. Please note that portions of the code from this project have been hidden from this page in order to make it more aesthetically pleasing. Please view the .Rmd file for the full source code.
+
+### 1. Ask
+
+The goal of this project is to determine whether or not temperature affects the number of recreational visits a national park receives in a given month, and whether or not this effect differs from state to state.
+
+### 2. Prepare
+
+Parks data source:  
+https://irma.nps.gov/Stats/
+
+Temperature data source:  
+https://www.kaggle.com/datasets/justinrwong/average-monthly-temperature-by-us-state?resource=download
+
+States data source:  
+https://worldpopulationreview.com/states/state-abbreviations
+
+```{r include = FALSE}
+# Load packages
+library(plyr)
+library(dplyr)
+library(ggplot2)
+library(tidyverse)
+library(cowplot)
+
+```
+
+```{r}
+# Parks data
+parks_data <- read.csv("parks_data.csv", header = TRUE, sep = ",")
+
+# Temperature data
+temp_data <- read.csv("temp_data.csv", header = TRUE, sep = ",")
+
+# States data
+states_data <- read.csv("states_data.csv", header = TRUE, sep = ",")
+
+```
+
+### 3. Process
+
+```{r}
+# Remove unwanted parks_data rows and columns (State == "" for Alaska and national monuments)
+parks_data <- parks_data %>% 
+  select(c(5:8)) %>% 
+  filter(State != "")
+
+# Add StateName column to parks_data
+parks_data$StateName <- states_data$state[match(parks_data$State, states_data$code)]
+  
+# Add Date column to parks_data, format: YYYY-MM
+parks_data$Date <- paste(parks_data$Year, parks_data$Month, sep = "-")
+parks_data$Date <- ifelse(nchar(parks_data$Date)==6,gsub("-", "-0", parks_data$Date), parks_data$Date)
+
+# Add date column to temp_data, format: YYYY-MM
+temp_data$date <- paste(temp_data$year, temp_data$month, sep = "-")
+temp_data$date <- ifelse(nchar(temp_data$date)==6,gsub("-", "-0", temp_data$date), temp_data$date)
+
+# Add AvgTemp column to parks_data
+parks_data$MatchCode <- paste(parks_data$Date, parks_data$StateName, sep = "-")
+temp_data$match_code <- paste(temp_data$date, temp_data$state, sep = "-")
+parks_data$AvgTemp <- temp_data$average_temp[match(parks_data$MatchCode, temp_data$match_code)]
+
+# Reorder columns
+parks_data <- parks_data[ , c(6,2,3,2,5,1,8,4)]
+
+# Convert RecreationVisits to integer
+parks_data$RecreationVisits <- gsub(",","",parks_data$RecreationVisits)
+parks_data$RecreationVisits <- as.integer(parks_data$RecreationVisits)
+
+# Remove NA data (Alaska, American Samoa, DC, Guam, Hawaii, Puerto Rico, Virgin Islands)
+parks_data <- parks_data[!is.na(parks_data$AvgTemp), ]
+
+# Change Month to abbreviation
+parks_data <- parks_data %>% 
+  mutate(Month = as.numeric(Month),
+         Month = month.abb[Month])
+
+# Aggregate the data so that all rows have a unique combination of date and state
+parks_data <- parks_data %>% 
+  group_by(Date, Year, Month, State, StateName) %>%
+  summarize(Temp = mean(AvgTemp), Visits = sum(RecreationVisits))
+
+# Convert F to C
+parks_data$Temp <- round((5/9) * (parks_data$Temp - 32), 0)
+
+```
+
+```{r include = FALSE}
+# Clear environment
+rm(temp_data, states_data)
+
+```
+
+### 4. Analyze
+
+The r and r^2 of *Temp ~ Visits* are low. This is because there is data from states with many recreational visits (e.g. CA, NC, NY) that towers over the data from states with fewer visits, pulling down the overall trend line. If *parks_data* is aggregated on *Date* (so that all *Visits* from each *State* are summed and *Temp* is averaged), the relationship of *Temp ~ Visits* becomes stronger and more meaningful.
+
+```{r fig.align = "center", fig.width = 4, fig.height = 3}
+# Plot Temp ~ Visits to show a weak correlation
+plot(parks_data$Temp, parks_data$Visits)
+
+# Display r and r^2 of Temp ~ Visits
+print(paste0("r: ", cor(parks_data$Temp, parks_data$Visits),
+  "    r^2: ", summary(lm(Temp ~ Visits, data = parks_data))$r.squared))
+
+# Display a bar graph to show that a handful of states receive the majority of park visits
+parks_data %>%
+  ggplot(aes(x = State, y = Visits)) +
+  geom_bar(stat = "identity")
+
+# Group data by date
+pd_by_date <- parks_data %>%
+  group_by(Date) %>% 
+  summarise(Visits = sum(Visits), Temp = mean(Temp))
+
+# Plot Temp ~ Visits again
+plot(pd_by_date$Temp, pd_by_date$Visits)
+
+# Display r and r^2 of Temp ~ Visits
+print(paste0("r: ", cor(pd_by_date$Temp, pd_by_date$Visits),
+  "    r^2: ", summary(lm(Temp ~ Visits, data = pd_by_date))$r.squared))
+
+```
+  
+Looking at the following list of *Temp ~ Visits* correlations by state, it appears that colder states have higher correlations, and hotter states have lower correlations. Plotting the correlation strength (r) of each state against that state's average temperature shows that r values seem to lower as average state temperature increases (especially so once average state temperature reaches ~17°C).
+
+```{r include = FALSE}
+# Function that takes in the data frame (parks_data) and outputs a new data frame
+# that shows the correlation of Temp~Visits for each distinct entry in a
+# column "x" ("State", "ParkType", or "Month")
+cor_find <- function(df, x) {
+  temp_df <- df[, c(x, "Temp", "Visits")]
+  output_df = data.frame(matrix(nrow = 0, ncol = 2)) 
+  colnames(output_df) <- c(x, "CorTempVisits")
+  
+  # For each distinct column x (e.g. "StateName"), add new line to the output data frame
+  # which contains that x value and the correlation Temp~Visits
+  for (i in 1:length(unique(temp_df[[x]]))) {
+    i_temp <- temp_df[temp_df[[x]] == temp_df[[x]][i], ]$Temp
+    i_visits <- temp_df[temp_df[[x]] == temp_df[[x]][i], ]$Visits
+    output_df[nrow(output_df) +1,] <- c(temp_df[[x]][i], cor(i_temp, i_visits))
+  } 
+  return(output_df)
+}
+#----------
+
+```
+
+
+``` {r}
+# Compare Temp ~ Visits correlations by state (4 strongest cor vs 4 weakest cor)
+cor_find(parks_data, "StateName") %>%
+  filter(min_rank(CorTempVisits) <= 4 | rank(desc(CorTempVisits)) <= 4  ) %>% 
+  arrange(desc(CorTempVisits))
+
+```
+
+
+```{r include = FALSE}
+cor_table <- parks_data %>% 
+  cor_find("StateName")
+
+avg_temp_table <- parks_data %>%
+  group_by(StateName) %>% 
+  summarise(Temp = mean(Temp))
+
+temp_v_cor <- cor_table %>%
+  left_join(avg_temp_table, by = "StateName")
+
+# Clear environment
+rm(cor_table, avg_temp_table)
+
+```
+
+```{r fig.align = "center", fig.width = 4, fig.height = 3}
+# Plot Temp ~ Visits correlations
+plot(temp_v_cor$Temp, temp_v_cor$CorTempVisits)
+
+```
+
+### 5. Share
+
+It can be seen in the following plots that higher temperatures tend to be associated with more park visits. In the two plots showing data from the hottest four states, this correlation is much weaker (and the trend line slope is much flatter). The correlation is stronger in the colder states. Since the number of visits a park receives can never fall below zero, the visits data hits a floor at a temperature of ~5°C (making the trend line less steep than it probably should be).
+
+```{r include = FALSE}
+# Get a list of states between any two ranks (1 to 47) from coldest to hottest
+StatesList <- function (x1, x2) {
+  return(unlist(as.list(
+      parks_data %>% 
+      group_by(State) %>% 
+      summarise(Temp = mean(Temp)) %>% 
+      filter(rank(Temp) >= x1 & rank(Temp) <= x2) %>%
+      select(State)
+    )))
+}
+
+# Create lists of coldest, hottest, moderate (middle average temperature), and all states
+cold_states <- StatesList(1,4)
+moderate_states <- StatesList(22,25)
+hot_states <- StatesList(44,47)
+all_states <- StatesList(1,47)
+
+```
+
+```{r include = FALSE}
+# Scatter plot drawing function
+CorGraph <- function(states_input, title_input) {
+  
+  # Create data frame that contains data from only the input states
+  df <- parks_data %>%
+    filter(State %in% states_input) %>% 
+    group_by(Date) %>% 
+    summarise(Visits = sum(Visits)/1000000, Temp = mean(Temp))
+    
+  # Info for plot text
+  plot_y_unit <- "(Millions)"
+  subtitle_input <- paste(states_input, collapse = ", ")
+  if (length(states_input) > 4) {subtitle_input <- "Excluding AK, DC, HI"}
+
+  # Plot colours - black, gray, light gray, accent
+  plot_colours <- c("#000000", "#666666", "#cccccc", "#E46767")
+  
+  # Plot text sizes - title, subtitle, axis title, axis text
+  plot_text_size <- c(16, 12, 12, 12)
+  
+  ggplot(df, aes(Temp, Visits)) +
+    geom_point(size = 2.5, colour = plot_colours[2]) +
+    geom_smooth(method='lm', se=FALSE, colour = plot_colours[4], size = 1.5) +
+    scale_x_continuous() +
+    scale_y_continuous() +
+    labs(x="Temperature (Celcius)", y=paste("Visitors", plot_y_unit), title = title_input, subtitle = subtitle_input) +
+    theme_bw() +
+    theme(
+      # Lines and spacing
+      plot.margin = unit(c(8, 8, 8, 8), "pt"),
+      panel.grid.major = element_line(colour = plot_colours[3]),
+      panel.grid.minor = element_line(colour = plot_colours[3]),
+      panel.border = element_rect(colour = plot_colours[1], size = 0.75, fill = NA),
+      axis.ticks = element_line(colour = plot_colours[1], size = 0.75), 
+      axis.ticks.length = unit(4,"pt"),
+      axis.line = element_blank(),
+      
+      # Text
+      plot.title = element_text(size = plot_text_size[1], face = 'bold', hjust = 0.5, vjust = 1, margin = margin(0,0,3,0)),
+      plot.subtitle = element_text(size = plot_text_size[2], hjust = 0.5, vjust = 1),
+      axis.title = element_text(size = plot_text_size[3], face = 'bold', hjust = 0.5, colour = plot_colours[1], margin = margin(r = 15)),
+      axis.text = element_text(size = plot_text_size[4], hjust = 0.5, vjust = 0.5, colour = plot_colours[1])
+    )
+}
+
+```
+
+
+```{r}
+# Make a 2X2 grid of the 4 plots
+plot_grid(
+CorGraph(all_states,"United States"),
+CorGraph(moderate_states,"Moderate States"),
+CorGraph(hot_states,"Hottest States"),
+CorGraph(cold_states,"Coldest States")
+)
+
+```
+
+
+```{r include = FALSE}
+# Double graph (bar chart and line graph) drawing function
+DoubleGraph <- function (states_input, title_input) {
+  # Create data frame that contains data from only the input states
+  df <- parks_data %>%
+    filter(State %in% states_input) %>% 
+    group_by(Month) %>% 
+    summarise(Visits = mean(Visits)/1000, Temp = mean(Temp)) %>% 
+    mutate(Month = factor(Month, levels = month.abb))
+
+  # Info for plot text
+  plot_y_unit <- "(Thousands)"
+  subtitle_input <- paste(states_input, collapse = ", ")
+  if (length(states_input) > 4) {subtitle_input <- "Excluding AK, DC, HI"}
+  
+  # Plot colours - black, gray, light gray, accent
+  plot_colours <- c("#000000", "#666666", "#cccccc", "#E46767")
+  
+  # Plot text sizes - title, subtitle, axis title, axis text
+  plot_text_size <- c(16, 12, 12, 9)
+
+  ggplot(df) +
+  aes(x=Month) +
+  geom_bar(aes(y=Visits, fill="Visits"), stat = "identity") +
+  geom_line(aes(y=Temp*(max(df$Visits)/20), group=1, color = "Temperature"), size = 1.5) +
+  scale_y_continuous(name = "Visits (Thousands)",
+                     sec.axis = sec_axis(~./(max(df$Visits)/20), name="Temperature (Celcius)")) +
+  labs(title = title_input, subtitle = subtitle_input) +
+    
+  scale_colour_manual(" ", values=c("Temperature" = plot_colours[4], "Visits" = plot_colours[2]))+
+    scale_fill_manual("",values=plot_colours[2])+
+  
+  theme_bw() +
+  theme(
+    # Lines and spacing
+    plot.margin = unit(c(8, 8, 8, 8), "pt"),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.border = element_rect(colour = plot_colours[1], size = 0.75, fill = NA),
+    axis.ticks = element_line(colour = plot_colours[1], size = 0.75), 
+    axis.ticks.length = unit(4,"pt"),
+    axis.line = element_blank(),
+
+    # Text
+    plot.title = element_text(size = plot_text_size[1], face = 'bold', hjust = 0.5, vjust = 1, margin = margin(0,0,3,0)),
+    plot.subtitle = element_text(size = plot_text_size[2], hjust = 0.5, vjust = 1),
+    axis.title = element_text(size = plot_text_size[3], face = 'bold', hjust = 0.5, colour = plot_colours[1], margin = margin(r = 15, l = 15)),
+    axis.text = element_text(size = plot_text_size[4], hjust = 0.5, vjust = 0.5, colour = plot_colours[1]),
+      legend.key=element_blank(),
+      legend.title=element_blank(),
+      legend.box="horizontal",
+      legend.position="none"
+    )
+}
+
+```
+
+```{r}
+# Get the legend (which is hidden in the theme)
+legend <- get_legend(
+    DoubleGraph(all_states,"United States") +
+    guides(color = guide_legend(nrow = 1)) +
+    theme(legend.position = "bottom", legend.margin = margin(1,1,1,1))
+)
+
+# Make a 2X2 grid of the 4 plots
+grid <- plot_grid(
+  DoubleGraph(all_states,"United States"),
+  DoubleGraph(moderate_states,"Moderate States"),
+  DoubleGraph(hot_states,"Hottest States"),
+  DoubleGraph(cold_states,"Coldest States")
+)
+
+# Plot the 2X2 grid with the legend
+plot_grid(grid, legend, ncol = 1, rel_heights = c(1, .1))
+
+```
+
+More vizualizations can be found on this project's accompanying [Tableau dashboard](https://public.tableau.com/app/profile/psqs/viz/U_S_NationalParkVisits/Dashboard1).
+
+### 6. Act
+
+As outlined above, the reason I completed this project was so that I could practice using R. I had no actionable goal in mind when I chose to analyze this data. If I were to assume what actions the U.S. National Park Service could take based on this analysis, it could be that they would prepare for more recreational visits in warmer months by hiring more seasonal staff. If the National Park Service is interested in increasing the number of visits to their parks, they could do more to entice people to visit during colder months. This could be achieved by offering more winter activities, such as snowshoeing or cross-country skiing.
