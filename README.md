@@ -1,3 +1,3 @@
 # stephensavoia.github.io
 
-## Check my portfolio at [stephensavoia.github.io](https://stephensavoia.github.io/)
+## My portfolio: [stephensavoia.github.io](https://stephensavoia.github.io/)
