@@ -13,7 +13,7 @@ div {
 }
 
 .links_container {
-    transform: translateY(10px);
+    transform: translateY(11px);
 }
 
 .intro, .row {
@@ -75,7 +75,7 @@ div {
 /* Text */
 
 .header a {
-    margin-left: 7px;
+    margin: 3px;
     font-size: 24px;
 }
 
