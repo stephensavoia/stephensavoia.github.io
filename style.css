@@ -16,22 +16,15 @@ div {
     transform: translateY(11px);
 }
 
-.intro, .row {
+.row {
     max-width: 800px;
     margin: 0px auto 35px auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.intro {
-    max-width: 675px;
-    margin: 0px auto 25px auto;
-}
-
-
-.intro_left, .row_left {
+.row_left {
     width: 22%;
-    float: left;
     display: flex;
     flex-direction: column;
     place-content: center;
@@ -39,30 +32,13 @@ div {
 
 .intro_right, .row_right {
     width: 78%;
-    float: right;
     display: flex;
     flex-direction: column;
     place-content: center;
 }
 
-.intro_left {
-    width: 68%;
-}
-
-.intro_right {
-    width: 32%;
-    text-align: right;
-}
 
 /* Image */
-
-.intro img {
-    max-width: 200px;
-    border-radius: 50%;
-    display: block;
-    float: right;
-    margin:0px 0px 0px auto;
-}
 
 .row img {
     max-width: 150px;
@@ -142,44 +118,26 @@ p {
 
    /* For mobile phones: */
 
-    .intro, .row {
+    .row {
         max-width: 100%;
         display: block;
     }
 
-    .intro {
-        max-width: 100%;
-    }
-
-    .intro_left, .row_left {
+    .row_left {
         width: 100%;
         float: none;
         display: block;
         text-align: center;
     }
 
-    .intro_left {
-        width: 100%;
-    }
-
-    .intro_right, .row_right {
+    .row_right {
         width: 100%;
         float: none;
         display: block;
         text-align: center;
-    }
-
-    .intro_right {
-        width: 100%;
     }
 
     /* Image */
-
-    .intro img {
-        display: block;
-        float: none;
-        margin: 20px auto 0px auto;
-    }
 
     .row img {
         margin: 10px auto 10px auto;
