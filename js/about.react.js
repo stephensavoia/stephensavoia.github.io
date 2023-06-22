@@ -1,7 +1,7 @@
 var targetRoot = document.getElementById("react-root");
 
 //ReactJS Class
-var TeamMember = React.createClass({
+var Project = React.createClass({
    render: function(){
        return(
             <div class="row">
@@ -22,7 +22,7 @@ var TeamMember = React.createClass({
    } 
 });
 
-var teamMembers = [{
+var Projects = [{
                     link:"https://github.com/stephensavoia/drive_to_shopify",
                     img:"img/drive-to-shopify.jpg",
                     title:"Bulk Upload Product Images from Google Drive to Shopify",
@@ -57,8 +57,8 @@ var PageContent = React.createClass({
        return (
         <div>
            {
-               teamMembers.map(function(obj){
-                return(<TeamMember id={obj.id} img={obj.img} name={obj.name} title={obj.title} />);
+               Projects.map(function(obj){
+                return(<Project link={obj.link} img={obj.img} title={obj.title} tools={obj.tools} text={obj.text} />);
            })
            }
         </div>
