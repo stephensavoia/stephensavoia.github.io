@@ -26,7 +26,7 @@ var Projects = [{
                     id:"drive-to-shopify",
                     link:"https://github.com/stephensavoia/drive_to_shopify",
                     img:"img/drive-to-shopify.jpg",
-                    title:"Bulk Upload Product Images from Google Drive to Shopify",
+                    title:"Bulk Product Images from Google Drive to Shopify",
                     tools:"Python (Pandas), Google Drive API, Shopify",
                     text:"The objective of this project was to write Python code that would allow Shopify store owners to bulk upload product images from a Google Drive folder to a Shopify store, via Shopify's \"import products by CSV\" feature. Image file information is collected via the Google Drive API, and is formatted using Pandas."
                     },
