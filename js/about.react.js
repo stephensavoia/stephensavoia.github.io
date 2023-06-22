@@ -33,7 +33,7 @@ var Projects = [{
                    {
                     id:"bike-share",
                     link:"https://github.com/stephensavoia/stephensavoia.github.io/blob/main/bikeshare/analysis.ipynb",
-                    img:"img/bike_share.jpg",
+                    img:"img/bike_share_analysis.jpg",
                     title:"Bike Share Toronto Rides Analysis",
                     tools:"Python (Pandas, Rasterio, JSON, seaborn)",
                     text:"For this project, I analysed Bike Share Toronto data to find that riders tended to lose elevation (i.e. bike downhill more often than uphill) in 2022. This project required me to collect data from three different sources: ride data (CSV), station data (JSON), and elevation data (DEM/TIF). Seaborn was used to create visualizations."
@@ -41,7 +41,7 @@ var Projects = [{
                    {
                     id:"italian-bakery",
                     link:"https://shop.tremaribakery.ca/",
-                    img:"img/italian_bakery-shopify.jpg",
+                    img:"img/italian-bakery-shopify.jpg",
                     title:"Italian Bakery Online Store",
                     tools:"Shopify (HTML, CSS, JavaScript, Liquid)",
                     text:"This is an ecommerce website that I created, pro bono, for an Italian bakery that was forced to shift its business online during the pandemic, due to mandated store closures. It was completed using Shopify (including several third-party apps and custom CSS, JavaScript, and Liquid). I communicated with bakery owners in order to obtain required assets (logos, photos, copy, etc.) and understand business needs surrounding product categorization, checkout, and delivery."
