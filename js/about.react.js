@@ -4,7 +4,7 @@ var targetRoot = document.getElementById("react-root");
 var Project = React.createClass({
    render: function(){
        return(
-        <div id={this.props.id} key={this.props.id} className="row">
+        <div id={this.props.id} className="row">
             <div className="row_left">
             <a className="img_link" href={this.props.link}>
                 <img src={this.props.img} alt="" />
@@ -38,14 +38,6 @@ var Projects = [{
                     tools:"Python (Pandas, Rasterio, JSON, seaborn)",
                     text:"For this project, I analysed Bike Share Toronto data to find that riders tended to lose elevation (i.e. bike downhill more often than uphill) in 2022. This project required me to collect data from three different sources: ride data (CSV), station data (JSON), and elevation data (DEM/TIF). Seaborn was used to create visualizations."
                     },
-                   {
-                    id:"italian-bakery",
-                    link:"https://shop.tremaribakery.ca/",
-                    img:"img/italian-bakery-shopify.jpg",
-                    title:"Italian Bakery Online Store",
-                    tools:"Shopify (HTML, CSS, JavaScript, Liquid)",
-                    text:"This is an ecommerce website that I created, pro bono, for an Italian bakery that was forced to shift its business online during the pandemic, due to mandated store closures. It was completed using Shopify (including several third-party apps and custom CSS, JavaScript, and Liquid). I communicated with bakery owners in order to obtain required assets (logos, photos, copy, etc.) and understand business needs surrounding product categorization, checkout, and delivery."
-                    },
                     {
                     id:"national-parks",
                     link:"https://stephensavoia.github.io/parks/parks.html",
@@ -53,6 +45,14 @@ var Projects = [{
                     title:"U.S. National Parks Recreational Visits Analysis",
                     tools:"R (dplyr, ggplot2), Tableau",
                     text:"This is a project I started after completing the Coursera Google Data Analytics Professional Certificate. Since my goal was to practice using R for data aggregation and visualization, I chose to explore rather obvious hypothesis: more people will visit U.S. national parks when the weather is warm."
+                    },
+                   {
+                    id:"italian-bakery",
+                    link:"https://shop.tremaribakery.ca/",
+                    img:"img/italian-bakery-shopify.jpg",
+                    title:"Italian Bakery Online Store",
+                    tools:"Shopify (HTML, CSS, JavaScript, Liquid)",
+                    text:"This is an ecommerce website that I created, pro bono, for an Italian bakery that was forced to shift its business online during the pandemic, due to mandated store closures. It was completed using Shopify (including several third-party apps and custom CSS, JavaScript, and Liquid). I communicated with bakery owners in order to obtain required assets (logos, photos, copy, etc.) and understand business needs surrounding product categorization, checkout, and delivery."
                     },
                    ];
 
