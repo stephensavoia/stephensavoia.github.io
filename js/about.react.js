@@ -62,7 +62,7 @@ var PageContent = React.createClass({
         <div>
            {
                Projects.map(function(obj){
-                return(<Project id={obj.id} link={obj.link} img={obj.img} title={obj.title} tools={obj.tools} text={obj.text} />);
+                return(<Project key={obj.id} id={obj.id} link={obj.link} img={obj.img} title={obj.title} tools={obj.tools} text={obj.text} />);
            })
            }
         </div>
