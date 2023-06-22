@@ -4,13 +4,13 @@ var targetRoot = document.getElementById("react-root");
 var Project = React.createClass({
    render: function(){
        return(
-        <div id={this.props.id} class="row">
+        <div id={this.props.id} className="row">
 
-            <div class="row_right">
+            <div className="row_right">
             <a href={this.props.link}>
                 <h3>{this.props.title}</h3>
             </a>
-            <span class="tools">{this.props.tools}</span>
+            <span className="tools">{this.props.tools}</span>
             <p>{this.props.text}</p>
             </div>
         </div>
