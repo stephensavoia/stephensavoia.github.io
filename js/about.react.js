@@ -4,8 +4,12 @@ var targetRoot = document.getElementById("react-root");
 var Project = React.createClass({
    render: function(){
        return(
-        <div id={this.props.id} className="row">
-
+        <div id={this.props.id} key={this.props.id} className="row">
+            <div className="row_left">
+            <a className="img_link" href={this.props.link}>
+                <img src={this.props.img} alt="" />
+            </a>
+            </div>
             <div className="row_right">
             <a href={this.props.link}>
                 <h3>{this.props.title}</h3>
