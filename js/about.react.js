@@ -31,28 +31,28 @@ var Projects = [{
                     text:"The objective of this project was to write Python code that would allow Shopify store owners to bulk upload product images from a Google Drive folder to a Shopify store, via Shopify's \"import products by CSV\" feature. Image file information is collected via the Google Drive API, and is formatted using Pandas."
                     },
                    {
-                    id:"drive-to-shopify2",
-                    link:"https://github.com/stephensavoia/drive_to_shopify",
-                    img:"img/drive-to-shopify.jpg",
-                    title:"Bulk Upload Product Images from Google Drive to Shopify",
-                    tools:"Python (Pandas), Google Drive API, Shopify",
-                    text:"The objective of this project was to write Python code that would allow Shopify store owners to bulk upload product images from a Google Drive folder to a Shopify store, via Shopify's \"import products by CSV\" feature. Image file information is collected via the Google Drive API, and is formatted using Pandas."
+                    id:"bike-share",
+                    link:"https://github.com/stephensavoia/stephensavoia.github.io/blob/main/bikeshare/analysis.ipynb",
+                    img:"img/bike_share.jpg",
+                    title:"Bike Share Toronto Rides Analysis",
+                    tools:"Python (Pandas, Rasterio, JSON, seaborn)",
+                    text:"For this project, I analysed Bike Share Toronto data to find that riders tended to lose elevation (i.e. bike downhill more often than uphill) in 2022. This project required me to collect data from three different sources: ride data (CSV), station data (JSON), and elevation data (DEM/TIF). Seaborn was used to create visualizations."
                     },
                    {
-                    id:"drive-to-shopify3",
-                    link:"https://github.com/stephensavoia/drive_to_shopify",
-                    img:"img/drive-to-shopify.jpg",
-                    title:"Bulk Upload Product Images from Google Drive to Shopify",
-                    tools:"Python (Pandas), Google Drive API, Shopify",
-                    text:"The objective of this project was to write Python code that would allow Shopify store owners to bulk upload product images from a Google Drive folder to a Shopify store, via Shopify's \"import products by CSV\" feature. Image file information is collected via the Google Drive API, and is formatted using Pandas."
+                    id:"italian-bakery",
+                    link:"https://shop.tremaribakery.ca/",
+                    img:"img/italian_bakery-shopify.jpg",
+                    title:"Italian Bakery Online Store",
+                    tools:"Shopify (HTML, CSS, JavaScript, Liquid)",
+                    text:"This is an ecommerce website that I created, pro bono, for an Italian bakery that was forced to shift its business online during the pandemic, due to mandated store closures. It was completed using Shopify (including several third-party apps and custom CSS, JavaScript, and Liquid). I communicated with bakery owners in order to obtain required assets (logos, photos, copy, etc.) and understand business needs surrounding product categorization, checkout, and delivery."
                     },
                     {
-                    id:"drive-to-shopify4",
-                    link:"https://github.com/stephensavoia/drive_to_shopify",
-                    img:"img/drive-to-shopify.jpg",
-                    title:"Bulk Upload Product Images from Google Drive to Shopify",
-                    tools:"Python (Pandas), Google Drive API, Shopify",
-                    text:"The objective of this project was to write Python code that would allow Shopify store owners to bulk upload product images from a Google Drive folder to a Shopify store, via Shopify's \"import products by CSV\" feature. Image file information is collected via the Google Drive API, and is formatted using Pandas."
+                    id:"national-parks",
+                    link:"https://stephensavoia.github.io/parks/parks.html",
+                    img:"img/parks.jpg",
+                    title:"U.S. National Parks Recreational Visits Analysis",
+                    tools:"R (dplyr, ggplot2), Tableau",
+                    text:"This is a project I started after completing the Coursera Google Data Analytics Professional Certificate. Since my goal was to practice using R for data aggregation and visualization, I chose to explore rather obvious hypothesis: more people will visit U.S. national parks when the weather is warm."
                     },
                    ];
 
