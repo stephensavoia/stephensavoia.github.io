@@ -23,6 +23,13 @@ var Project = React.createClass({
 });
 
 var Projects = [{
+                    id:"word-cloud",
+                    link:"https://github.com/stephensavoia/stephensavoia.github.io/blob/main/wordcloud/rt-word-cloud-generator.ipynb",
+                    img:"img/word_cloud.png",
+                    title:"Rotten Tomatoes Review Snippet Word Cloud Generator",
+                    tools:"Python (Selenium, NLTK, WordCloud)",
+                    text:"This code automates the process of generating a word cloud from the reviews snippets for a given film on Rotten Tomatoes. Selenium is used to scrape review snippets, and NLTK and regular expressions are used to clean the data. The code outputs to a word clouds summarizing critic sentiment of the film."
+                    },{
                     id:"drive-to-shopify",
                     link:"https://github.com/stephensavoia/drive_to_shopify",
                     img:"img/drive-to-shopify.jpg",
