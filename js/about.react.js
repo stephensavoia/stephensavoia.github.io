@@ -23,15 +23,8 @@ var Project = React.createClass({
 });
 
 var Projects = [{
-                    id:"word-cloud",
-                    link:"https://github.com/stephensavoia/stephensavoia.github.io/blob/main/wordcloud/rt-word-cloud-generator.ipynb",
-                    img:"img/word_cloud.png",
-                    title:"Rotten Tomatoes Review Snippet Word Cloud Generator",
-                    tools:"Python (Selenium, NLTK, WordCloud)",
-                    text:"This code automates the process of generating a word cloud from the reviews snippets for a given film on Rotten Tomatoes. Selenium is used to scrape review snippets, and NLTK and regular expressions are used to clean the data. The code outputs to a word clouds summarizing critic sentiment of the film."
-                    },{
                     id:"drive-to-shopify",
-                    link:"https://github.com/stephensavoia/drive_to_shopify",
+                    link:"https://nbviewer.org/github/stephensavoia/drive_to_shopify/blob/main/drive-to-shopify.ipynb",
                     img:"img/drive-to-shopify.jpg",
                     title:"Bulk Product Images from Google Drive to Shopify",
                     tools:"Python (Pandas), Google Drive API, Shopify",
@@ -39,11 +32,19 @@ var Projects = [{
                     },
                    {
                     id:"bike-share",
-                    link:"https://github.com/stephensavoia/stephensavoia.github.io/blob/main/bikeshare/analysis.ipynb",
+                    link:"https://nbviewer.org/github/stephensavoia/stephensavoia.github.io/blob/main/bikeshare/analysis.ipynb",
                     img:"img/bike_share_analysis.jpg",
                     title:"Bike Share Toronto Rides Analysis",
                     tools:"Python (Pandas, Rasterio, JSON, seaborn)",
                     text:"For this project, I analysed Bike Share Toronto data to find that riders tended to lose elevation (i.e. bike downhill more often than uphill) in 2022. This project required me to collect data from three different sources: ride data (CSV), station data (JSON), and elevation data (DEM/TIF). Seaborn was used to create visualizations."
+                    },
+                    {
+                    id:"word-cloud",
+                    link:"https://nbviewer.org/github/stephensavoia/stephensavoia.github.io/blob/main/wordcloud/rt-word-cloud-generator.ipynb",
+                    img:"img/word_cloud.png",
+                    title:"Film Review Word Cloud Generator",
+                    tools:"Python (Selenium, NLTK, WordCloud)",
+                    text:"This code automates the process of generating a word cloud from the reviews snippets for a given film on Rotten Tomatoes. Selenium is used to scrape review snippets, and NLTK and regular expressions are used to clean the data. The code outputs to a word clouds summarizing critic sentiment of the film."
                     },
                     {
                     id:"national-parks",
