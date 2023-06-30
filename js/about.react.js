@@ -44,7 +44,7 @@ var Projects = [{
                     img:"img/word_cloud.png",
                     title:"Film Review Word Cloud Generator",
                     tools:"Python (Selenium, NLTK, WordCloud)",
-                    text:"This code automates the process of generating a word cloud from the reviews snippets for a given film on Rotten Tomatoes. Selenium is used to scrape review snippets, and NLTK and regular expressions are used to clean the data. The code outputs to a word clouds summarizing critic sentiment of the film."
+                    text:"This code automates the process of generating a word cloud from the review snippets for a given film on Rotten Tomatoes. Selenium is used to scrape review snippets, and NLTK and regular expressions are used to clean the data. The code outputs to a word clouds summarizing critic sentiment of the film."
                     },
                     {
                     id:"national-parks",
