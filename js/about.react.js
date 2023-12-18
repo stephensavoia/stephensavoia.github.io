@@ -24,11 +24,11 @@ var Project = React.createClass({
 
 var Projects = [{
                     id:"italian-bakery",
-                    link:"https://shop.tremaribakery.ca/",
+                    link:"https://www.tremari.ca/",
                     img:"img/italian-bakery-shopify.jpg",
                     title:"Italian Bakery Online Store",
-                    tools:"Shopify (HTML, CSS, JavaScript, Liquid)",
-                    text:"This is an ecommerce website that I created for an Italian bakery. It was completed using Shopify (including custom CSS, JavaScript, and Liquid, and the use of several third-party apps). I communicated with bakery owners in order to obtain required assets (logos, photos, copy, etc.) and understand business needs surrounding product categorization, checkout, and delivery."
+                    tools:"Shopify (HTML, CSS, JavaScript, Liquid, GraphQL), Sheets/Excel, Pandas, Meta Ads Manager, Google Ads",
+                    text:"I used the Shopify platform to create an ecommerce website for a family-owned Italian bakery. I communicated with a marketing team to obtain assets required for the website and ad campaigns. I worked with a fulfillment team to understand business needs surrounding checkout and delivery. I used Python Pandas and Google Sheets to reach data-driven insights that led to improved UX, navigation, and product categorization."
                     },{
                     id:"bike-share",
                     link:"https://nbviewer.org/github/stephensavoia/stephensavoia.github.io/blob/main/bikeshare/analysis.ipynb",
