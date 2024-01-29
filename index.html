@@ -1,26 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5LD092C2HR"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-5LD092C2HR');
-    </script>
-    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-WD9JDQF"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>stephensavoia.github.io</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://fb.me/react-15.1.0.js"></script>
-    <script src="https://fb.me/react-dom-15.1.0.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
-    <script src="js/about.react.js" type="text/babel"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
   </head>
   <body>
     <div class="header">
@@ -41,6 +28,58 @@
 
     <h2>PROJECTS:</h2>
 
-    <div id="react-root"></div>
+    <div
+    x-data="{
+      projects: [{
+        id:'italian-bakery',
+        link:'https://www.tremari.ca/',
+        img:'img/italian-bakery-shopify.jpg',
+        title:'Italian Bakery Online Store',
+        tools:'Shopify (HTML, CSS, JavaScript, Liquid, GraphQL), Sheets/Excel, Pandas, Meta Ads Manager, Google Ads',
+        text:'I used the Shopify platform to create an ecommerce website for a family-owned Italian bakery. I communicated with a marketing team to obtain assets required for the website and ad campaigns. I worked with a fulfillment team to understand business needs surrounding checkout and delivery. I used various analysis tools to reach data-driven insights that led to improved UX, navigation, and product categorization.'
+        },{
+        id:'bike-share',
+        link:'https://nbviewer.org/github/stephensavoia/stephensavoia.github.io/blob/main/bikeshare/analysis.ipynb',
+        img:'img/bike_share_analysis.jpg',
+        title:'Bike Share Toronto Rides Analysis',
+        tools:'Python (Pandas, Rasterio, JSON, seaborn)',
+        text:'For this project, I analysed Bike Share Toronto data to find that riders tended to lose elevation (i.e. bike downhill more often than uphill) in 2022. This project required me to collect data from three different sources: ride data (CSV), station data (JSON), and elevation data (DEM/TIF). Seaborn was used to create visualizations.'
+        },
+        {
+        id:'word-cloud',
+        link:'https://nbviewer.org/github/stephensavoia/stephensavoia.github.io/blob/main/wordcloud/rt-word-cloud-generator.ipynb',
+        img:'img/word_cloud.png',
+        title:'Film Review Word Cloud Generator',
+        tools:'Python (Selenium, NLTK, WordCloud)',
+        text:'This code automates the process of generating a word cloud from the review snippets for a given film on Rotten Tomatoes. Selenium is used to scrape review snippets, and NLTK and regular expressions are used to clean the data. The code outputs to a word clouds summarizing critic sentiment of the film.'
+        },
+        {
+        id:'national-parks',
+        link:'https://stephensavoia.github.io/parks/parks.html',
+        img:'img/parks.jpg',
+        title:'U.S. National Parks Recreational Visits Analysis',
+        tools:'R (dplyr, ggplot2), Tableau',
+        text:'This is a project I started after completing the Coursera Google Data Analytics Professional Certificate. Since my goal was to practice using R for data aggregation and visualization, I chose to explore rather obvious hypothesis: more people will visit U.S. national parks when the weather is warm.'
+        },
+       ]
+    }"
+    >
+      <template x-for="project in projects">
+        <div class="row">
+          <div class="row_left">
+            <a class="img_link" x-bind:href="project.link">
+                <img x-bind:src="project.img" x-bind:alt="project.title" />
+            </a>
+          </div>
+          <div class="row_right">
+            <a x-bind:href="project.link">
+                <h3 x-text="project.title"></h3>
+            </a>
+            <span x-text="project.tools" class="tools"></span>
+            <p x-text="project.text"></p>
+          </div>
+        </div>
+      </template>
+    </div>
   </body>
 </html>
