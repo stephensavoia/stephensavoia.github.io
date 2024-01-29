@@ -28,7 +28,7 @@ var Projects = [{
                     img:"img/italian-bakery-shopify.jpg",
                     title:"Italian Bakery Online Store",
                     tools:"Shopify (HTML, CSS, JavaScript, Liquid, GraphQL), Sheets/Excel, Pandas, Meta Ads Manager, Google Ads",
-                    text:"I used the Shopify platform to create an ecommerce website for a family-owned Italian bakery. I communicated with a marketing team to obtain assets required for the website and ad campaigns. I worked with a fulfillment team to understand business needs surrounding checkout and delivery. I used Python Pandas and Google Sheets to reach data-driven insights that led to improved UX, navigation, and product categorization."
+                    text:"I used the Shopify platform to create an ecommerce website for a family-owned Italian bakery. I communicated with a marketing team to obtain assets required for the website and ad campaigns. I worked with a fulfillment team to understand business needs surrounding checkout and delivery. I used various analysis tools to reach data-driven insights that led to improved UX, navigation, and product categorization."
                     },{
                     id:"bike-share",
                     link:"https://nbviewer.org/github/stephensavoia/stephensavoia.github.io/blob/main/bikeshare/analysis.ipynb",
