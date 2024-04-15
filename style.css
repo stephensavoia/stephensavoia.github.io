@@ -1,3 +1,73 @@
+/* Text */
+
+h1 {
+    margin: 0px;
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 46px;
+    line-height: 1em;
+    text-align: center;    
+}
+
+h2 {
+    margin: 0px auto 25px auto;
+    display: block;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;    
+}
+
+h3 {
+    margin: 4px 10px 4px 10px;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+p {
+    margin: 10px;
+    color: #222;
+}
+
+.tools {
+    margin: 0px 10px 0px 10px;
+    font-style: italic;
+    color: #777;
+}
+
+a {
+    opacity: 1;
+    color: black;
+    text-decoration: none;
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+}
+
+a:hover {
+  opacity:0.6;
+  transition: opacity .2s ease-out;
+  -moz-transition: opacity .2s ease-out;
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+}
+
+
+.header a {
+    margin: 3px;
+    font-size: 24px;
+}
+
+
 /* Grid */
 div {
     padding: 0;
@@ -45,72 +115,6 @@ div {
     border-radius: 50%;
     margin: 10px auto 10px 0px;
     display: block;
-}
-
-
-/* Text */
-
-.header a {
-    margin: 3px;
-    font-size: 24px;
-}
-
-body {
-    font-family: Verdana, sans-serif;
-    font-size: 14px;
-    line-height: 1.5em;
-}
-
-h1 {
-    margin: 0px;
-    display: block;
-    font-family: Georgia, serif;
-    font-size: 46px;
-    line-height: 1em;
-    text-align: center;    
-}
-
-h2 {
-    margin: 0px auto 25px auto;
-    display: block;
-    font-family: Georgia, serif;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;    
-}
-
-h3 {
-    margin: 4px 10px 4px 10px;
-    font-family: Georgia, serif;
-    font-size: 22px;
-    line-height: 30px;
-}
-
-a {
-    opacity: 1;
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-  opacity:0.6;
-  transition: opacity .2s ease-out;
-  -moz-transition: opacity .2s ease-out;
-  -webkit-transition: opacity .2s ease-out;
-  -o-transition: opacity .2s ease-out;
-}
-
-.tools {
-    margin: 0px 10px 0px 10px;
-    font-style: italic;
-    font-size: 14px;
-    color: #777;
-}
-
-p {
-    margin: 10px;
-    color: #222;
 }
 
 
