@@ -1,7 +1,7 @@
 /* Text */
 
 h1 {
-    margin: 0.3rem 0;
+    margin: 1.85rem 0 0.3rem 0;
     display: block;
     font-family: Georgia, serif;
     font-size: 3rem;
@@ -121,6 +121,7 @@ div {
     .row {
         max-width: 100%;
         display: block;
+        margin-bottom: 30px;
     }
 
     .row-left {
@@ -140,7 +141,7 @@ div {
     /* Image */
 
     .row img {
-        margin: 10px auto 10px auto;
+        margin: 1.5rem auto 0.5rem auto;
         display: block;
     }
 
@@ -148,7 +149,7 @@ div {
     /* Text */
 
     h2 {
-        margin-top: 35px;
+        margin: 35px auto 20px auto;
     }
 
     h3 {
