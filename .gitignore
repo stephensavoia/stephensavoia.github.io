@@ -1,4 +1,8 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
+src/r/.Rproj.user
+src/r/.Rhistory
+src/r/.RData
+src/r/.Ruserdata
+node_modules/
+_site/
+.cache/
+.env
