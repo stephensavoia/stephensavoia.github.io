@@ -3,6 +3,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/r/parks");
   eleventyConfig.addPassthroughCopy("src/pandas/bikeshare");
 
+  eleventyConfig.addWatchTarget("src/assets/css/");
+
   return {
     dir: {
       input: "src",
