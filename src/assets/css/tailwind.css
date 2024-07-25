@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* h1 {
+.ss-gradient-bg {
+  /* filter: contrast(330%) brightness(100%); */
+  background: linear-gradient(
+      40deg,
+      rgba(45, 45, 45, 1),
+      rgba(15, 15, 15, 0.8),
+      rgba(20, 20, 20, 0.7),
+      rgba(154, 154, 154, 0.5)
+    ),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 147 147' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* /* h1 {
   margin: 1.85rem 0 0.3rem 0;
   display: block;
   font-family: Georgia, serif;
@@ -34,7 +46,7 @@ h3 {
   line-height: 1.5rem;
 } */
 
-p {
+/* p {
   margin: 10px;
   color: #222;
 }
@@ -43,7 +55,7 @@ p {
   margin: 0px 10px 0px 10px;
   font-style: italic;
   color: #777;
-}
+} */
 
 /* Links */
 
@@ -77,7 +89,7 @@ a:hover,
 
 /* Image */
 
-.row img {
+/* .row img {
   max-width: 150px;
   border-radius: 50%;
   margin: 10px auto 10px 0px;
@@ -85,7 +97,7 @@ a:hover,
 }
 
 /* Layout */
-div {
+/* div {
   padding: 0;
   margin: 0;
 }
@@ -113,12 +125,12 @@ div {
   display: flex;
   flex-direction: column;
   place-content: center;
-}
-
+} */
+/* 
 @media only screen and (max-width: 800px) {
   /* For mobile phones: */
 
-  .row {
+/* .row {
     max-width: 100%;
     display: block;
     margin-bottom: 30px;
@@ -136,18 +148,18 @@ div {
     float: none;
     display: block;
     text-align: center;
-  }
+  } */
 
-  /* Image */
+/* Image */
 
-  .row img {
+/* .row img {
     margin: 1.5rem auto 0.5rem auto;
     display: block;
-  }
+  } */
 
-  /* Text */
+/* Text */
 
-  h2 {
+/* h2 {
     margin: 35px auto 20px auto;
   }
 
@@ -159,4 +171,4 @@ div {
   p {
     margin: 10px 20px 10px 20px;
   }
-}
+} */
