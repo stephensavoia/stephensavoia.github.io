@@ -1,7 +1,7 @@
-src/r/.Rproj.user
-src/r/.Rhistory
-src/r/.RData
-src/r/.Ruserdata
+r/.Rproj.user
+r/.Rhistory
+r/.RData
+r/.Ruserdata
 node_modules/
 _site/
 .cache/

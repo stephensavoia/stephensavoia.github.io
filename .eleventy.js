@@ -1,9 +1,11 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy("src/r/parks");
-  eleventyConfig.addPassthroughCopy("src/pandas/bikeshare");
+  eleventyConfig.addPassthroughCopy("src/assets/**/*.{jpg,png,svg,gif,ico,js}");
+  eleventyConfig.addPassthroughCopy("src/assets/css/styles.css");
+  eleventyConfig.addPassthroughCopy("r/parks/parks.html");
+  eleventyConfig.addPassthroughCopy("pandas/bikeshare");
 
-  eleventyConfig.addWatchTarget("src/assets/css/");
+  eleventyConfig.addWatchTarget("./src/**/*/styles.css");
+  eleventyConfig.addWatchTarget("tailwind.config.js");
 
   return {
     dir: {

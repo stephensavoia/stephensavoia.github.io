@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./_site/**/*.{html,js,njk}"],
+  content: ["./src/**/*.{html,js,njk}"],
   theme: {
+    fontFamily: {
+      sans: ["Verdana", "sans-serif"],
+      serif: ["Georgia", "serif"],
+    },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["lofi"],
+  },
 };

@@ -7,9 +7,9 @@
     "start": "npm-run-all -p dev:*",
     "build": "run-s build:*",
     "dev:11ty": "eleventy --serve",
-    "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/tailwind.css --watch --postcss",
+    "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o src/assets/css/styles.css --watch --postcss",
     "build:11ty": "eleventy",
-    "build:css": "tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/tailwind.css --postcss",
+    "build:css": "tailwindcss -i src/assets/css/tailwind.css -o src/assets/css/styles.css --postcss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
+    "daisyui": "^4.12.10",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.6"
   }
