@@ -3,6 +3,7 @@ layout: "layouts/base.html"
 ---
 
 <div
+  id="about"
   class="card mt-3 mx-auto lg:card-side bg-base-300 shadow-xl ss-gradient-bg"
 >
   <div class="card-body w-3/5 pr-0">
@@ -19,185 +20,106 @@ layout: "layouts/base.html"
   </figure>
 </div>
 
-<div class="links_container"></div>
-<div class="flex w-full flex-col">
-  <div class="row">
-    <div class="row-left">
-      <img src="assets/img/profile2.jpg" alt="" />
+<div id="projects" class="flex w-full flex-col my-4">
+  <div
+    class="divider divider-start divider-neutral font-serif font-bold text-2xl"
+  >
+    PROJECTS
+  </div>
+</div>
+
+<div class="container flex flex-wrap mx-auto justify-between">
+  <div class="card bg-base-100 w-full lg:w-[49%] shadow-xl mb-8">
+    <figure class="w-full">
+      <a class="w-full" href="https://www.cycletofun.com/">
+        <img class="w-full" src="assets/img/cycle-to-fun.jpg" />
+      </a>
+    </figure>
+    <div class="card-body">
+      <h3 class="font-serif font-bold text-xl">Cycle TO Fun</h3>
+      <p>
+        Cycle TO Fun is a website that allows users to view a collection of
+        Toronto cycling routes via a sleek and user-friendly interface.
+      </p>
+      <div class="card-actions justify-start mt-1">
+        <div class="badge badge-outline">Remix</div>
+        <div class="badge badge-outline">Cloudflare D1</div>
+        <div class="badge badge-outline">Tailwind</div>
+        <div class="badge badge-outline">Github</div>
+      </div>
     </div>
-    <div class="row-right text-3xl"></div>
   </div>
 
-  <h2>PROJECTS:</h2>
+  <div class="card bg-base-100 w-full lg:w-[49%] shadow-xl">
+    <figure class="w-full">
+      <a class="w-full" href="https://www.cycletofun.com/">
+        <img class="w-full" src="assets/img/colder-city.jpg" />
+      </a>
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">
+        Shoes!
+        <div class="badge badge-secondary">NEW</div>
+      </h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+      <div class="card-actions justify-end">
+        <div class="badge badge-outline">Fashion</div>
+        <div class="badge badge-outline">Products</div>
+      </div>
+    </div>
+  </div>
 
-  <div class="row">
-    <div class="row-left">
+  <div class="card bg-base-100 w-1/2 shadow-xl">
+    <figure>
       <a href="https://www.cycletofun.com/">
         <img src="assets/img/cycle-to-fun.jpg" />
       </a>
-    </div>
-    <div class="row-right">
-      <a href="https://www.cycletofun.com/">
-        <h3>Cycle TO Fun</h3>
-      </a>
-      <span class="tools"
-        >Remix/React/JavaScript, DaisyUI/Tailwind/CSS, Cloudflare D1/SQL,
-        GitHub</span
-      >
-      <p>
-        Cycle TO Fun is a project I developed using Remix, Cloudflare D1, and
-        DaisyUI/Tailwind. It's a website that allows users to view a collection
-        of Toronto cycling routes via a sleek and user-friendly interface.
-        GitHub is utilized for version control and automatic deployment to
-        Cloudflare.
-      </p>
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">
+        Shoes!
+        <div class="badge badge-secondary">NEW</div>
+      </h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+      <div class="card-actions justify-end">
+        <div class="badge badge-outline">Fashion</div>
+        <div class="badge badge-outline">Products</div>
+      </div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="row-left">
-      <a href="https://which-city-is-colder.pages.dev/">
+  <div class="card bg-base-100 w-1/2 shadow-xl">
+    <figure>
+      <a href="https://www.cycletofun.com/">
         <img src="assets/img/colder-city.jpg" />
       </a>
-    </div>
-    <div class="row-right">
-      <a href="https://which-city-is-colder.pages.dev/">
-        <h3>Which City is Colder?</h3>
-      </a>
-      <span class="tools"
-        >HTML, CSS, Remix/React/JavaScript, JSON, Open-Meteo API, GitHub,
-        Cloudflare</span
-      >
-      <p>
-        This is a game that I creating using Remix—a React framework owned by
-        Shopify. Utilizing live weather data sourced from Open-Meteo, the
-        gameplay blends geography trivia with an element of chance. The project
-        is hosted on Cloudflare pages and is updated automatically via its
-        Github repository.
-      </p>
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">
+        Shoes!
+        <div class="badge badge-secondary">NEW</div>
+      </h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+      <div class="card-actions justify-end">
+        <div class="badge badge-outline">Fashion</div>
+        <div class="badge badge-outline">Products</div>
+      </div>
     </div>
   </div>
+</div>
 
-  <div class="row">
-    <div class="row-left">
-      <a
-        href="assets/pdf/Random%20Jelly%20Bean%20Shopify%20Theme%20Section.pdf"
-      >
-        <img src="assets/img/random-jelly-bean.jpg" />
-      </a>
-    </div>
-    <div class="row-right">
-      <a
-        href="assets/pdf/Random%20Jelly%20Bean%20Shopify%20Theme%20Section.pdf"
-      >
-        <h3>Random Jelly Bean Shopify Feature</h3>
-      </a>
-      <span class="tools"
-        >Shopify (HTML, CSS, JavaScript, Liquid), JSON, GitHub</span
-      >
-      <p>
-        I created coded a custom Shopify theme section to allow customers to add
-        a random product to their cart. In completing this project, I
-        demonstrated my ability to utilize of many common web technologies, as
-        well as my understanding of the standard Shopify objects. I followed
-        best practices for theme customization by isolating new code and
-        utilizing existing theme functionality where possible.
-      </p>
-    </div>
+<div id="skills" class="flex w-full flex-col my-4">
+  <div
+    class="divider divider-start divider-neutral font-serif font-bold text-2xl"
+  >
+    SKILLS
   </div>
+</div>
 
-  <div class="row">
-    <div class="row-left">
-      <a href="assets/pdf/Cake%20Dawn%20Shopify%20Theme.pdf">
-        <img src="assets/img/cake-dawn.jpg" />
-      </a>
-    </div>
-    <div class="row-right">
-      <a href="assets/pdf/Cake%20Dawn%20Shopify%20Theme.pdf">
-        <h3>Cake Dawn Shopify Theme</h3>
-      </a>
-      <span class="tools">Shopify (HTML, CSS, JavaScript, Liquid), GitHub</span>
-      <p>
-        I modified Shopify's leading free theme, Dawn, in order to provide
-        merchants who sell cakes with additional functionality. Features of Cake
-        Dawn include: infinite scroll, product order minimums, custom product
-        text-input fields, and custom popup modals. Implementing these features
-        required knowledge of Liquid, as well as an understanding of Shopify's
-        schemas, metafields, standard objects, and theme structure.
-      </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="row-left">
-      <a href="assets/pdf/Italian%20Bakery%20Case%20Study.pdf">
-        <img src="assets/img/italian-bakery-shopify.jpg" />
-      </a>
-    </div>
-    <div class="row-right">
-      <a href="assets/pdf/Italian%20Bakery%20Case%20Study.pdf">
-        <h3>Italian Bakery Online Store</h3>
-      </a>
-      <span class="tools"
-        >Shopify (HTML, CSS, JavaScript, Liquid, JSON, GraphQL), Sheets/Excel,
-        Pandas, Meta Ads Manager, Google Ads</span
-      >
-      <p>
-        I created an ecommerce website for a family-owned Italian bakery using
-        the Shopify platform. This project showcases my coding proficiency, as
-        well as my in-depth knowledge of Shopify's admin and its third-party app
-        ecosystem. I utilized my data-analyst background to reach insights that
-        led to improved UX, navigation, and product categorization. I
-        communicated with a marketing team to obtain assets required for the
-        website and various ad campaigns, and worked with a fulfillment team to
-        understand business needs surrounding checkout and delivery.
-      </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="row-left">
-      <a
-        href="https://nbviewer.org/github/stephensavoia/stephensavoia.github.io/blob/main/bikeshare/analysis.ipynb"
-      >
-        <img src="assets/img/bike_share_analysis.jpg" />
-      </a>
-    </div>
-    <div class="row-right">
-      <a
-        href="https://nbviewer.org/github/stephensavoia/stephensavoia.github.io/blob/main/bikeshare/analysis.ipynb"
-      >
-        <h3>Bike Share Toronto Rides Analysis</h3>
-      </a>
-      <span class="tools">Python (Pandas, Rasterio, JSON, seaborn)</span>
-      <p>
-        For this project, I analyzed Bike Share Toronto data to find that riders
-        tended to lose elevation (i.e. bike downhill more often than uphill) in
-        2022. This project required me to collect data from three different
-        sources: ride data (CSV), station data (JSON), and elevation data
-        (DEM/TIF). Seaborn was used to create visualizations.
-      </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="row-left">
-      <a href="r/parks/parks.html">
-        <img src="assets/img/parks.jpg" />
-      </a>
-    </div>
-    <div class="row-right">
-      <a href="r/parks/parks.html">
-        <h3>U.S. National Parks Recreational Visits Analysis</h3>
-      </a>
-      <span class="tools">R (dplyr, ggplot2), Tableau</span>
-      <p>
-        This is a project I started after completing the Coursera Google Data
-        Analytics Professional Certificate. Since my goal was to practice using
-        R for data aggregation and visualization, I chose to explore a rather
-        obvious hypothesis: more people will visit U.S. national parks when the
-        weather is warm.
-      </p>
-    </div>
+<div id="contact" class="flex w-full flex-col my-4">
+  <div
+    class="divider divider-start divider-neutral font-serif font-bold text-2xl"
+  >
+    CONTACT
   </div>
 </div>
