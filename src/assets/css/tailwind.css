@@ -3,17 +3,52 @@
 @tailwind utilities;
 
 .ss-gradient-bg {
-  /* filter: contrast(330%) brightness(100%); */
   background: linear-gradient(
-      40deg,
-      rgba(45, 45, 45, 1),
-      rgba(15, 15, 15, 0.8),
-      rgba(20, 20, 20, 0.7),
-      rgba(154, 154, 154, 0.5)
+      125deg,
+      rgba(65, 65, 65, 1) 0%,
+      rgba(40, 40, 40, 0.95) 10%,
+      rgba(25, 25, 25, 0.9) 25%,
+      rgba(30, 30, 30, 0.85) 60%,
+      rgba(50, 50, 50, 0.8) 75%,
+      rgba(154, 154, 154, 0.5) 100%
     ),
     url("data:image/svg+xml,%3Csvg viewBox='0 0 147 147' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+.ss-text-shadow {
+  filter: drop-shadow(0rem 0rem 2rem rgba(0, 0, 0, 0.7));
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 
 .badge-outline {
   color: rgba(119, 119, 119, 1);
 }
+
+/* Skills bar */
+.steps {
+  margin-left: -7.5%;
+  width: 115%;
+  margin-bottom: 0.5rem;
+}
+.steps .step {
+  min-width: 0;
+  grid-template-rows: 1.5rem 1fr;
+}
+.steps .step:before {
+  height: 0.4rem;
+  background-color: rgba(190, 190, 190, 1);
+}
+.steps .step-neutral + .step-neutral:before,
+.steps .step-neutral:after {
+  background-color: rgba(34, 34, 34, 1);
+}
+.steps .step:after {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.steps .step-empty:after {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: rgba(190, 190, 190, 1);
+}
+/* End of skills bar */

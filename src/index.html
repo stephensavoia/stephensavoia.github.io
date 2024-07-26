@@ -4,18 +4,19 @@ layout: "layouts/base.html"
 
 <div
   id="about"
-  class="card mt-3 mx-auto lg:card-side bg-base-300 shadow-xl ss-gradient-bg"
+  class="card mt-3 mx-auto lg:card-side bg-base-300 ss-gradient-bg"
 >
-  <div class="card-body w-3/5 pr-0">
-    <p class="w-4/5 mx-auto text-center">
-      I am a web developer currently living in Toronto, Canada. I have
-      experience building successful ecommerce and fundraising websites, and am
-      especially well-versed in the Shopify platform. I also have a professional
-      background in education. Please take a moment to browse through some of
-      the projects I have completed on this portfolio site.
+  <div
+    class="card-body w-full lg:w-3/5 px-12 pt-12 pb-0 lg:py-0 lg:px-4 justify-center"
+  >
+    <p
+      class="w-full lg:w-4/5 mx-auto text-center flex-grow-0 text-primary-content text-3xl leading-normal ss-text-shadow"
+    >
+      I'm a web developer with experience in creating successful ecommerce
+      websites and a background in education.
     </p>
   </div>
-  <figure class="w-2/5 p-12">
+  <figure class="w-full lg:w-2/5 p-12">
     <img class="mask mask-circle" src="assets/img/profile2.jpg" alt="Me" />
   </figure>
 </div>
@@ -50,59 +51,23 @@ layout: "layouts/base.html"
     </div>
   </div>
 
-  <div class="card bg-base-100 w-full lg:w-[49%] shadow-xl">
+  <div class="card bg-base-100 w-full lg:w-[49%] shadow-xl mb-8">
     <figure class="w-full">
       <a class="w-full" href="https://www.cycletofun.com/">
-        <img class="w-full" src="assets/img/colder-city.jpg" />
+        <img class="w-full" src="assets/img/cycle-to-fun.jpg" />
       </a>
     </figure>
     <div class="card-body">
-      <h2 class="card-title">
-        Shoes!
-        <div class="badge badge-secondary">NEW</div>
-      </h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <div class="badge badge-outline">Fashion</div>
-        <div class="badge badge-outline">Products</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card bg-base-100 w-1/2 shadow-xl">
-    <figure>
-      <a href="https://www.cycletofun.com/">
-        <img src="assets/img/cycle-to-fun.jpg" />
-      </a>
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">
-        Shoes!
-        <div class="badge badge-secondary">NEW</div>
-      </h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <div class="badge badge-outline">Fashion</div>
-        <div class="badge badge-outline">Products</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card bg-base-100 w-1/2 shadow-xl">
-    <figure>
-      <a href="https://www.cycletofun.com/">
-        <img src="assets/img/colder-city.jpg" />
-      </a>
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">
-        Shoes!
-        <div class="badge badge-secondary">NEW</div>
-      </h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <div class="badge badge-outline">Fashion</div>
-        <div class="badge badge-outline">Products</div>
+      <h3 class="font-serif font-bold text-xl">Cycle TO Fun</h3>
+      <p>
+        Cycle TO Fun is a website that allows users to view a collection of
+        Toronto cycling routes via a sleek and user-friendly interface.
+      </p>
+      <div class="card-actions justify-start mt-1">
+        <div class="badge badge-outline">Remix</div>
+        <div class="badge badge-outline">Cloudflare D1</div>
+        <div class="badge badge-outline">Tailwind</div>
+        <div class="badge badge-outline">Github</div>
       </div>
     </div>
   </div>
@@ -112,7 +77,76 @@ layout: "layouts/base.html"
   <div
     class="divider divider-start divider-neutral font-serif font-bold text-2xl"
   >
-    SKILLS
+    TECHNICAL SKILLS
+  </div>
+</div>
+
+<div class="container flex flex-wrap mx-auto justify-between">
+  <div class="card bg-base-100 w-full lg:w-[32%] mb-8">
+    <div class="card-body">
+      <h3 class="font-serif font-bold text-xl">Highly Skilled In...</h3>
+      <ul class="steps">
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+      </ul>
+      <div class="card-actions justify-start mt-1">
+        <div class="badge badge-outline">HTML</div>
+        <div class="badge badge-outline">CSS</div>
+        <div class="badge badge-outline">Liquid</div>
+        <div class="badge badge-outline">JSON</div>
+        <div class="badge badge-outline">Front End JavaScript</div>
+
+        <div class="badge badge-outline">Shopify Admin</div>
+        <div class="badge badge-outline">Excel/Sheets</div>
+      </div>
+    </div>
+  </div>
+  <div class="card bg-base-100 w-full lg:w-[32%] mb-8">
+    <div class="card-body">
+      <h3 class="font-serif font-bold text-xl">Experienced In...</h3>
+      <ul class="steps">
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-empty"></li>
+        <li data-content="" class="step step-empty"></li>
+      </ul>
+      <div class="card-actions justify-start mt-1">
+        <div class="badge badge-outline">Remix</div>
+        <div class="badge badge-outline">React</div>
+        <div class="badge badge-outline">TypeScript</div>
+        <div class="badge badge-outline">Full Stack JavaScript</div>
+        <div class="badge badge-outline">Tailwind</div>
+        <div class="badge badge-outline">11ty</div>
+        <div class="badge badge-outline">Git/Github</div>
+        <div class="badge badge-outline">Cloudflare</div>
+        <div class="badge badge-outline">npm</div>
+      </div>
+    </div>
+  </div>
+  <div class="card bg-base-100 w-full lg:w-[32%] mb-8">
+    <div class="card-body">
+      <h3 class="font-serif font-bold text-xl">Familiar With...</h3>
+      <ul class="steps">
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-empty"></li>
+        <li data-content="" class="step step-empty"></li>
+        <li data-content="" class="step step-empty"></li>
+      </ul>
+      <div class="card-actions justify-start mt-1">
+        <div class="badge badge-outline">SQL</div>
+        <div class="badge badge-outline">Python/Pandas</div>
+        <div class="badge badge-outline">R</div>
+        <div class="badge badge-outline">GraphQL</div>
+        <div class="badge badge-outline">Meta Ads Manager</div>
+        <div class="badge badge-outline">Google Ads</div>
+        <div class="badge badge-outline">Prisma</div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -123,3 +157,76 @@ layout: "layouts/base.html"
     CONTACT
   </div>
 </div>
+
+<form
+  class="flex flex-col space-y-4 items-center"
+  aria-labelledby="contact-heading"
+>
+  <h2 id="contact-heading" class="sr-only">Contact Form</h2>
+
+  <label for="name" class="sr-only">Name</label>
+  <input
+    type="text"
+    id="name"
+    name="name"
+    placeholder="Name"
+    class="input input-bordered input-primary w-full max-w-sm"
+    aria-label="Name"
+    aria-required="true"
+  />
+
+  <label for="email" class="sr-only">Email</label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Email"
+    class="input input-bordered input-primary w-full max-w-sm"
+    aria-label="Email"
+    aria-required="true"
+  />
+
+  <label for="message" class="sr-only">Message</label>
+  <textarea
+    id="message"
+    name="message"
+    placeholder="Message"
+    class="textarea textarea-bordered textarea-primary w-full max-w-sm text-[1rem]"
+    aria-label="Message"
+    aria-required="true"
+    rows="5"
+  ></textarea>
+  <button type="submit" class="btn btn-primary w-full max-w-sm">Submit</button>
+  <div role="alert" class="alert alert-success max-w-sm hidden">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6 shrink-0 stroke-current"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+    </svg>
+    <span>Message sent!</span>
+  </div>
+  <div role="alert" class="alert alert-error max-w-sm hidden">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6 shrink-0 stroke-current"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+    </svg>
+    <span>Error! Task failed successfully.</span>
+  </div>
+</form>

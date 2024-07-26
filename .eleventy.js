@@ -7,6 +7,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/**/*/styles.css");
   eleventyConfig.addWatchTarget("tailwind.config.js");
 
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
   return {
     dir: {
       input: "src",
