@@ -2,23 +2,29 @@
 layout: "layouts/base.html"
 ---
 
-<div
-  id="about"
-  class="card mt-3 mx-auto lg:card-side bg-base-300 ss-gradient-bg"
->
+<div class="ss-animated-static-bg">
   <div
-    class="card-body w-full lg:w-3/5 px-12 pt-12 pb-0 lg:py-0 lg:px-4 justify-center"
+    id="about"
+    class="card mt-3 mx-auto lg:card-side bg-base-300 ss-gradient-bg"
   >
-    <p
-      class="w-full lg:w-4/5 mx-auto text-center flex-grow-0 text-primary-content text-3xl leading-normal ss-text-shadow"
+    <div
+      class="card-body w-full lg:w-3/5 px-12 pt-12 pb-0 lg:py-0 lg:px-4 justify-center"
     >
-      I'm a web developer with experience in creating successful ecommerce
-      websites and a background in education.
-    </p>
+      <p
+        class="w-full lg:w-4/5 mx-auto text-center flex-grow-0 text-primary-content text-3xl leading-normal ss-text-shadow"
+      >
+        I'm a web developer with experience in creating successful ecommerce
+        websites and a background in education.
+      </p>
+    </div>
+    <figure class="w-full lg:w-2/5 p-12">
+      <img
+        class="mask mask-circle lg:mr-4"
+        src="assets/img/profile2.jpg"
+        alt="Me"
+      />
+    </figure>
   </div>
-  <figure class="w-full lg:w-2/5 p-12">
-    <img class="mask mask-circle" src="assets/img/profile2.jpg" alt="Me" />
-  </figure>
 </div>
 
 <div id="projects" class="flex w-full flex-col my-4">
@@ -28,49 +34,27 @@ layout: "layouts/base.html"
     PROJECTS
   </div>
 </div>
-
 <div class="container flex flex-wrap mx-auto justify-between">
-  <div class="card bg-base-100 w-full lg:w-[49%] shadow-xl mb-8">
+  {% for ride in rides %}
+  <div class="card bg-base-100 w-full md:w-[49%] shadow-xl mb-8">
     <figure class="w-full">
-      <a class="w-full" href="https://www.cycletofun.com/">
-        <img class="w-full" src="assets/img/cycle-to-fun.jpg" />
+      <a class="w-full" href="{{ride.link}}">
+        <img class="w-full" src="assets/img/{{ride.image}}" />
       </a>
     </figure>
     <div class="card-body">
-      <h3 class="font-serif font-bold text-xl">Cycle TO Fun</h3>
-      <p>
-        Cycle TO Fun is a website that allows users to view a collection of
-        Toronto cycling routes via a sleek and user-friendly interface.
-      </p>
-      <div class="card-actions justify-start mt-1">
-        <div class="badge badge-outline">Remix</div>
-        <div class="badge badge-outline">Cloudflare D1</div>
-        <div class="badge badge-outline">Tailwind</div>
-        <div class="badge badge-outline">Github</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card bg-base-100 w-full lg:w-[49%] shadow-xl mb-8">
-    <figure class="w-full">
-      <a class="w-full" href="https://www.cycletofun.com/">
-        <img class="w-full" src="assets/img/cycle-to-fun.jpg" />
+      <a href="{{ride.link}}" class="self-start">
+        <h3 class="font-serif font-bold text-xl">{{ride.title}}</h3>
       </a>
-    </figure>
-    <div class="card-body">
-      <h3 class="font-serif font-bold text-xl">Cycle TO Fun</h3>
-      <p>
-        Cycle TO Fun is a website that allows users to view a collection of
-        Toronto cycling routes via a sleek and user-friendly interface.
-      </p>
-      <div class="card-actions justify-start mt-1">
-        <div class="badge badge-outline">Remix</div>
-        <div class="badge badge-outline">Cloudflare D1</div>
-        <div class="badge badge-outline">Tailwind</div>
-        <div class="badge badge-outline">Github</div>
+      <p>{{ride.description | safe}}</p>
+      <div class="card-actions justify-start mt-4">
+        {% for tag in ride.tags %}
+        <div class="badge badge-outline">{{tag}}</div>
+        {% endfor %}
       </div>
     </div>
   </div>
+  {% endfor %}
 </div>
 
 <div id="skills" class="flex w-full flex-col my-4">
@@ -83,7 +67,7 @@ layout: "layouts/base.html"
 
 <div class="container flex flex-wrap mx-auto justify-between">
   <div class="card bg-base-100 w-full lg:w-[32%] mb-8">
-    <div class="card-body">
+    <div class="card-body overflow-hidden">
       <h3 class="font-serif font-bold text-xl">Highly Skilled In...</h3>
       <ul class="steps">
         <li data-content="" class="step step-neutral"></li>
@@ -105,7 +89,7 @@ layout: "layouts/base.html"
     </div>
   </div>
   <div class="card bg-base-100 w-full lg:w-[32%] mb-8">
-    <div class="card-body">
+    <div class="card-body overflow-hidden">
       <h3 class="font-serif font-bold text-xl">Experienced In...</h3>
       <ul class="steps">
         <li data-content="" class="step step-neutral"></li>
@@ -128,7 +112,7 @@ layout: "layouts/base.html"
     </div>
   </div>
   <div class="card bg-base-100 w-full lg:w-[32%] mb-8">
-    <div class="card-body">
+    <div class="card-body overflow-hidden">
       <h3 class="font-serif font-bold text-xl">Familiar With...</h3>
       <ul class="steps">
         <li data-content="" class="step step-neutral"></li>
@@ -145,6 +129,7 @@ layout: "layouts/base.html"
         <div class="badge badge-outline">Meta Ads Manager</div>
         <div class="badge badge-outline">Google Ads</div>
         <div class="badge badge-outline">Prisma</div>
+        <div class="badge badge-outline">WordPress</div>
       </div>
     </div>
   </div>
@@ -161,7 +146,15 @@ layout: "layouts/base.html"
 <form
   class="flex flex-col space-y-4 items-center"
   aria-labelledby="contact-heading"
+  method="POST"
+  action="https://api.web3forms.com/submit"
+  id="form"
 >
+  <input
+    type="hidden"
+    name="access_key"
+    value="5edb3956-c25d-4ce8-9149-6794d20835b2"
+  />
   <h2 id="contact-heading" class="sr-only">Contact Form</h2>
 
   <label for="name" class="sr-only">Name</label>
@@ -173,6 +166,7 @@ layout: "layouts/base.html"
     class="input input-bordered input-primary w-full max-w-sm"
     aria-label="Name"
     aria-required="true"
+    required
   />
 
   <label for="email" class="sr-only">Email</label>
@@ -184,6 +178,7 @@ layout: "layouts/base.html"
     class="input input-bordered input-primary w-full max-w-sm"
     aria-label="Email"
     aria-required="true"
+    required
   />
 
   <label for="message" class="sr-only">Message</label>
@@ -195,9 +190,20 @@ layout: "layouts/base.html"
     aria-label="Message"
     aria-required="true"
     rows="5"
+    required
   ></textarea>
-  <button type="submit" class="btn btn-primary w-full max-w-sm">Submit</button>
-  <div role="alert" class="alert alert-success max-w-sm hidden">
+  <button
+    id="submitButton"
+    type="submit"
+    class="btn btn-primary w-full max-w-sm"
+  >
+    Submit
+  </button>
+  <div
+    id="successAlert"
+    role="alert"
+    class="alert alert-success max-w-sm hidden"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="h-6 w-6 shrink-0 stroke-current"
@@ -211,9 +217,9 @@ layout: "layouts/base.html"
         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
       />
     </svg>
-    <span>Message sent!</span>
+    <span id="successMessage">Success!</span>
   </div>
-  <div role="alert" class="alert alert-error max-w-sm hidden">
+  <div role="alert" id="errorAlert" class="alert alert-error max-w-sm hidden">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="h-6 w-6 shrink-0 stroke-current"
@@ -227,6 +233,6 @@ layout: "layouts/base.html"
         d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
       />
     </svg>
-    <span>Error! Task failed successfully.</span>
+    <span id="errorMessage">Error!</span>
   </div>
 </form>

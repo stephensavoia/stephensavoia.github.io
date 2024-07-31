@@ -1,4 +1,5 @@
-// Remove focus from menu (i.e. close menu, because that's how daisyui works),
+// REMOVE FOCUS FROM MENU
+// (i.e. close menu, because that's how daisyui works),
 // when the menu button is clicked after it is already in focus (i.e. opened)
 
 const menuBtn = document.getElementById("menuBtn");
@@ -29,3 +30,60 @@ document.querySelectorAll("#menu a").forEach((link) => {
     document.activeElement.blur();
   });
 });
+// END OF REMOVE FOCUS FROM MENU
+
+// CONTACT FORM
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("form");
+  const submitButton = document.getElementById("submitButton");
+  const successAlert = document.getElementById("successAlert");
+  const successMessage = document.getElementById("successMessage");
+  const errorAlert = document.getElementById("errorAlert");
+  const errorMessage = document.getElementById("errorMessage");
+
+  form.addEventListener("submit", function (e) {
+    const formData = new FormData(form);
+    e.preventDefault();
+    var object = {};
+    formData.forEach((value, key) => {
+      object[key] = value;
+    });
+    var json = JSON.stringify(object);
+    submitButton.disabled = true;
+    submitButton.innerHTML = "Submitting...";
+
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    })
+      .then(async (response) => {
+        let json = await response.json();
+        if (response.status == 200) {
+          errorAlert.classList.add("hidden");
+          successAlert.classList.remove("hidden");
+          successMessage.innerHTML = json.message;
+        } else {
+          console.log(response);
+          successAlert.classList.add("hidden");
+          errorAlert.classList.remove("hidden");
+          errorMessage.innerHTML = json.message;
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+        successAlert.classList.add("hidden");
+        errorAlert.classList.remove("hidden");
+        errorMessage.innerHTML = "Error! Message was not sent.";
+      })
+      .then(function () {
+        form.reset();
+        submitButton.disabled = false;
+        submitButton.innerHTML = "Submit";
+      });
+  });
+});
+// END OF CONTACT FORM

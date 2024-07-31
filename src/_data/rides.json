@@ -1,0 +1,50 @@
+[
+  {
+    "id": "006",
+    "title": "Cycle TO Fun",
+    "description": "This is a website that allows users to view a collection of Toronto cycling routes via a sleek and user-friendly interface.",
+    "link": "https://www.cycletofun.com/",
+    "tags": ["Remix", "Cloudflare D1", "Tailwind", "Github"],
+    "image": "cycle-to-fun.jpg"
+  },
+  {
+    "id": "005",
+    "title": "Which City is Colder?",
+    "description": "This is a game I created that blends geography trivia with an element of chance. It utilizes live weather data from Open-Meteo.",
+    "link": "https://which-city-is-colder.pages.dev/",
+    "tags": ["Remix", "JSON", "CSS", "Open-Meteo API", "Github"],
+    "image": "which-city-is-colder.jpg"
+  },
+  {
+    "id": "004",
+    "title": "Cake Dawn Shopify Theme",
+    "description": "I modified Shopify's leading free theme, Dawn, in order to provide merchants who sell cakes with additional functionality.",
+    "link": "https://which-city-is-colder.pages.dev/",
+    "tags": ["Shopify", "Liquid", "CSS", "JavaScript", "Github"],
+    "image": "cake-dawn.jpg"
+  },
+  {
+    "id": "003",
+    "title": "Italian Bakery Online Store",
+    "description": "I created an ecommerce website for a family-owned Italian bakery using the Shopify platform, including its third-party app ecosystem.",
+    "link": "https://which-city-is-colder.pages.dev/",
+    "tags": ["Shopify", "Liquid", "CSS", "JavaScript", "Github"],
+    "image": "tre-mari-bakery.jpg"
+  },
+  {
+    "id": "002",
+    "title": "Bike Share Toronto Rides Analysis",
+    "description": "I analyzed Bike Share Toronto data to find that riders tended to lose elevation (i.e. bike downhill more often than uphill) in 2022.",
+    "link": "https://which-city-is-colder.pages.dev/",
+    "tags": ["Python", "Pandas", "JSON", "seaborn", "DEM"],
+    "image": "bike-share-rides.jpg"
+  },
+  {
+    "id": "001",
+    "title": "U.S. National Parks Visits Analysis",
+    "description": "In this simple data aggregation and visualization project, I show that more people will visit U.S. national parks when the weather is warm.",
+    "link": "https://which-city-is-colder.pages.dev/",
+    "tags": ["R", "dplyr", "ggplot2", "Tableau"],
+    "image": "us-national-parks.jpg"
+  }
+]
