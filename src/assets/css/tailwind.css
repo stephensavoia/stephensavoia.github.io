@@ -2,58 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes gradientFlow {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 200% 50%;
-  }
+:root {
+  --first-banner-color: rgba(93, 0, 0, 0.4);
+  --second-banner-color: rgba(0, 0, 171, 0.1);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.ss-animated-static-bg {
-  @apply relative bg-opacity-50;
-  background: linear-gradient(
-    110deg,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.8) 10%,
-    rgba(0, 0, 0, 0.8) 20%,
-    rgba(0, 0, 0, 0.65) 30%,
-    rgba(0, 0, 0, 0.45) 40%,
-    rgba(0, 0, 0, 0.45) 50%,
-    rgba(0, 0, 0, 0.45) 60%,
-    rgba(0, 0, 0, 0.65) 70%,
-    rgba(0, 0, 0, 0.8) 80%,
-    rgba(0, 0, 0, 0.8) 90%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
-  background-size: 200% 100%;
-  animation: gradientFlow 20s linear infinite;
+@keyframes staticNoise {
+  0%,
+  100% {
+    background-image: url("/assets/svg/noise1.svg");
+  }
+  25%,
+  75% {
+    background-image: url("/assets/svg/noise2.svg");
+  }
+  50% {
+    background-image: url("/assets/svg/noise3.svg");
+  }
 }
 
-.ss-gradient-bg {
-  background: linear-gradient(
-      120deg,
-      rgba(0, 0, 0, 0.48) 0%,
-      rgba(0, 0, 0, 0.58) 13%,
-      rgba(0, 0, 0, 0.62) 17%,
-      rgba(0, 0, 0, 0.65) 25%,
-      rgba(0, 0, 0, 0.65) 42%,
-      rgba(0, 0, 0, 0.62) 50%,
-      rgba(0, 0, 0, 0.58) 54%,
-      rgba(0, 0, 0, 0.52) 60%,
-      rgba(0, 0, 0, 0.28) 95%
-    ),
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 147 147' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+.ss-animated-noise-bg {
+  background: rgb(0, 0, 0);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("/assets/svg/noise1.svg");
+  animation: staticNoise 0.5s steps(5) infinite;
 }
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+#about {
+  background: linear-gradient(
+    120deg,
+    var(--first-banner-color) 20%,
+    var(--second-banner-color) 40%,
+    var(--second-banner-color) 60%,
+    var(--first-banner-color) 80%
+  );
+  background-size: 300% 100%;
+  animation: gradientFlow 50s linear infinite;
+}
+
+/* Project badges */
 
 .badge-outline {
   color: rgba(119, 119, 119, 1);
 }
+
+/* End of project badges */
 
 /* Skills bar */
 .steps {
