@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --first-banner-color: rgba(93, 0, 0, 0.4);
-  --second-banner-color: rgba(0, 0, 171, 0.1);
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -16,42 +11,45 @@ html {
   100% {
     background-image: url("/assets/svg/noise1.svg");
   }
-  25%,
-  75% {
+  20%,
+  80% {
     background-image: url("/assets/svg/noise2.svg");
   }
-  50% {
+  30%,
+  70% {
     background-image: url("/assets/svg/noise3.svg");
+  }
+  40%,
+  60% {
+    background-image: url("/assets/svg/noise4.svg");
+  }
+  50% {
+    background-image: url("/assets/svg/noise5.svg");
   }
 }
 
-.ss-animated-noise-bg {
-  background: rgb(0, 0, 0);
+.animated-noise-bg {
+  background: rgb(255, 255, 255);
   background-size: cover;
   background-position: 50% 50%;
-  background-image: url("/assets/svg/noise1.svg");
-  animation: staticNoise 0.5s steps(5) infinite;
+  /* background-image: url("/assets/svg/noise1.svg"); */
+  animation: staticNoise 1s steps(5) infinite;
 }
 
 @keyframes gradientFlow {
-  0% {
-    background-position: 0% 50%;
-  }
+  0%,
   100% {
-    background-position: 300% 50%;
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 15%;
   }
 }
 
 #about {
-  background: linear-gradient(
-    120deg,
-    var(--first-banner-color) 20%,
-    var(--second-banner-color) 40%,
-    var(--second-banner-color) 60%,
-    var(--first-banner-color) 80%
-  );
-  background-size: 300% 100%;
-  animation: gradientFlow 50s linear infinite;
+  background: radial-gradient(#ffefba80, #93b0fb80);
+  background-size: 150% 200%;
+  animation: gradientFlow 15s ease-in-out infinite;
 }
 
 /* Project badges */
@@ -90,3 +88,7 @@ html {
   background-color: rgba(190, 190, 190, 1);
 }
 /* End of skills bar */
+
+#about p.day-mode {
+  color: #222222;
+}
