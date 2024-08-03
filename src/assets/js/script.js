@@ -87,3 +87,26 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 // END OF CONTACT FORM
+
+// DARK MODE TOGGLE
+
+document.addEventListener("DOMContentLoaded", function () {
+  const body = document.body;
+  const themeController = document.getElementById("themeController");
+  const profileLightMode = document.getElementById("profileLightMode");
+  const profileDarkMode = document.getElementById("profileDarkMode");
+
+  themeController.addEventListener("change", function () {
+    if (themeController.checked) {
+      body.classList.add("dark-mode");
+      profileDarkMode.classList.remove("hidden");
+      profileLightMode.classList.add("hidden");
+    } else {
+      body.classList.remove("dark-mode");
+      profileLightMode.classList.remove("hidden");
+      profileDarkMode.classList.add("hidden");
+    }
+  });
+});
+
+// END OF DARK MODE TOGGLE
