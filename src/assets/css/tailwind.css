@@ -103,6 +103,15 @@ body.dark-mode .bg-base-100 {
   color: #d6d6d6;
 }
 
+:where(
+    body.dark-mode
+      .menu
+      li:not(.menu-title, .disabled)
+      > *:not(ul, details, .menu-title)
+  ):not(.active, .btn):hover {
+  background-color: #282828;
+}
+
 body.dark-mode .animated-noise-bg {
   background-color: #1e1e1e;
 }
@@ -134,7 +143,7 @@ body.dark-mode .flex .card {
 body.dark-mode .steps .step-neutral + .step-neutral:before,
 body.dark-mode .steps .step-neutral:after,
 body.dark-mode .btn-primary {
-  background-color: #414141;
+  background-color: #525252;
 }
 
 body.dark-mode form input,

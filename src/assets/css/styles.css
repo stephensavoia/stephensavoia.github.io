@@ -2344,6 +2344,22 @@ html {
   z-index: 1;
 }
 
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -2356,6 +2372,14 @@ html {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .mt-1 {
@@ -2446,6 +2470,10 @@ html {
   grid-auto-flow: column;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -2460,6 +2488,10 @@ html {
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -2558,6 +2590,11 @@ html {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-\[1rem\] {
@@ -2715,6 +2752,15 @@ body.dark-mode .bg-base-100 {
   color: #d6d6d6;
 }
 
+:where(
+    body.dark-mode
+      .menu
+      li:not(.menu-title, .disabled)
+      > *:not(ul, details, .menu-title)
+  ):not(.active, .btn):hover {
+  background-color: #282828;
+}
+
 body.dark-mode .animated-noise-bg {
   background-color: #1e1e1e;
 }
@@ -2747,7 +2793,7 @@ body.dark-mode .flex .card {
 body.dark-mode .steps .step-neutral + .step-neutral:before,
 body.dark-mode .steps .step-neutral:after,
 body.dark-mode .btn-primary {
-  background-color: #414141;
+  background-color: #525252;
 }
 
 body.dark-mode form input,
@@ -3271,14 +3317,35 @@ body.dark-mode .star {
   }
 }
 
+@media (min-width: 640px) {
+  .sm\:order-1 {
+    order: 1;
+  }
+
+  .sm\:order-2 {
+    order: 2;
+  }
+
+  .sm\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .sm\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:w-\[49\%\] {
     width: 49%;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
 
