@@ -2394,6 +2394,14 @@ html {
   margin-top: 1rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -2793,7 +2801,7 @@ body.dark-mode .flex .card {
 body.dark-mode .steps .step-neutral + .step-neutral:before,
 body.dark-mode .steps .step-neutral:after,
 body.dark-mode .btn-primary {
-  background-color: #525252;
+  background-color: #454545;
 }
 
 body.dark-mode form input,
@@ -3326,12 +3334,20 @@ body.dark-mode .star {
     order: 2;
   }
 
+  .sm\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .sm\:ml-0 {
     margin-left: 0px;
   }
 
   .sm\:mr-0 {
     margin-right: 0px;
+  }
+
+  .sm\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .sm\:flex {

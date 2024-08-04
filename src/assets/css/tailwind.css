@@ -143,7 +143,7 @@ body.dark-mode .flex .card {
 body.dark-mode .steps .step-neutral + .step-neutral:before,
 body.dark-mode .steps .step-neutral:after,
 body.dark-mode .btn-primary {
-  background-color: #525252;
+  background-color: #454545;
 }
 
 body.dark-mode form input,
