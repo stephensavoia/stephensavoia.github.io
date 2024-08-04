@@ -1,5 +1,7 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/assets/**/*.{jpg,png,svg,gif,ico,js}");
+  eleventyConfig.addPassthroughCopy(
+    "src/assets/**/*.{jpg,png,svg,gif,ico,js,pdf}"
+  );
   eleventyConfig.addPassthroughCopy("src/assets/css/styles.css");
   eleventyConfig.addPassthroughCopy("r/parks/parks.html");
   eleventyConfig.addPassthroughCopy("pandas/bikeshare");

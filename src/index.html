@@ -35,6 +35,7 @@ layout: "layouts/base.html"
       <div class="star"></div>
       <div class="star"></div>
       <div class="star"></div>
+      <!-- <div class="star"></div>
       <div class="star"></div>
       <div class="star"></div>
       <div class="star"></div>
@@ -53,8 +54,7 @@ layout: "layouts/base.html"
       <div class="star"></div>
       <div class="star"></div>
       <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
+      <div class="star"></div> -->
     </div>
     <div
       class="card-body w-full lg:w-3/5 px-12 pt-12 pb-0 lg:py-0 lg:px-4 justify-center"
@@ -92,20 +92,20 @@ layout: "layouts/base.html"
   </div>
 </div>
 <div class="container flex flex-wrap max-w-[1024px] mx-auto justify-between">
-  {% for ride in rides %}
+  {% for project in projects %}
   <div class="card bg-base-100 w-full md:w-[49%] lg:w-[32%] shadow-xl mb-8">
     <figure class="w-full">
-      <a class="w-full" href="{{ride.link}}">
-        <img class="w-full" src="assets/img/{{ride.image}}" />
+      <a class="w-full" href="{{project.link}}">
+        <img class="w-full" src="assets/img/{{project.image}}" />
       </a>
     </figure>
     <div class="card-body">
-      <a href="{{ride.link}}" class="self-start">
-        <h3 class="font-serif font-bold text-xl">{{ride.title}}</h3>
+      <a href="{{project.link}}" class="self-start">
+        <h3 class="font-serif font-bold text-xl">{{project.title}}</h3>
       </a>
-      <p>{{ride.description | safe}}</p>
+      <p>{{project.description | safe}}</p>
       <div class="card-actions justify-start mt-4">
-        {% for tag in ride.tags %}
+        {% for tag in project.tags %}
         <div class="badge badge-outline">{{tag}}</div>
         {% endfor %}
       </div>

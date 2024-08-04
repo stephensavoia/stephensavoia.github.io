@@ -19,7 +19,7 @@
     "id": "004",
     "title": "Cake Dawn Shopify Theme",
     "description": "I modified Shopify's leading free theme, Dawn, in order to provide merchants who sell cakes with additional functionality.",
-    "link": "https://which-city-is-colder.pages.dev/",
+    "link": "/assets/pdf/Cake-Dawn-Shopify-Theme.pdf",
     "tags": ["Shopify", "Liquid", "CSS", "JavaScript", "Github"],
     "image": "cake-dawn.jpg"
   },
@@ -27,7 +27,7 @@
     "id": "003",
     "title": "Italian Bakery Online Store",
     "description": "I created an ecommerce website for a family-owned Italian bakery using the Shopify platform, including its third-party app ecosystem.",
-    "link": "https://which-city-is-colder.pages.dev/",
+    "link": "/assets/pdf/Italian-Bakery-Case-Study.pdf",
     "tags": ["Shopify", "Liquid", "CSS", "JavaScript", "Github"],
     "image": "tre-mari-bakery.jpg"
   },
@@ -35,7 +35,7 @@
     "id": "002",
     "title": "Bike Share Toronto Rides Analysis",
     "description": "I analyzed Bike Share Toronto data to find that riders tended to lose elevation (i.e. bike downhill more often than uphill) in 2022.",
-    "link": "https://which-city-is-colder.pages.dev/",
+    "link": "https://nbviewer.org/github/stephensavoia/stephensavoia.github.io/blob/main/bikeshare/analysis.ipynb",
     "tags": ["Python", "Pandas", "JSON", "seaborn", "DEM"],
     "image": "bike-share-rides.jpg"
   },
@@ -43,7 +43,7 @@
     "id": "001",
     "title": "U.S. National Parks Visits Analysis",
     "description": "In this simple data aggregation and visualization project, I show that more people will visit U.S. national parks when the weather is warm.",
-    "link": "https://which-city-is-colder.pages.dev/",
+    "link": "/r/parks/parks.html",
     "tags": ["R", "dplyr", "ggplot2", "Tableau"],
     "image": "us-national-parks.jpg"
   }

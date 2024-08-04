@@ -193,8 +193,8 @@ body.dark-mode form textarea:focus {
 
 .stars {
   position: absolute;
-  top: 0;
-  left: -65%;
+  top: -25%;
+  left: -55%;
   width: 200%;
   height: 200%;
   transform: rotate(-45deg);
@@ -413,7 +413,7 @@ body.dark-mode .star {
   --fall-duration: 10.106s;
   --fall-delay: 1.115s;
 }
-.star:nth-child(31) {
+/* .star:nth-child(31) {
   --star-tail-length: 5.24em;
   --top-offset: 7.9vh;
   --fall-duration: 6.422s;
@@ -532,7 +532,7 @@ body.dark-mode .star {
   --top-offset: 47.64vh;
   --fall-duration: 7.839s;
   --fall-delay: 9.749s;
-}
+} */
 .star::before,
 .star::after {
   position: absolute;
