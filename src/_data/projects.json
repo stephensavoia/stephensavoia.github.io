@@ -17,11 +17,11 @@
   },
   {
     "id": "004",
-    "title": "Cake Dawn Shopify Theme",
-    "description": "I modified Shopify's leading free theme, Dawn, in order to provide merchants who sell cakes with additional functionality.",
-    "link": "/assets/pdf/Cake-Dawn-Shopify-Theme.pdf",
-    "tags": ["Shopify", "Liquid", "CSS", "JavaScript", "Github"],
-    "image": "cake-dawn.jpg"
+    "title": "xkcd App",
+    "description": "This app allows users to view famous webcomic xkcd. Fast loading times are achieved by preloading next/previous images.",
+    "link": "https://xkcdspa.pages.dev/",
+    "tags": ["Remix", "JavaScript", "JSON", "Cloudflare Pages", "Github"],
+    "image": "xkcd-app.jpg"
   },
   {
     "id": "003",
