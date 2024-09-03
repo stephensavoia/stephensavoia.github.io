@@ -9,19 +9,19 @@
   },
   {
     "id": "005",
-    "title": "Which City is Colder?",
-    "description": "This is a game I created that blends geography trivia with an element of chance. It utilizes live weather data from Open-Meteo.",
-    "link": "https://which-city-is-colder.pages.dev/",
-    "tags": ["Remix", "JSON", "CSS", "Open-Meteo API", "Github"],
-    "image": "which-city-is-colder.jpg"
-  },
-  {
-    "id": "004",
     "title": "xkcd App",
     "description": "This app allows users to view the popular webcomic xkcd. Fast loading times are achieved by preloading next/previous images.",
     "link": "https://xkcdspa.pages.dev/",
     "tags": ["Remix", "TypeScript", "JSON", "Cloudflare Pages", "Github"],
     "image": "xkcd-app.jpg"
+  },
+  {
+    "id": "004",
+    "title": "Online Artwork Store",
+    "description": "I developed an ecommerce strategy for a photographer, prioritizing cost efficiency and a quick site launch by utilizing existing hosting contracts.",
+    "link": "https://francodeleo.com/",
+    "tags": ["CSS", "CSV", "Google Sheets", "Shopify", "Cargo", "Github"],
+    "image": "artwork-store.jpg"
   },
   {
     "id": "003",
