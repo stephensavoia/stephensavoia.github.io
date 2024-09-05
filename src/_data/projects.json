@@ -4,7 +4,16 @@
     "title": "Cycle TO Fun",
     "description": "This is a website that allows users to view a collection of Toronto cycling routes via a sleek and user-friendly interface.",
     "link": "https://www.cycletofun.com/",
-    "tags": ["Remix", "Cloudflare D1", "Tailwind", "Github"],
+    "tags": [
+      "Remix",
+      "React",
+      "TypeScript",
+      "CSS",
+      "Tailwind",
+      "Daisy UI",
+      "Cloudflare D1",
+      "Github"
+    ],
     "image": "cycle-to-fun.jpg"
   },
   {
@@ -12,7 +21,16 @@
     "title": "xkcd App",
     "description": "This app allows users to view the popular webcomic xkcd. Fast loading times are achieved by preloading next/previous images.",
     "link": "https://xkcdspa.pages.dev/",
-    "tags": ["Remix", "TypeScript", "JSON", "Cloudflare Pages", "Github"],
+    "tags": [
+      "Remix",
+      "React",
+      "TypeScript",
+      "CSS",
+      "JSON",
+      "REST API",
+      "Cloudflare Pages",
+      "Github"
+    ],
     "image": "xkcd-app.jpg"
   },
   {
@@ -20,7 +38,16 @@
     "title": "Online Artwork Store",
     "description": "I developed an ecommerce strategy for a photographer, prioritizing cost efficiency and a quick site launch by utilizing existing hosting contracts.",
     "link": "https://francodeleo.com/",
-    "tags": ["CSS", "CSV", "Google Sheets", "Shopify", "Cargo", "Github"],
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "CSV",
+      "Google Sheets",
+      "Shopify",
+      "Cargo",
+      "Github"
+    ],
     "image": "artwork-store.jpg"
   },
   {
@@ -28,7 +55,16 @@
     "title": "Italian Bakery Online Store",
     "description": "I created an ecommerce website for a family-owned Italian bakery using the Shopify platform, including its third-party app ecosystem.",
     "link": "/assets/pdf/Italian-Bakery-Case-Study.pdf",
-    "tags": ["Shopify", "Liquid", "CSS", "JavaScript", "Github"],
+    "tags": [
+      "Shopify Admin",
+      "Liquid",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "GraphQL",
+      "CSV",
+      "Github"
+    ],
     "image": "tre-mari-bakery.jpg"
   },
   {
@@ -36,7 +72,17 @@
     "title": "Bike Share Toronto Rides Analysis",
     "description": "I analyzed Bike Share Toronto data to find that riders tended to lose elevation (i.e. bike downhill more often than uphill) in 2022.",
     "link": "https://nbviewer.org/github/stephensavoia/stephensavoia.github.io/blob/main/bikeshare/analysis.ipynb",
-    "tags": ["Python", "Pandas", "JSON", "seaborn", "DEM"],
+    "tags": [
+      "Python",
+      "Pandas",
+      "JSON",
+      "numpy",
+      "geopandas",
+      "rasterio",
+      "seaborn",
+      "DEM",
+      "CSV"
+    ],
     "image": "bike-share-rides.jpg"
   },
   {
@@ -44,7 +90,17 @@
     "title": "U.S. National Parks Visits Analysis",
     "description": "In this simple data aggregation and visualization project, I show that more people will visit U.S. national parks when the weather is warm.",
     "link": "/r/parks/parks.html",
-    "tags": ["R", "dplyr", "ggplot2", "Tableau"],
+    "tags": [
+      "R",
+      "tidyverse",
+      "ggplot2",
+      "dplyr",
+      "cowplot",
+      "Tableau",
+      "CSV",
+      "IRMA",
+      "Kaggle"
+    ],
     "image": "us-national-parks.jpg"
   }
 ]
