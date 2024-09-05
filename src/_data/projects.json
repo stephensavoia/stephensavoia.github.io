@@ -56,14 +56,15 @@
     "description": "I created an ecommerce website for a family-owned Italian bakery using the Shopify platform, including its third-party app ecosystem.",
     "link": "/assets/pdf/Italian-Bakery-Case-Study.pdf",
     "tags": [
-      "Shopify Admin",
+      "Shopify",
       "Liquid",
       "HTML",
       "CSS",
       "JavaScript",
       "GraphQL",
       "CSV",
-      "Github"
+      "Github",
+      "Google Ads"
     ],
     "image": "tre-mari-bakery.jpg"
   },
