@@ -1,6 +1,22 @@
 [
   {
     "id": "006",
+    "title": "TPL Barcode Generator",
+    "description": "This tool generates phone wallpapers that double as digital Toronto Public Library cards that can be used with barcode scanners.",
+    "link": "https://tpl-barcode.pages.dev/",
+    "tags": [
+      "Remix",
+      "React",
+      "TypeScript",
+      "JsBarcode",
+      "Flowbite",
+      "Cloudflare Pages",
+      "Github"
+    ],
+    "image": "tpl-barcode-generator.jpg"
+  },
+  {
+    "id": "005",
     "title": "Cycle TO Fun",
     "description": "This is a website that allows users to view a collection of Toronto cycling routes via a sleek and user-friendly interface.",
     "link": "https://www.cycletofun.com/",
@@ -15,23 +31,6 @@
       "Github"
     ],
     "image": "cycle-to-fun.jpg"
-  },
-  {
-    "id": "005",
-    "title": "xkcd App",
-    "description": "This app allows users to view the popular webcomic xkcd. Fast loading times are achieved by preloading next/previous images.",
-    "link": "https://xkcdspa.pages.dev/",
-    "tags": [
-      "Remix",
-      "React",
-      "TypeScript",
-      "CSS",
-      "JSON",
-      "REST API",
-      "Cloudflare Pages",
-      "Github"
-    ],
-    "image": "xkcd-app.jpg"
   },
   {
     "id": "004",
