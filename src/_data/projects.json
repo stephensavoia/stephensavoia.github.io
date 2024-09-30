@@ -3,7 +3,7 @@
     "id": "006",
     "title": "TPL Barcode Generator",
     "description": "This tool generates phone wallpapers that double as digital Toronto Public Library cards that can be used with barcode scanners.",
-    "link": "https://tpl-barcode.pages.dev/",
+    "link": "https://tplbarcode.com/",
     "tags": [
       "Remix",
       "React",
