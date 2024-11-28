@@ -1,6 +1,6 @@
 [
   {
-    "id": "006",
+    "id": "003",
     "title": "TPL Barcode Generator",
     "description": "This tool generates phone wallpapers that double as digital Toronto Public Library cards that can be used with barcode scanners.",
     "link": "https://tplbarcode.com/",
@@ -16,41 +16,7 @@
     "image": "tpl-barcode-generator.jpg"
   },
   {
-    "id": "005",
-    "title": "Cycle TO Fun",
-    "description": "This is a website that allows users to view a collection of Toronto cycling routes via a sleek and user-friendly interface.",
-    "link": "https://www.cycletofun.com/",
-    "tags": [
-      "Remix",
-      "React",
-      "TypeScript",
-      "CSS",
-      "Tailwind",
-      "Daisy UI",
-      "Cloudflare D1",
-      "Github"
-    ],
-    "image": "cycle-to-fun.jpg"
-  },
-  {
-    "id": "004",
-    "title": "Online Artwork Store",
-    "description": "I developed an ecommerce strategy for a photographer, prioritizing cost efficiency and a quick site launch by utilizing existing hosting contracts.",
-    "link": "https://francodeleo.com/",
-    "tags": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "CSV",
-      "Google Sheets",
-      "Shopify",
-      "Cargo",
-      "Github"
-    ],
-    "image": "artwork-store.jpg"
-  },
-  {
-    "id": "003",
+    "id": "002",
     "title": "Italian Bakery Online Store",
     "description": "I created an ecommerce website for a family-owned Italian bakery using the Shopify platform, including its third-party app ecosystem.",
     "link": "/assets/pdf/Italian-Bakery-Case-Study.pdf",
@@ -66,24 +32,6 @@
       "Google Ads"
     ],
     "image": "tre-mari-bakery.jpg"
-  },
-  {
-    "id": "002",
-    "title": "Bike Share Toronto Rides Analysis",
-    "description": "I analyzed Bike Share Toronto data to find that riders tended to lose elevation (i.e. bike downhill more often than uphill) in 2022.",
-    "link": "https://nbviewer.org/github/stephensavoia/stephensavoia.github.io/blob/main/bikeshare/analysis.ipynb",
-    "tags": [
-      "Python",
-      "Pandas",
-      "JSON",
-      "numpy",
-      "geopandas",
-      "rasterio",
-      "seaborn",
-      "DEM",
-      "CSV"
-    ],
-    "image": "bike-share-rides.jpg"
   },
   {
     "id": "001",
