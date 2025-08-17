@@ -15,10 +15,28 @@
       "CSV",
       "Github"
     ],
-    "image": "mycelium-marketing.jpg"
+    "image": "mycelium-marketing-2025.jpg"
   },
   {
     "id": "002",
+    "title": "Fruit Stand",
+    "description": "I created a fake ecommerce website to showcase my understanding of Shopify theme development and CRO. <strong>Store password: <em>fruit</em></strong>",
+    "link": "https://fruit-stand-ss.myshopify.com/",
+    "tags": [
+      "Shopify",
+      "Liquid",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "GraphQL",
+      "JSON",
+      "CSV",
+      "Github"
+    ],
+    "image": "fruit-stand-2025.jpg"
+  },
+  {
+    "id": "001",
     "title": "TPL Barcode Generator",
     "description": "This tool generates phone wallpapers that double as digital Toronto Public Library cards that can be used with barcode scanners.",
     "link": "https://tplbarcode.com/",
@@ -31,24 +49,6 @@
       "Cloudflare Pages",
       "Github"
     ],
-    "image": "tpl-barcode-generator.jpg"
-  },
-  {
-    "id": "001",
-    "title": "U.S. National Parks Visits Analysis",
-    "description": "In this simple data aggregation and visualization project, I show that more people will visit U.S. national parks when the weather is warm.",
-    "link": "/r/parks/parks.html",
-    "tags": [
-      "R",
-      "tidyverse",
-      "ggplot2",
-      "dplyr",
-      "cowplot",
-      "Tableau",
-      "CSV",
-      "IRMA",
-      "Kaggle"
-    ],
-    "image": "us-national-parks.jpg"
+    "image": "tpl-barcode-generator-2025.jpg"
   }
 ]
