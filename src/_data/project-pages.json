@@ -4,14 +4,28 @@
         "title": "Fruit Stand",
         "sections": [
             {
-                "id": "about",
-                "title": "About",
-                "content": "This is a simple fruit stand project."
+                "title": "FRUIT STAND THEME",
+                "content": "This is a simple fruit stand project.",
+                "image": "fruit-stand-homepage.gif",
+                "tags": ["Liquid", "JavaScript", "CSS", "HTML"]
             },
             {
-                "id": "gallery",
-                "title": "Gallery",
-                "content": "Images of various fruits."
+                "title": "COMPARE PRODUCTS",
+                "content": "This product comparison feature showcases my understanding of modern Shopify theme development best practices, including the use of web components, asynchronous JavaScript, and Shopify's Section Rendering API. It was built using HTML, CSS, JavaScript, JSON, and Liquid.",
+                "image": "fruit-stand-compare.gif",
+                "tags": ["Section Rendering API", "JSON", "JavaScript", "Liquid", "Web Components"]
+            },
+            {
+                "title": "COLLECTION FILTERS",
+                "content": "Images of various fruits.",
+                "image": "fruit-stand-collection-page.gif",
+                "tags": ["Shopify Search & Discovery", "E-commerce", "Filters"]
+            },
+            {
+                "title": "FREE SHIPPING PROGRESS BAR",
+                "content": "Images of various fruits.",
+                "image": "fruit-stand-cart.gif",
+                "tags": ["Shopify", "E-commerce", "Cart"]
             }
         ]
     },
@@ -20,14 +34,22 @@
         "title": "Italian Bakery",
         "sections": [
             {
-                "id": "about",
-                "title": "About",
-                "content": "This is a simple Italian bakery project."
+                "title": "ITALIAN BAKERY SHOPIFY THEME",
+                "content": "Images of various fruits.",
+                "image": "tre-mari-shopify-2-website.gif",
+                "tags": ["Shopify", "E-commerce", "Theme"]
             },
             {
-                "id": "gallery",
-                "title": "Gallery",
-                "content": "Images of various Italian pastries."
+                "title": "PRODUCT CATEGORIZATION AND NAVIGATION",
+                "content": "Images of various fruits.",
+                "image": "tre-mari-main-nav.gif",
+                "tags": ["Shopify", "E-commerce", "Navigation"]
+            },
+            {
+                "title": "THIRD-PARTY APP INTEGRATION",
+                "content": "Images of various fruits.",
+                "image": "tre-mari-third-party-apps.gif",
+                "tags": ["Shopify", "E-commerce", "Integration"]
             }
         ]
     }

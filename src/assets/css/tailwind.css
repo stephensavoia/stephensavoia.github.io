@@ -332,3 +332,12 @@ body.dark-mode .stars {
 }
 
 /* End of dark mode stars */
+
+/* Project pages */
+.hero {
+  border-radius: 4px;
+}
+
+.mobile-gif {
+  max-width: 13rem;
+}
