@@ -8,8 +8,8 @@ pagination:
 permalink: "{{ project.id }}.html"
 ---
 {% for section in project.sections %}
-<div class="hero bg-base-200 mt-3 px-12 py-12">
-  <div class="hero-content flex-col lg:flex-row-reverse">
+<div class="hero bg-base-200 mt-3 mb-8 px-12 py-12">
+  <div class="hero-content flex-col w-full justify-around lg:flex-row{% if loop.index is odd %}-reverse{% endif %}">
     <img
       src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
       class="max-w-sm rounded-lg shadow-2xl"
