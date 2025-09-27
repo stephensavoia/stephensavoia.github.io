@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>stephensavoia.github.io</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
-  <body class="light-mode">
+  <body>
     <div class="container mx-auto max-w-[1024px] w-full p-4 pb-20">
-      <div class="navbar bg-base-100">
-  <div class="navbar-start">
-    <div class="dropdown">
+      <div class="navbar grid grid-cols-2 sm:flex sm:flex-row bg-base-100">
+  <div class="navbar-start order-1 col-span-1 w-full justify-start sm:order-0">
+    <div class="dropdown mr-2 sm:mr-0">
       <div
         id="menuBtn"
         tabindex="0"
@@ -39,7 +39,7 @@
         class="menu menu-md dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
       >
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <!-- <li><a href="#skills">Skills</a></li> -->
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -76,13 +76,16 @@
       </svg>
     </label>
   </div>
-  <div class="navbar-center">
-    <h1 class="font-serif font-bold text-2xl md:text-3xl">STEPHEN SAVOIA</h1>
+  <div
+    class="navbar-center order-0 col-span-2 justify-center mb-2 sm:order-1 sm:mb-0"
+  >
+    <a href="/"><h1 class="font-serif font-bold text-center text-3xl">STEPHEN SAVOIA</h1></a>
   </div>
-  <div class="navbar-end">
+  <div class="navbar-end order-2 col-span-1 w-full justify-end sm:order-2">
     <a
       class="btn btn-ghost btn-circle w-[2.25rem] h-[2.25rem] lg:w-[2.75rem] lg:h-[2.75rem] min-h-0"
       href="https://github.com/stephensavoia"
+      aria-label="GitHub"
     >
       <svg
         role="img"
@@ -97,8 +100,9 @@
       </svg>
     </a>
     <a
-      class="btn btn-ghost btn-circle w-[2.25rem] h-[2.25rem] lg:w-[2.75rem] lg:h-[2.75rem] min-h-0"
+      class="btn btn-ghost btn-circle w-[2.25rem] h-[2.25rem] lg:w-[2.75rem] lg:h-[2.75rem] min-h-0 ml-2 sm:ml-0"
       href="https://www.linkedin.com/in/stephensavoia?originalSubdomain=ca"
+      aria-label="LinkedIn"
     >
       <svg
         role="img"
@@ -128,56 +132,15 @@
       <div class="star"></div>
       <div class="star"></div>
       <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <!-- <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div> -->
     </div>
     <div
       class="card-body w-full lg:w-3/5 px-12 pt-12 pb-0 lg:py-0 lg:px-4 justify-center"
     >
       <p
-        class="w-full lg:w-4/5 mx-auto text-center flex-grow-0 text-2xl leading-normal day-mode"
+        class="w-full lg:w-4/5 mx-auto text-center flex-grow-0 text-xl leading-normal day-mode"
       >
-        I'm a web developer with extensive expertise in front-end technologies,
-        a solid understanding of the Shopify ecosystem, and a background in
-        education.
+        I'm a Shopify developer with extensive expertise in front-end technologies
+        and a deep understanding of the ecommerce best practices that drive conversion
       </p>
     </div>
     <figure class="w-full lg:w-2/5 p-12">
@@ -208,76 +171,32 @@
   
   <div class="card bg-base-100 w-full md:w-[49%] lg:w-[32%] shadow-xl mb-8">
     <figure class="w-full">
-      <a class="w-full" href="https://www.cycletofun.com/">
-        <img class="w-full" src="assets/img/cycle-to-fun.jpg" />
+      <a class="w-full" href="https://myceliummarketing.com/">
+        <img class="w-full" src="assets/img/mycelium-marketing-2025.jpg" />
       </a>
     </figure>
     <div class="card-body">
-      <a href="https://www.cycletofun.com/" class="self-start">
-        <h3 class="font-serif font-bold text-xl">Cycle TO Fun</h3>
+      <a href="https://myceliummarketing.com/" class="self-start">
+        <h3 class="font-serif font-bold text-xl">Mycelium Marketing</h3>
       </a>
-      <p>This is a website that allows users to view a collection of Toronto cycling routes via a sleek and user-friendly interface.</p>
-      <div class="card-actions justify-start mt-4">
-        
-        <div class="badge badge-outline">Remix</div>
-        
-        <div class="badge badge-outline">Cloudflare D1</div>
-        
-        <div class="badge badge-outline">Tailwind</div>
-        
-        <div class="badge badge-outline">Github</div>
-        
-      </div>
-    </div>
-  </div>
-  
-  <div class="card bg-base-100 w-full md:w-[49%] lg:w-[32%] shadow-xl mb-8">
-    <figure class="w-full">
-      <a class="w-full" href="https://which-city-is-colder.pages.dev/">
-        <img class="w-full" src="assets/img/which-city-is-colder.jpg" />
-      </a>
-    </figure>
-    <div class="card-body">
-      <a href="https://which-city-is-colder.pages.dev/" class="self-start">
-        <h3 class="font-serif font-bold text-xl">Which City is Colder?</h3>
-      </a>
-      <p>This is a game I created that blends geography trivia with an element of chance. It utilizes live weather data from Open-Meteo.</p>
-      <div class="card-actions justify-start mt-4">
-        
-        <div class="badge badge-outline">Remix</div>
-        
-        <div class="badge badge-outline">JSON</div>
-        
-        <div class="badge badge-outline">CSS</div>
-        
-        <div class="badge badge-outline">Open-Meteo API</div>
-        
-        <div class="badge badge-outline">Github</div>
-        
-      </div>
-    </div>
-  </div>
-  
-  <div class="card bg-base-100 w-full md:w-[49%] lg:w-[32%] shadow-xl mb-8">
-    <figure class="w-full">
-      <a class="w-full" href="/assets/pdf/Cake-Dawn-Shopify-Theme.pdf">
-        <img class="w-full" src="assets/img/cake-dawn.jpg" />
-      </a>
-    </figure>
-    <div class="card-body">
-      <a href="/assets/pdf/Cake-Dawn-Shopify-Theme.pdf" class="self-start">
-        <h3 class="font-serif font-bold text-xl">Cake Dawn Shopify Theme</h3>
-      </a>
-      <p>I modified Shopify's leading free theme, Dawn, in order to provide merchants who sell cakes with additional functionality.</p>
+      <p>I help small and medium-sized businesses grow and thrive online in my role as Shopify Developer and CRO Strategist at Mycelium Marketing.</p>
       <div class="card-actions justify-start mt-4">
         
         <div class="badge badge-outline">Shopify</div>
         
         <div class="badge badge-outline">Liquid</div>
         
+        <div class="badge badge-outline">JavaScript</div>
+        
+        <div class="badge badge-outline">TypeScript</div>
+        
+        <div class="badge badge-outline">HTML</div>
+        
         <div class="badge badge-outline">CSS</div>
         
-        <div class="badge badge-outline">JavaScript</div>
+        <div class="badge badge-outline">GraphQL</div>
+        
+        <div class="badge badge-outline">CSV</div>
         
         <div class="badge badge-outline">Github</div>
         
@@ -287,24 +206,32 @@
   
   <div class="card bg-base-100 w-full md:w-[49%] lg:w-[32%] shadow-xl mb-8">
     <figure class="w-full">
-      <a class="w-full" href="/assets/pdf/Italian-Bakery-Case-Study.pdf">
-        <img class="w-full" src="assets/img/tre-mari-bakery.jpg" />
+      <a class="w-full" href="https://fruit-stand-ss.myshopify.com/">
+        <img class="w-full" src="assets/img/fruit-stand-2025.jpg" />
       </a>
     </figure>
     <div class="card-body">
-      <a href="/assets/pdf/Italian-Bakery-Case-Study.pdf" class="self-start">
-        <h3 class="font-serif font-bold text-xl">Italian Bakery Online Store</h3>
+      <a href="https://fruit-stand-ss.myshopify.com/" class="self-start">
+        <h3 class="font-serif font-bold text-xl">Fruit Stand</h3>
       </a>
-      <p>I created an ecommerce website for a family-owned Italian bakery using the Shopify platform, including its third-party app ecosystem.</p>
+      <p>I created a fake ecommerce website to showcase my understanding of Shopify theme development and CRO. <strong>Store password: <em>fruit</em></strong></p>
       <div class="card-actions justify-start mt-4">
         
         <div class="badge badge-outline">Shopify</div>
         
         <div class="badge badge-outline">Liquid</div>
         
+        <div class="badge badge-outline">JavaScript</div>
+        
+        <div class="badge badge-outline">HTML</div>
+        
         <div class="badge badge-outline">CSS</div>
         
-        <div class="badge badge-outline">JavaScript</div>
+        <div class="badge badge-outline">GraphQL</div>
+        
+        <div class="badge badge-outline">JSON</div>
+        
+        <div class="badge badge-outline">CSV</div>
         
         <div class="badge badge-outline">Github</div>
         
@@ -314,58 +241,37 @@
   
   <div class="card bg-base-100 w-full md:w-[49%] lg:w-[32%] shadow-xl mb-8">
     <figure class="w-full">
-      <a class="w-full" href="https://nbviewer.org/github/stephensavoia/stephensavoia.github.io/blob/main/bikeshare/analysis.ipynb">
-        <img class="w-full" src="assets/img/bike-share-rides.jpg" />
+      <a class="w-full" href="https://tplbarcode.com/">
+        <img class="w-full" src="assets/img/tpl-barcode-generator-2025.jpg" />
       </a>
     </figure>
     <div class="card-body">
-      <a href="https://nbviewer.org/github/stephensavoia/stephensavoia.github.io/blob/main/bikeshare/analysis.ipynb" class="self-start">
-        <h3 class="font-serif font-bold text-xl">Bike Share Toronto Rides Analysis</h3>
+      <a href="https://tplbarcode.com/" class="self-start">
+        <h3 class="font-serif font-bold text-xl">TPL Barcode Generator</h3>
       </a>
-      <p>I analyzed Bike Share Toronto data to find that riders tended to lose elevation (i.e. bike downhill more often than uphill) in 2022.</p>
+      <p>This tool generates phone wallpapers that double as digital Toronto Public Library cards that can be used with barcode scanners.</p>
       <div class="card-actions justify-start mt-4">
         
-        <div class="badge badge-outline">Python</div>
+        <div class="badge badge-outline">Remix</div>
         
-        <div class="badge badge-outline">Pandas</div>
+        <div class="badge badge-outline">React</div>
         
-        <div class="badge badge-outline">JSON</div>
+        <div class="badge badge-outline">TypeScript</div>
         
-        <div class="badge badge-outline">seaborn</div>
+        <div class="badge badge-outline">JsBarcode</div>
         
-        <div class="badge badge-outline">DEM</div>
+        <div class="badge badge-outline">Flowbite</div>
         
-      </div>
-    </div>
-  </div>
-  
-  <div class="card bg-base-100 w-full md:w-[49%] lg:w-[32%] shadow-xl mb-8">
-    <figure class="w-full">
-      <a class="w-full" href="/r/parks/parks.html">
-        <img class="w-full" src="assets/img/us-national-parks.jpg" />
-      </a>
-    </figure>
-    <div class="card-body">
-      <a href="/r/parks/parks.html" class="self-start">
-        <h3 class="font-serif font-bold text-xl">U.S. National Parks Visits Analysis</h3>
-      </a>
-      <p>In this simple data aggregation and visualization project, I show that more people will visit U.S. national parks when the weather is warm.</p>
-      <div class="card-actions justify-start mt-4">
+        <div class="badge badge-outline">Cloudflare Pages</div>
         
-        <div class="badge badge-outline">R</div>
-        
-        <div class="badge badge-outline">dplyr</div>
-        
-        <div class="badge badge-outline">ggplot2</div>
-        
-        <div class="badge badge-outline">Tableau</div>
+        <div class="badge badge-outline">Github</div>
         
       </div>
     </div>
   </div>
   
 </div>
-
+<!--
 <div id="skills" class="flex w-full flex-col my-4">
   <div
     class="divider divider-start divider-neutral font-serif font-bold text-2xl"
@@ -391,7 +297,7 @@
         <div class="badge badge-outline">Liquid</div>
         <div class="badge badge-outline">JSON</div>
         <div class="badge badge-outline">Front End JavaScript</div>
-
+        <div class="badge badge-outline">REST</div>
         <div class="badge badge-outline">Shopify Admin</div>
         <div class="badge badge-outline">Excel/Sheets</div>
       </div>
@@ -443,6 +349,7 @@
     </div>
   </div>
 </div>
+-->
 
 <div id="contact" class="flex w-full flex-col my-4">
   <div

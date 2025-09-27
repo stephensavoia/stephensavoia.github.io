@@ -1,0 +1,34 @@
+[
+    {
+        "id": "fruit-stand",
+        "title": "Fruit Stand",
+        "sections": [
+            {
+                "id": "about",
+                "title": "About",
+                "content": "This is a simple fruit stand project."
+            },
+            {
+                "id": "gallery",
+                "title": "Gallery",
+                "content": "Images of various fruits."
+            }
+        ]
+    },
+    {
+        "id": "italian-bakery",
+        "title": "Italian Bakery",
+        "sections": [
+            {
+                "id": "about",
+                "title": "About",
+                "content": "This is a simple Italian bakery project."
+            },
+            {
+                "id": "gallery",
+                "title": "Gallery",
+                "content": "Images of various Italian pastries."
+            }
+        ]
+    }
+]
