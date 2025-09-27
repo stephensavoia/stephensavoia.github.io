@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>stephensavoia.github.io</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="light-mode">
+    <div class="container mx-auto max-w-[1024px] w-full p-4 pb-20">
+      <div class="navbar bg-base-100">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div
+        id="menuBtn"
+        tabindex="0"
+        role="button"
+        class="btn btn-ghost btn-circle w-[2.75rem] h-[2.75rem] min-h-0"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-7 w-7"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h7"
+          />
+        </svg>
+      </div>
+      <ul
+        id="menu"
+        tabindex="0"
+        class="menu menu-md dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+      >
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <label class="swap swap-rotate">
+      <!-- this hidden checkbox controls the state -->
+      <input
+        id="themeController"
+        type="checkbox"
+        class="theme-controller"
+        value="darkmode"
+      />
+
+      <!-- sun icon -->
+      <svg
+        class="swap-on h-7 w-7 fill-current"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"
+        />
+      </svg>
+
+      <!-- moon icon -->
+      <svg
+        class="swap-off h-7 w-7 pl-1 fill-current"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"
+        />
+      </svg>
+    </label>
+  </div>
+  <div class="navbar-center">
+    <h1 class="font-serif font-bold text-2xl md:text-3xl">STEPHEN SAVOIA</h1>
+  </div>
+  <div class="navbar-end">
+    <a
+      class="btn btn-ghost btn-circle w-[2.25rem] h-[2.25rem] lg:w-[2.75rem] lg:h-[2.75rem] min-h-0"
+      href="https://github.com/stephensavoia"
+    >
+      <svg
+        role="img"
+        class="h-6 w-6 lg:h-7 lg:w-7 fill-current"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>GitHub</title>
+        <path
+          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+        />
+      </svg>
+    </a>
+    <a
+      class="btn btn-ghost btn-circle w-[2.25rem] h-[2.25rem] lg:w-[2.75rem] lg:h-[2.75rem] min-h-0"
+      href="https://www.linkedin.com/in/stephensavoia?originalSubdomain=ca"
+    >
+      <svg
+        role="img"
+        class="h-6 w-6 lg:h-7 lg:w-7 fill-current"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>LinkedIn</title>
+        <path
+          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+ 
+<div class="animated-noise-bg mt-3 mb-8">
+  <div id="about" class="card mx-auto lg:card-side ss-gradient-bg">
+    <div class="stars">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <!-- <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div> -->
+    </div>
+    <div
+      class="card-body w-full lg:w-3/5 px-12 pt-12 pb-0 lg:py-0 lg:px-4 justify-center"
+    >
+      <p
+        class="w-full lg:w-4/5 mx-auto text-center flex-grow-0 text-2xl leading-normal day-mode"
+      >
+        I'm a web developer with extensive expertise in front-end technologies,
+        a solid understanding of the Shopify ecosystem, and a background in
+        education.
+      </p>
+    </div>
+    <figure class="w-full lg:w-2/5 p-12">
+      <img
+        id="profileLightMode"
+        class="mask mask-circle lg:mr-4"
+        src="assets/img/profile.jpg"
+        alt="Me"
+      />
+      <img
+        id="profileDarkMode"
+        class="mask mask-circle lg:mr-4 hidden"
+        src="assets/img/profile-dark-mode.jpg"
+        alt="Me, at night"
+      />
+    </figure>
+  </div>
+</div>
+
+<div id="projects" class="flex w-full flex-col my-4">
+  <div
+    class="divider divider-start divider-neutral font-serif font-bold text-2xl"
+  >
+    PROJECTS
+  </div>
+</div>
+<div class="container flex flex-wrap max-w-[1024px] mx-auto justify-between">
+  
+  <div class="card bg-base-100 w-full md:w-[49%] lg:w-[32%] shadow-xl mb-8">
+    <figure class="w-full">
+      <a class="w-full" href="https://www.cycletofun.com/">
+        <img class="w-full" src="assets/img/cycle-to-fun.jpg" />
+      </a>
+    </figure>
+    <div class="card-body">
+      <a href="https://www.cycletofun.com/" class="self-start">
+        <h3 class="font-serif font-bold text-xl">Cycle TO Fun</h3>
+      </a>
+      <p>This is a website that allows users to view a collection of Toronto cycling routes via a sleek and user-friendly interface.</p>
+      <div class="card-actions justify-start mt-4">
+        
+        <div class="badge badge-outline">Remix</div>
+        
+        <div class="badge badge-outline">Cloudflare D1</div>
+        
+        <div class="badge badge-outline">Tailwind</div>
+        
+        <div class="badge badge-outline">Github</div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="card bg-base-100 w-full md:w-[49%] lg:w-[32%] shadow-xl mb-8">
+    <figure class="w-full">
+      <a class="w-full" href="https://which-city-is-colder.pages.dev/">
+        <img class="w-full" src="assets/img/which-city-is-colder.jpg" />
+      </a>
+    </figure>
+    <div class="card-body">
+      <a href="https://which-city-is-colder.pages.dev/" class="self-start">
+        <h3 class="font-serif font-bold text-xl">Which City is Colder?</h3>
+      </a>
+      <p>This is a game I created that blends geography trivia with an element of chance. It utilizes live weather data from Open-Meteo.</p>
+      <div class="card-actions justify-start mt-4">
+        
+        <div class="badge badge-outline">Remix</div>
+        
+        <div class="badge badge-outline">JSON</div>
+        
+        <div class="badge badge-outline">CSS</div>
+        
+        <div class="badge badge-outline">Open-Meteo API</div>
+        
+        <div class="badge badge-outline">Github</div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="card bg-base-100 w-full md:w-[49%] lg:w-[32%] shadow-xl mb-8">
+    <figure class="w-full">
+      <a class="w-full" href="/assets/pdf/Cake-Dawn-Shopify-Theme.pdf">
+        <img class="w-full" src="assets/img/cake-dawn.jpg" />
+      </a>
+    </figure>
+    <div class="card-body">
+      <a href="/assets/pdf/Cake-Dawn-Shopify-Theme.pdf" class="self-start">
+        <h3 class="font-serif font-bold text-xl">Cake Dawn Shopify Theme</h3>
+      </a>
+      <p>I modified Shopify's leading free theme, Dawn, in order to provide merchants who sell cakes with additional functionality.</p>
+      <div class="card-actions justify-start mt-4">
+        
+        <div class="badge badge-outline">Shopify</div>
+        
+        <div class="badge badge-outline">Liquid</div>
+        
+        <div class="badge badge-outline">CSS</div>
+        
+        <div class="badge badge-outline">JavaScript</div>
+        
+        <div class="badge badge-outline">Github</div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="card bg-base-100 w-full md:w-[49%] lg:w-[32%] shadow-xl mb-8">
+    <figure class="w-full">
+      <a class="w-full" href="/assets/pdf/Italian-Bakery-Case-Study.pdf">
+        <img class="w-full" src="assets/img/tre-mari-bakery.jpg" />
+      </a>
+    </figure>
+    <div class="card-body">
+      <a href="/assets/pdf/Italian-Bakery-Case-Study.pdf" class="self-start">
+        <h3 class="font-serif font-bold text-xl">Italian Bakery Online Store</h3>
+      </a>
+      <p>I created an ecommerce website for a family-owned Italian bakery using the Shopify platform, including its third-party app ecosystem.</p>
+      <div class="card-actions justify-start mt-4">
+        
+        <div class="badge badge-outline">Shopify</div>
+        
+        <div class="badge badge-outline">Liquid</div>
+        
+        <div class="badge badge-outline">CSS</div>
+        
+        <div class="badge badge-outline">JavaScript</div>
+        
+        <div class="badge badge-outline">Github</div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="card bg-base-100 w-full md:w-[49%] lg:w-[32%] shadow-xl mb-8">
+    <figure class="w-full">
+      <a class="w-full" href="https://nbviewer.org/github/stephensavoia/stephensavoia.github.io/blob/main/bikeshare/analysis.ipynb">
+        <img class="w-full" src="assets/img/bike-share-rides.jpg" />
+      </a>
+    </figure>
+    <div class="card-body">
+      <a href="https://nbviewer.org/github/stephensavoia/stephensavoia.github.io/blob/main/bikeshare/analysis.ipynb" class="self-start">
+        <h3 class="font-serif font-bold text-xl">Bike Share Toronto Rides Analysis</h3>
+      </a>
+      <p>I analyzed Bike Share Toronto data to find that riders tended to lose elevation (i.e. bike downhill more often than uphill) in 2022.</p>
+      <div class="card-actions justify-start mt-4">
+        
+        <div class="badge badge-outline">Python</div>
+        
+        <div class="badge badge-outline">Pandas</div>
+        
+        <div class="badge badge-outline">JSON</div>
+        
+        <div class="badge badge-outline">seaborn</div>
+        
+        <div class="badge badge-outline">DEM</div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="card bg-base-100 w-full md:w-[49%] lg:w-[32%] shadow-xl mb-8">
+    <figure class="w-full">
+      <a class="w-full" href="/r/parks/parks.html">
+        <img class="w-full" src="assets/img/us-national-parks.jpg" />
+      </a>
+    </figure>
+    <div class="card-body">
+      <a href="/r/parks/parks.html" class="self-start">
+        <h3 class="font-serif font-bold text-xl">U.S. National Parks Visits Analysis</h3>
+      </a>
+      <p>In this simple data aggregation and visualization project, I show that more people will visit U.S. national parks when the weather is warm.</p>
+      <div class="card-actions justify-start mt-4">
+        
+        <div class="badge badge-outline">R</div>
+        
+        <div class="badge badge-outline">dplyr</div>
+        
+        <div class="badge badge-outline">ggplot2</div>
+        
+        <div class="badge badge-outline">Tableau</div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div id="skills" class="flex w-full flex-col my-4">
+  <div
+    class="divider divider-start divider-neutral font-serif font-bold text-2xl"
+  >
+    TECHNICAL SKILLS
+  </div>
+</div>
+
+<div class="container flex flex-wrap mx-auto justify-between">
+  <div class="card bg-base-100 w-full lg:w-[32%] mb-8">
+    <div class="card-body overflow-hidden">
+      <h3 class="font-serif font-bold text-xl">Highly Skilled In...</h3>
+      <ul class="steps">
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+      </ul>
+      <div class="card-actions justify-start mt-1">
+        <div class="badge badge-outline">HTML</div>
+        <div class="badge badge-outline">CSS</div>
+        <div class="badge badge-outline">Liquid</div>
+        <div class="badge badge-outline">JSON</div>
+        <div class="badge badge-outline">Front End JavaScript</div>
+
+        <div class="badge badge-outline">Shopify Admin</div>
+        <div class="badge badge-outline">Excel/Sheets</div>
+      </div>
+    </div>
+  </div>
+  <div class="card bg-base-100 w-full lg:w-[32%] mb-8">
+    <div class="card-body overflow-hidden">
+      <h3 class="font-serif font-bold text-xl">Experienced In...</h3>
+      <ul class="steps">
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-empty"></li>
+        <li data-content="" class="step step-empty"></li>
+      </ul>
+      <div class="card-actions justify-start mt-1">
+        <div class="badge badge-outline">Remix</div>
+        <div class="badge badge-outline">React</div>
+        <div class="badge badge-outline">TypeScript</div>
+        <div class="badge badge-outline">Full Stack JavaScript</div>
+        <div class="badge badge-outline">Tailwind</div>
+        <div class="badge badge-outline">11ty</div>
+        <div class="badge badge-outline">Git/Github</div>
+        <div class="badge badge-outline">Cloudflare</div>
+        <div class="badge badge-outline">npm</div>
+      </div>
+    </div>
+  </div>
+  <div class="card bg-base-100 w-full lg:w-[32%] mb-8">
+    <div class="card-body overflow-hidden">
+      <h3 class="font-serif font-bold text-xl">Familiar With...</h3>
+      <ul class="steps">
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-empty"></li>
+        <li data-content="" class="step step-empty"></li>
+        <li data-content="" class="step step-empty"></li>
+      </ul>
+      <div class="card-actions justify-start mt-1">
+        <div class="badge badge-outline">SQL</div>
+        <div class="badge badge-outline">Python/Pandas</div>
+        <div class="badge badge-outline">R</div>
+        <div class="badge badge-outline">GraphQL</div>
+        <div class="badge badge-outline">Meta Ads Manager</div>
+        <div class="badge badge-outline">Google Ads</div>
+        <div class="badge badge-outline">Prisma</div>
+        <div class="badge badge-outline">WordPress</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="flex w-full flex-col my-4">
+  <div
+    class="divider divider-start divider-neutral font-serif font-bold text-2xl"
+  >
+    CONTACT
+  </div>
+</div>
+
+<form
+  class="flex flex-col space-y-4 items-center"
+  aria-labelledby="contact-heading"
+  method="POST"
+  action="https://api.web3forms.com/submit"
+  id="form"
+>
+  <input
+    type="hidden"
+    name="access_key"
+    value="5edb3956-c25d-4ce8-9149-6794d20835b2"
+  />
+  <h2 id="contact-heading" class="sr-only">Contact Form</h2>
+
+  <label for="name" class="sr-only">Name</label>
+  <input
+    type="text"
+    id="name"
+    name="name"
+    placeholder="Name"
+    class="input input-bordered input-primary w-full max-w-sm"
+    aria-label="Name"
+    aria-required="true"
+    required
+  />
+
+  <label for="email" class="sr-only">Email</label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Email"
+    class="input input-bordered input-primary w-full max-w-sm"
+    aria-label="Email"
+    aria-required="true"
+    required
+  />
+
+  <label for="message" class="sr-only">Message</label>
+  <textarea
+    id="message"
+    name="message"
+    placeholder="Message"
+    class="textarea textarea-bordered textarea-primary w-full max-w-sm text-[1rem]"
+    aria-label="Message"
+    aria-required="true"
+    rows="5"
+    required
+  ></textarea>
+  <button
+    id="submitButton"
+    type="submit"
+    class="btn btn-primary w-full max-w-sm"
+  >
+    Submit
+  </button>
+  <div
+    id="successAlert"
+    role="alert"
+    class="alert alert-success max-w-sm hidden"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6 shrink-0 stroke-current"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+    </svg>
+    <span id="successMessage">Success!</span>
+  </div>
+  <div role="alert" id="errorAlert" class="alert alert-error max-w-sm hidden">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6 shrink-0 stroke-current"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+    </svg>
+    <span id="errorMessage">Error!</span>
+  </div>
+</form>
+
+    </div>
+    <footer
+  class="footer footer-center bg-primary text-primary-content mx-auto w-full p-14"
+>
+  <aside>
+    <p>© 2025 Stephen Savoia</p>
+  </aside>
+  <nav>
+    <div class="grid grid-flow-col gap-4">
+      <a href="https://github.com/stephensavoia">
+        <svg
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current"
+        >
+          <title>GitHub</title>
+          <path
+            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+          />
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/stephensavoia?originalSubdomain=ca">
+        <svg
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current"
+        >
+          <title>LinkedIn</title>
+          <path
+            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+          />
+        </svg>
+      </a>
+    </div>
+  </nav>
+</footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
