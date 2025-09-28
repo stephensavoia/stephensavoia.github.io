@@ -52,12 +52,6 @@ html {
   animation: gradientFlow 15s ease-in-out infinite;
 }
 
-.project-hero {
-  background: radial-gradient(ellipse, #ffffff, #f2f2f2);
-  background-size: 150% 200%;
-  animation: gradientFlow 15s ease-in-out infinite;
-}
-
 /* Project badges */
 
 .badge-outline {
@@ -343,7 +337,20 @@ body.dark-mode .stars {
 .hero {
   border-radius: 4px;
 }
-
+.project-hero {
+  background: radial-gradient(ellipse, #ffffff, #f2f2f2);
+  background-size: 150% 200%;
+  animation: gradientFlow 15s ease-in-out infinite;
+}
+body.dark-mode .project-hero {
+  background: radial-gradient(ellipse, #000000, #252525);
+}
+.project-badge {
+  color: black;
+}
+body.dark-mode .project-badge {
+  color: #d6d6d6;
+}
 .mobile-gif {
   max-width: 13rem;
 }

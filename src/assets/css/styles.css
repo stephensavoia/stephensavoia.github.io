@@ -2485,16 +2485,8 @@ html {
   max-width: 1024px;
 }
 
-.max-w-md {
-  max-width: 28rem;
-}
-
 .max-w-sm {
   max-width: 24rem;
-}
-
-.max-w-xs {
-  max-width: 20rem;
 }
 
 .shrink-0 {
@@ -2692,11 +2684,6 @@ html {
   line-height: 1.5;
 }
 
-.\!text-black {
-  --tw-text-opacity: 1 !important;
-  color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
-}
-
 .text-primary-content {
   --tw-text-opacity: 1;
   color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity)));
@@ -2776,12 +2763,6 @@ html {
 
 #about {
   background: radial-gradient(ellipse, #ffefba80, #93b0fb80);
-  background-size: 150% 200%;
-  animation: gradientFlow 15s ease-in-out infinite;
-}
-
-.project-hero {
-  background: radial-gradient(ellipse, #ffffff, #f2f2f2);
   background-size: 150% 200%;
   animation: gradientFlow 15s ease-in-out infinite;
 }
@@ -3104,6 +3085,24 @@ body.dark-mode .stars {
   border-radius: 4px;
 }
 
+.project-hero {
+  background: radial-gradient(ellipse, #ffffff, #f2f2f2);
+  background-size: 150% 200%;
+  animation: gradientFlow 15s ease-in-out infinite;
+}
+
+body.dark-mode .project-hero {
+  background: radial-gradient(ellipse, #000000, #252525);
+}
+
+.project-badge {
+  color: black;
+}
+
+body.dark-mode .project-badge {
+  color: #d6d6d6;
+}
+
 .mobile-gif {
   max-width: 13rem;
 }
@@ -3195,12 +3194,12 @@ body.dark-mode .stars {
     width: 40%;
   }
 
-  .lg\:w-3\/5 {
-    width: 60%;
+  .lg\:w-3\/4 {
+    width: 75%;
   }
 
-  .lg\:w-4\/5 {
-    width: 80%;
+  .lg\:w-3\/5 {
+    width: 60%;
   }
 
   .lg\:w-7 {

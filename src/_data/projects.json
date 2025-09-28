@@ -19,9 +19,9 @@
   },
   {
     "id": "002",
-    "title": "Fruit Stand",
-    "description": "I created a fake ecommerce website to showcase my understanding of Shopify theme development and CRO. <strong>Store password: <em>fruit</em></strong>",
-    "link": "https://fruit-stand-ss.myshopify.com/",
+    "title": "Fruit Stand Online Store",
+    "description": "A custom Shopify theme designed for an online fruit market, built with a strong focus on CRO and modern development best practices.",
+    "link": "/fruit-stand",
     "tags": [
       "Shopify",
       "Liquid",
@@ -30,25 +30,23 @@
       "CSS",
       "GraphQL",
       "JSON",
-      "CSV",
-      "Github"
+      "CSV Bulk Uploads"
     ],
     "image": "fruit-stand-2025.jpg"
   },
   {
     "id": "001",
-    "title": "TPL Barcode Generator",
-    "description": "This tool generates phone wallpapers that double as digital Toronto Public Library cards that can be used with barcode scanners.",
-    "link": "https://tplbarcode.com/",
+    "title": "Italian Bakery Website",
+    "description": "An online shop designed for a medium-sized Italian bakery, built with a strong focus on CRO and modern Shopify development best practices.",
+    "link": "/italian-bakery",
     "tags": [
-      "Remix",
-      "React",
-      "TypeScript",
-      "JsBarcode",
-      "Flowbite",
-      "Cloudflare Pages",
-      "Github"
+      "Shopify",
+      "Liquid",
+      "JavaScript",
+      "CSS",
+      "CSV Bulk Uploads",
+      "Third-Party App Integration"
     ],
-    "image": "tpl-barcode-generator-2025.jpg"
+    "image": "tre-mari-bakery-online-shop.jpg"
   }
 ]

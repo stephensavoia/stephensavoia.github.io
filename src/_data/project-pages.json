@@ -1,56 +1,56 @@
 [
-    {
-        "id": "fruit-stand",
-        "title": "Fruit Stand",
-        "sections": [
-            {
-                "title": "FRUIT STAND THEME",
-                "content": "This Shopify theme, intended for use by an online fruit market, showcases the best of modern CRO and Shopify development principles.",
-                "image": "fruit-stand-homepage.gif",
-                "tags": ["Liquid", "JavaScript", "CSS", "HTML", "CRO"]
-            },
-            {
-                "title": "COMPARE PRODUCTS",
-                "content": "This product comparison feature allows visitors to better determine which fruit they want to buy, based on factors such as price, rating, and dietary information.",
-                "image": "fruit-stand-compare.gif",
-                "tags": ["Section Rendering API", "JSON", "JavaScript", "Liquid", "Metaobjects", "Web Components"]
-            },
-            {
-                "title": "COLLECTION FILTERS",
-                "content": "This theme's collection pages include sleek design and modern filtering functionality, including a custom-built sliding price select feature.",
-                "image": "fruit-stand-collection-page.gif",
-                "tags": ["Shopify Search & Discovery", "HTML", "CSS", "JavaScript", "Horizon Theme Events"]
-            },
-            {
-                "title": "FREE SHIPPING PROGRESS BAR",
-                "content": "This feature provides users with a visual indicator of their progress towards free shipping, enhancing the shopping experience and boosting conversion.",
-                "image": "fruit-stand-cart.gif",
-                "tags": ["Cart Liquid Object", "HTML", "CSS", "JavaScript", "Horizon Theme Events", "Metaobjects", "Web Components"]
-            }
-        ]
-    },
-    {
-        "id": "italian-bakery",
-        "title": "Italian Bakery",
-        "sections": [
-            {
-                "title": "ITALIAN BAKERY SHOPIFY THEME",
-                "content": "This Shopify 2.0 theme—created for a medium-sized Italian bakery—was built with a focus on performance, CRO, and user experience. It lead to a 115% growth in year-over-year online revenue.",
-                "image": "tre-mari-shopify-2-website.gif",
-                "tags": ["Shopify 2.0","Liquid", "JavaScript", "CSS", "HTML", "CRO", "Third Party Apps", "Shopify Admin"]
-            },
-            {
-                "title": "PRODUCT CATEGORIZATION AND NAVIGATION",
-                "content": "Navigation and product categorization was completely overhauled, guided by user behavior analytics and best practices, to create a more intuitive shopping experience.",
-                "image": "tre-mari-main-nav.gif",
-                "tags": ["Data Analysis", "Shopify Search & Discovery", "UI/UX", "Shopify Admin", "Bulk Product Uploads"]
-            },
-            {
-                "title": "THIRD-PARTY APP INTEGRATION",
-                "content": "A third party app related to in-store pickup and local delivery time management was integrated into the theme, following styles to make it look and function like the rest of the site.",
-                "image": "tre-mari-third-party-apps.gif",
-                "tags": ["Third Party App APIs", "AJAX", "Liquid", "JavaScript", "CSS", "HTML"]
-            }
-        ]
-    }
+  {
+    "id": "fruit-stand",
+    "title": "Fruit Stand",
+    "sections": [
+      {
+        "title": "FRUIT STAND THEME",
+        "content": "A custom Shopify theme designed for an online fruit market, built with a strong focus on conversion rate optimization and modern Shopify development best practices.",
+        "image": "fruit-stand-homepage.gif",
+        "tags": ["Liquid", "JavaScript", "CSS", "HTML", "CRO"]
+      },
+      {
+        "title": "PRODUCT COMPARISON TOOL",
+        "content": "A comparison feature that lets customers evaluate fruits side-by-side based on price, ratings, and dietary info—empowering more confident purchasing decisions.",
+        "image": "fruit-stand-compare.gif",
+        "tags": ["Section Rendering API", "JSON", "JavaScript", "Liquid", "Metaobjects", "Web Components"]
+      },
+      {
+        "title": "COLLECTION FILTERING",
+        "content": "A modern collection page with a sleek design and dynamic filtering options, including a custom-built sliding price selector that integrates seamlessly with Horizon's default filtering system.",
+        "image": "fruit-stand-collection-page.gif",
+        "tags": ["Shopify Search & Discovery", "HTML", "CSS", "JavaScript", "Horizon Theme Events"]
+      },
+      {
+        "title": "FREE SHIPPING PROGRESS BAR",
+        "content": "A dynamic progress bar in the cart that visually shows customers how close they are to receiving free shipping—driving higher average order values and improving the checkout experience.",
+        "image": "fruit-stand-cart.gif",
+        "tags": ["Cart Liquid Object", "HTML", "CSS", "JavaScript", "Horizon Theme Events", "Metaobjects", "Web Components"]
+      }
+    ]
+  },
+  {
+    "id": "italian-bakery",
+    "title": "Italian Bakery",
+    "sections": [
+      {
+        "title": "ITALIAN BAKERY THEME",
+        "content": "An elegant Shopify 2.0 theme created for a mid-sized Italian bakery, focused on CRO and UX best practices. The launch drove a 115% increase in year-over-year online revenue.",
+        "image": "tre-mari-shopify-2-website.gif",
+        "tags": ["Shopify 2.0", "Liquid", "JavaScript", "CSS", "HTML", "CRO", "Third-Party Apps", "Shopify Admin"]
+      },
+      {
+        "title": "PRODUCT CATEGORIZATION & NAVIGATION",
+        "content": "Navigation and product categorization was redesigned using behavioral analytics and UX best practices, resulting in a more intuitive and user-friendly shopping journey.",
+        "image": "tre-mari-main-nav.gif",
+        "tags": ["Data Analysis", "Shopify Search & Discovery", "UI/UX", "Shopify Admin", "Bulk Product Uploads"]
+      },
+      {
+        "title": "THIRD-PARTY APP INTEGRATION",
+        "content": "A third-party app for in-store pickup and local delivery time slots was integrated into the cart, with its appearance and functionality customized to blend seamlessly with the theme’s design.",
+        "image": "tre-mari-third-party-apps.gif",
+        "tags": ["Third-Party App APIs", "AJAX", "Liquid", "JavaScript", "CSS", "HTML"]
+      }
+    ]
+  }
 ]
