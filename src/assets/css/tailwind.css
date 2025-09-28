@@ -340,7 +340,7 @@ body.dark-mode .stars {
 .project-hero {
   background: radial-gradient(ellipse, #ffffff, #f2f2f2);
   background-size: 150% 200%;
-  animation: gradientFlow 15s ease-in-out infinite;
+ /* animation: gradientFlow 15s ease-in-out infinite; */
 }
 body.dark-mode .project-hero {
   background: radial-gradient(ellipse, #000000, #252525);
