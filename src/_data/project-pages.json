@@ -7,7 +7,7 @@
         "title": "FRUIT STAND THEME",
         "content": "A custom Shopify theme designed for an online fruit market, built with a strong focus on conversion rate optimization and modern Shopify development best practices.",
         "image": "fruit-stand-homepage.gif",
-        "tags": ["Liquid", "JavaScript", "CSS", "HTML", "CRO"]
+        "tags": ["Liquid", "JavaScript", "CSS", "HTML", "CRO", "Web Components"]
       },
       {
         "title": "PRODUCT COMPARISON TOOL",
@@ -43,7 +43,7 @@
         "title": "PRODUCT CATEGORIZATION & NAVIGATION",
         "content": "Navigation and product categorization was redesigned using behavioral analytics and UX best practices, resulting in a more intuitive and user-friendly shopping journey.",
         "image": "tre-mari-main-nav.gif",
-        "tags": ["Data Analysis", "Shopify Search & Discovery", "UI/UX", "Shopify Admin", "Bulk Product Uploads"]
+        "tags": ["Shopify Search & Discovery", "UI/UX", "Data Analysis", "Shopify Admin", "Bulk Product Uploads"]
       },
       {
         "title": "THIRD-PARTY APP INTEGRATION",
