@@ -2493,6 +2493,10 @@ html {
   max-width: 24rem;
 }
 
+.max-w-xs {
+  max-width: 20rem;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -2772,6 +2776,12 @@ html {
 
 #about {
   background: radial-gradient(ellipse, #ffefba80, #93b0fb80);
+  background-size: 150% 200%;
+  animation: gradientFlow 15s ease-in-out infinite;
+}
+
+.project-hero {
+  background: radial-gradient(ellipse, #ffffff, #f2f2f2);
   background-size: 150% 200%;
   animation: gradientFlow 15s ease-in-out infinite;
 }

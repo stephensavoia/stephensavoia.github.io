@@ -8,18 +8,18 @@ pagination:
 permalink: "{{ project.id }}.html"
 ---
 {% for section in project.sections %}
-<div class="hero bg-base-200 mt-3 mb-8 py-4 lg:py-6 px-2 lg:px-6">
+<div class="hero project-hero bg-base-200 mt-3 mb-8 py-4 lg:py-6 px-2 lg:px-6">
   <div class="hero-content flex-col w-full gap-10 justify-evenly lg:flex-row{% if loop.index is odd %}-reverse{% endif %}">
     <img
       src="/assets/img/{{section.image}}"
       class="{% if project.title == 'Italian Bakery' %}mobile-gif{% else %}lg:max-w-lg{% endif %} rounded-lg shadow-2xl"
     />
     <div class="pt-4 lg:pt-0">
-      <h1 class="text-2xl max-w-md font-bold font-serif text-balance text-center lg:text-left">{{ section.title }}</h1>
-      <p class="py-4 max-w-md text-balance text-center lg:text-left">
+      <h1 class="text-2xl max-w-sm font-bold font-serif text-balance text-center lg:text-left">{{ section.title }}</h1>
+      <p class="py-4 max-w-sm text-center lg:text-left">
         {{ section.content }}
       </p>
-      <div class="card-actions justify-center max-w-md lg:justify-start mt-2">
+      <div class="card-actions justify-center max-w-sm lg:justify-start mt-2">
         {% for tag in section.tags %}
         <div class="badge badge-outline !text-black">{{tag}}</div>
         {% endfor %}

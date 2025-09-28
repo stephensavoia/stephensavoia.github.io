@@ -5,27 +5,27 @@
         "sections": [
             {
                 "title": "FRUIT STAND THEME",
-                "content": "This is a simple fruit stand project.",
+                "content": "This Shopify theme, intended for use by an online fruit market, showcases the best of modern CRO and Shopify development principles.",
                 "image": "fruit-stand-homepage.gif",
-                "tags": ["Liquid", "JavaScript", "CSS", "HTML"]
+                "tags": ["Liquid", "JavaScript", "CSS", "HTML", "CRO"]
             },
             {
                 "title": "COMPARE PRODUCTS",
-                "content": "This product comparison feature showcases my understanding of modern Shopify theme development best practices, including the use of web components, asynchronous JavaScript, and Shopify's Section Rendering API. It was built using HTML, CSS, JavaScript, JSON, and Liquid.",
+                "content": "This product comparison feature allows visitors to better determine which fruit they want to buy, based on factors such as price, rating, and dietary information.",
                 "image": "fruit-stand-compare.gif",
-                "tags": ["Section Rendering API", "JSON", "JavaScript", "Liquid", "Web Components"]
+                "tags": ["Section Rendering API", "JSON", "JavaScript", "Liquid", "Metaobjects", "Web Components"]
             },
             {
                 "title": "COLLECTION FILTERS",
-                "content": "Images of various fruits.",
+                "content": "This theme's collection pages include sleek design and modern filtering functionality, including a custom-built sliding price select feature.",
                 "image": "fruit-stand-collection-page.gif",
-                "tags": ["Shopify Search & Discovery", "E-commerce", "Filters"]
+                "tags": ["Shopify Search & Discovery", "HTML", "CSS", "JavaScript", "Horizon Theme Events"]
             },
             {
                 "title": "FREE SHIPPING PROGRESS BAR",
-                "content": "Images of various fruits.",
+                "content": "This feature provides users with a visual indicator of their progress towards free shipping, enhancing the shopping experience and boosting conversion.",
                 "image": "fruit-stand-cart.gif",
-                "tags": ["Shopify", "E-commerce", "Cart"]
+                "tags": ["Cart Liquid Object", "HTML", "CSS", "JavaScript", "Horizon Theme Events", "Metaobjects", "Web Components"]
             }
         ]
     },
@@ -35,21 +35,21 @@
         "sections": [
             {
                 "title": "ITALIAN BAKERY SHOPIFY THEME",
-                "content": "Images of various fruits.",
+                "content": "This Shopify 2.0 theme—created for a medium-sized Italian bakery—was built with a focus on performance, CRO, and user experience. It lead to a 115% growth in year-over-year online revenue.",
                 "image": "tre-mari-shopify-2-website.gif",
-                "tags": ["Shopify", "E-commerce", "Theme"]
+                "tags": ["Shopify 2.0","Liquid", "JavaScript", "CSS", "HTML", "CRO", "Third Party Apps", "Shopify Admin"]
             },
             {
                 "title": "PRODUCT CATEGORIZATION AND NAVIGATION",
-                "content": "Images of various fruits.",
+                "content": "Navigation and product categorization was completely overhauled, guided by user behavior analytics and best practices, to create a more intuitive shopping experience.",
                 "image": "tre-mari-main-nav.gif",
-                "tags": ["Shopify", "E-commerce", "Navigation"]
+                "tags": ["Data Analysis", "Shopify Search & Discovery", "UI/UX", "Shopify Admin", "Bulk Product Uploads"]
             },
             {
                 "title": "THIRD-PARTY APP INTEGRATION",
-                "content": "Images of various fruits.",
+                "content": "A third party app related to in-store pickup and local delivery time management was integrated into the theme, following styles to make it look and function like the rest of the site.",
                 "image": "tre-mari-third-party-apps.gif",
-                "tags": ["Shopify", "E-commerce", "Integration"]
+                "tags": ["Third Party App APIs", "AJAX", "Liquid", "JavaScript", "CSS", "HTML"]
             }
         ]
     }
