@@ -6,25 +6,25 @@
       {
         "title": "FRUIT STAND THEME",
         "content": "A custom Shopify theme designed for an online fruit market, built with a strong focus on conversion rate optimization and modern Shopify development best practices.",
-        "image": "fruit-stand-homepage.gif",
+        "video": "fruit-stand-homepage.mp4",
         "tags": ["Liquid", "JavaScript", "CSS", "HTML", "CRO", "Web Components"]
       },
       {
         "title": "PRODUCT COMPARISON TOOL",
         "content": "A comparison feature that lets customers evaluate fruits side-by-side based on price, ratings, and dietary info—empowering more confident purchasing decisions.",
-        "image": "fruit-stand-compare.gif",
+        "video": "fruit-stand-compare.mp4",
         "tags": ["Section Rendering API", "JSON", "JavaScript", "Liquid", "Metaobjects", "Web Components"]
       },
       {
         "title": "COLLECTION FILTERING",
         "content": "A modern collection page with a sleek design and dynamic filtering options, including a custom-built sliding price selector that integrates seamlessly with Horizon's default filtering system.",
-        "image": "fruit-stand-collection-page.gif",
+        "video": "fruit-stand-collection-page.mp4",
         "tags": ["Shopify Search & Discovery", "HTML", "CSS", "JavaScript", "Horizon Theme Events"]
       },
       {
         "title": "FREE SHIPPING PROGRESS BAR",
         "content": "A dynamic progress bar in the cart that visually shows customers how close they are to receiving free shipping—driving higher average order values and improving the checkout experience.",
-        "image": "fruit-stand-cart.gif",
+        "video": "fruit-stand-cart.mp4",
         "tags": ["Cart Liquid Object", "HTML", "CSS", "JavaScript", "Horizon Theme Events", "Metaobjects", "Web Components"]
       }
     ]
@@ -36,19 +36,19 @@
       {
         "title": "ITALIAN BAKERY THEME",
         "content": "An elegant Shopify 2.0 theme created for a mid-sized Italian bakery, focused on CRO and UX best practices. The launch drove a 115% increase in year-over-year online revenue.",
-        "image": "tre-mari-shopify-2-website.gif",
+        "video": "tre-mari-shopify-2-website.mp4",
         "tags": ["Shopify 2.0", "Liquid", "JavaScript", "CSS", "HTML", "CRO", "Third-Party Apps", "Shopify Admin"]
       },
       {
         "title": "PRODUCT CATEGORIZATION & NAVIGATION",
         "content": "Navigation and product categorization was redesigned using behavioral analytics and UX best practices, resulting in a more intuitive and user-friendly shopping journey.",
-        "image": "tre-mari-main-nav.gif",
+        "video": "tre-mari-main-nav.mp4",
         "tags": ["Shopify Search & Discovery", "UI/UX", "Data Analysis", "Shopify Admin", "Bulk Product Uploads"]
       },
       {
         "title": "THIRD-PARTY APP INTEGRATION",
         "content": "A third-party app for in-store pickup and local delivery time slots was integrated into the cart, with its appearance and functionality customized to blend seamlessly with the theme’s design.",
-        "image": "tre-mari-third-party-apps.gif",
+        "video": "tre-mari-third-party-app.mp4",
         "tags": ["Third-Party App APIs", "AJAX", "Liquid", "JavaScript", "CSS", "HTML"]
       }
     ]

@@ -10,10 +10,16 @@ permalink: "{{ project.id }}.html"
 {% for section in project.sections %}
 <div class="hero project-hero bg-base-200 mt-3 mb-8 py-4 lg:py-6 px-2 lg:px-6">
   <div class="hero-content flex-col w-full gap-10 justify-evenly lg:flex-row{% if loop.index is odd %}-reverse{% endif %}">
-    <img
-      src="/assets/img/{{section.image}}"
-      class="{% if project.title == 'Italian Bakery' %}mobile-gif{% else %}lg:max-w-lg{% endif %} rounded-lg shadow-2xl"
-    />
+  <video
+    src="/assets/videos/{{section.video}}"
+    class="{% if project.title == 'Italian Bakery' %}mobile-video{% else %}lg:max-w-lg{% endif %} rounded-lg shadow-2xl"
+    autoplay
+    loop
+    muted
+    playsinline
+>
+    Your browser does not support the video tag.
+</video>
     <div>
       <h1 class="text-2xl max-w-sm font-bold font-serif text-balance text-center lg:text-left">{{ section.title }}</h1>
       <p class="py-4 max-w-sm text-center lg:text-left">

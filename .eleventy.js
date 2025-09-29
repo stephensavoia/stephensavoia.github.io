@@ -1,6 +1,6 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy(
-    "src/assets/**/*.{jpg,png,svg,gif,ico,js,pdf}"
+    "src/assets/**/*.{jpg,png,svg,gif,ico,js,pdf,mp4}"
   );
   eleventyConfig.addPassthroughCopy("src/assets/css/styles.css");
   eleventyConfig.addPassthroughCopy("r/parks/parks.html");

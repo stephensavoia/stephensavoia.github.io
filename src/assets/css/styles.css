@@ -2645,22 +2645,6 @@ html {
   padding-top: 3rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
-.pt-0 {
-  padding-top: 0px;
-}
-
 .text-center {
   text-align: center;
 }
@@ -3115,7 +3099,7 @@ body.dark-mode .project-badge {
   color: #d6d6d6;
 }
 
-.mobile-gif {
+.mobile-video {
   max-width: 13rem;
 }
 
@@ -3260,10 +3244,6 @@ body.dark-mode .project-badge {
   .lg\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .lg\:pt-0 {
-    padding-top: 0px;
   }
 
   .lg\:text-left {
