@@ -13,6 +13,8 @@ permalink: "{{ project.id }}.html"
   <video
     src="/assets/videos/{{section.video}}"
     class="{% if project.title == 'Italian Bakery' %}mobile-video{% else %}lg:max-w-lg{% endif %} rounded-lg shadow-2xl"
+    width="{{section.videoWidth}}"
+    height="{{section.videoHeight}}"
     autoplay
     loop
     muted
