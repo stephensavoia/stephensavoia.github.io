@@ -52,24 +52,22 @@ layout: "layouts/base.html"
 </div>
 <div class="container flex flex-wrap max-w-[1024px] mx-auto justify-between">
   {% for project in projects %}
-  <div class="card bg-base-100 w-full md:w-[49%] lg:w-[32%] shadow-xl mb-8">
-    <figure class="w-full">
-      <a class="w-full" href="{{project.link}}">
-        <img class="w-full" src="assets/img/{{project.image}}" />
-      </a>
-    </figure>
-    <div class="card-body">
-      <a href="{{project.link}}" class="self-start">
+  <a class="w-full md:w-[49%] lg:w-[32%]" href="{{project.link}}">
+    <div class="card bg-base-100 w-full shadow-xl mb-8">
+      <figure class="w-full">
+          <img class="w-full" src="assets/img/{{project.image}}" />
+      </figure>
+      <div class="card-body">
         <h3 class="font-serif font-bold text-xl">{{project.title}}</h3>
-      </a>
-      <p>{{project.description | safe}}</p>
-      <div class="card-actions justify-start mt-4">
-        {% for tag in project.tags %}
-        <div class="badge badge-outline">{{tag}}</div>
-        {% endfor %}
+        <p>{{project.description | safe}}</p>
+        <div class="card-actions justify-start mt-4">
+          {% for tag in project.tags %}
+          <div class="badge badge-outline">{{tag}}</div>
+          {% endfor %}
+        </div>
       </div>
     </div>
-  </div>
+  </a>
   {% endfor %}
 </div>
 <!--

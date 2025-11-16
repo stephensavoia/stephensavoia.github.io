@@ -2555,10 +2555,6 @@ html {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.self-start {
-  align-self: flex-start;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -3074,6 +3070,27 @@ body.dark-mode .stars {
 }
 
 /* End of dark mode stars */
+
+/* Projects section */
+
+.card figure img {
+  transition: transform 0.3s ease-out;
+}
+
+.card:hover figure img {
+  transform: scale(1.03);
+}
+
+.card figure {
+  overflow: hidden;
+}
+
+.card:hover h3 {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* End of project sections */
 
 /* Project pages */
 
