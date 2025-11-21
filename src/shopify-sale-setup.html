@@ -62,7 +62,7 @@ layout: "layouts/base.html"
     The Problem With Automatic Discounts
   </h3>
   <p class="my-4">
-    The issues with using compare at prices to set up a sale in Shopify lead some merchants to use automatic discounts instead. This approach, however, has its own downside. While automatic discounts display both the discounted price and the slashed-out original price in the cart (on most themes) and at checkout, there is no way to show discount prices on the product or collection pages. This is terrible for conversion, because a product page that doesn't display a sale price with a slashed-out original price is far less likely to convert.
+    The issues with compare at prices lead some Shopify merchants to use automatic discounts to set up a sale instead. This approach, however, has its own downside. While automatic discounts display both the discounted price and the slashed-out original price in the cart (on most themes) and at checkout, there is no way to show discount prices on the product or collection pages. This is terrible for conversion, because a product page that doesn't display a sale price with a slashed-out original price is far less likely to convert.
   </p>
   <div class="container blog-post flex flex-wrap max-w-[1024px] mx-auto my-2 justify-between">
     <div class="w-full md:w-[49%] lg:w-[32%]">
@@ -162,7 +162,7 @@ layout: "layouts/base.html"
   </p>
   <ol class="list-decimal list-outside ml-5 mb-4">
     <li class="mb-4">
-      Schedule a start time for the automatic discount.This is easy to accomplish, as scheduled start and end times are built into Shopify's automatic discount feature.
+      Schedule a start time for the automatic discount. This is easy to accomplish, as scheduled start and end times are built into Shopify's automatic discount feature.
     </li>
     <li class="mb-4">
       Have a developer create a shop-level boolean metafield called "show discount prices" and set it to false. Then, using Shopify Flow, schedule a workflow that updates this metafield to <em>true</em> at the desired time. Finally, have the developer update the theme code to conditionally display the discount price only when (1) the "discount price" metafield is not blank, and (2) the shop-level "show discount prices" metafield is set to true. With this setup, all "discount price" variant metafields can be input in advance, and the theme will reveal them to customers only when the scheduled time arrives.
