@@ -1,0 +1,186 @@
+---
+layout: "layouts/base.html"
+---
+
+<div id="projects" class="flex w-full flex-col my-4">
+  <h2 class="font-serif font-bold text-2xl">
+    The Best Way to Set Up a Sale in Shopify
+  </h2>
+  <p class="my-4">
+    Running effective sales is crucial for Shopify merchants. Promotions drive conversion and generate excitement around a brand. It's therefore unfortunate that Shopify doesn't offer a particularly strong built-in method for setting up sales. Below is a clear guide to help Shopify merchants set up sales in the most effective way possible.
+  </p>
+  <h3 class="font-serif font-bold text-xl">
+      The Problem With Using Compare at Prices to Set Up a Sale
+  </h3>
+  <p class="my-4">
+    The simplest way to run a sale in Shopify is to lower a variant's price and set its compare at price. The online store's theme will then display the discounted price alongside a slashed-out original price, signaling a sale to customers.
+  </p>
+  <p class="mb-4">
+    While this approach is simple and easy to implement, it creates two problems:
+  </p>
+  <ol class="list-decimal list-outside ml-5 mb-4">
+    <li class="mb-4">
+      Even though the product page and cart display the slashed-out compare-at price, the checkout page does not. At checkout, customers see the lower price with no indication that they're receiving a discount. This can create confusion and hurt conversion.
+    </li>
+    <li class="mb-4">
+      Since this method involves lowering the variant's actual price, any existing discount codes or automatic discounts will stack on top of the sale price. To prevent this, merchants must either (a) manually disable all other discount codes—including those created by third-party apps—or (b) install a discount-blocking app.
+    </li>
+  </ol>
+  <div class="container blog-post flex flex-wrap max-w-[1024px] mx-auto my-2 justify-between">
+    <div class="w-full md:w-[49%] lg:w-[32%]">
+        <div class="card bg-base-100 w-full shadow-xl mb-8">
+        <figure class="w-full">
+            <img class="w-full" src="../assets/img/product-page-slashed-out-price.png" />
+        </figure>
+        <div class="card-body blog-post-card-body">
+            <p class="italic text-sm text-center">Product page with slashed-out price.</p>
+        </div>
+        </div>
+    </div>
+    <div class="w-full md:w-[49%] lg:w-[32%]">
+        <div class="card bg-base-100 w-full shadow-xl mb-8">
+        <figure class="w-full">
+            <img class="w-full" src="../assets/img/cart-slashed-out-price.png" />
+        </figure>
+        <div class="card-body blog-post-card-body">
+            <p class="italic text-sm text-center">Cart with slashed-out price.</p>
+        </div>
+        </div>
+    </div>
+    <div class="w-full md:w-[49%] lg:w-[32%]">
+        <div class="card bg-base-100 w-full shadow-xl mb-8">
+        <figure class="w-full">
+            <img class="w-full" src="../assets/img/checkout-page-no-slashed-out-price.png" />
+        </figure>
+        <div class="card-body blog-post-card-body">
+            <p class="italic text-sm text-center">Checkout with no slashed-out price.</p>
+        </div>
+        </div>
+    </div>
+  </div> 
+  <h3 class="font-serif font-bold text-xl">
+    The Problem With Automatic Discounts
+  </h3>
+  <p class="my-4">
+    The issues with using compare at prices to set up a sale in Shopify lead some merchants to use automatic discounts instead. This approach, however, has its own downside. While automatic discounts display both the discounted price and the slashed-out original price in the cart (on most themes) and at checkout, there is no way to show discount prices on the product or collection pages. This is terrible for conversion, because a product page that doesn't display a sale price with a slashed-out original price is far less likely to convert.
+  </p>
+  <div class="container blog-post flex flex-wrap max-w-[1024px] mx-auto my-2 justify-between">
+    <div class="w-full md:w-[49%] lg:w-[32%]">
+        <div class="card bg-base-100 w-full shadow-xl mb-8">
+        <figure class="w-full">
+            <img class="w-full" src="../assets/img/product-page-no-slashed-out-price.png" />
+        </figure>
+        <div class="card-body blog-post-card-body">
+            <p class="italic text-sm text-center">Product page with no slashed-out price.</p>
+        </div>
+        </div>
+    </div>
+    <div class="w-full md:w-[49%] lg:w-[32%]">
+        <div class="card bg-base-100 w-full shadow-xl mb-8">
+        <figure class="w-full">
+            <img class="w-full" src="../assets/img/cart-slashed-out-price.png" />
+        </figure>
+        <div class="card-body blog-post-card-body">
+            <p class="italic text-sm text-center">Cart with slashed-out price.</p>
+        </div>
+        </div>
+    </div>
+    <div class="w-full md:w-[49%] lg:w-[32%]">
+        <div class="card bg-base-100 w-full shadow-xl mb-8">
+        <figure class="w-full">
+            <img class="w-full" src="../assets/img/checkout-page-slashed-out-price.png" />
+        </figure>
+        <div class="card-body blog-post-card-body">
+            <p class="italic text-sm text-center">Checkout with slashed-out price.</p>
+        </div>
+        </div>
+    </div>
+  </div> 
+  <h3 class="font-serif font-bold text-xl">
+    The Best Way to Set Up a Sale in Shopify
+  </h3>
+  <p class="my-4">
+    The best way to set up a sale in Shopify is to use an automatic discount and then create a product variant metafield called "discount price" that can be displayed on the product page.
+  </p>
+  <p class="mb-4">
+    Merchants can accomplish this by following these steps:
+  </p>
+  <ol class="list-decimal list-outside ml-5 mb-4">
+    <li class="mb-4">
+      Create an automatic discount (you may need to create multiple discounts, if different products will be discounted by different percentages).
+    </li>
+    <li class="mb-4">
+      Have a developer create a product variant metafield called "discount price."
+    </li>
+    <li class="mb-4">
+      Set the value of each variant's "discount price" metafield to its sale price. If your store has a lot of products, you can use the app <a href="https://apps.shopify.com/excel-export-import" title="Matrixify Shopify App">Matrixify</a> to help speed this up.
+    </li>
+    <li class="mb-4">
+      Have a developer update your theme so that, when the "discount price" metafield has a value, it displays that value as the product price and shows the regular price as a slashed-out, compare-at price.
+    </li>
+  </ol>
+  <p class="mb-8">
+    That's it! After following these steps, you will have set up your sale in a way that (a) displays savings on the product page, cart, and checkout page and (b) prevents customers from stacking coupon codes on top of the sale price.
+  </p>
+  <div class="container blog-post flex flex-wrap max-w-[1024px] mx-auto my-2 justify-between">
+    <div class="w-full md:w-[49%] lg:w-[32%]">
+        <div class="card bg-base-100 w-full shadow-xl mb-8">
+        <figure class="w-full">
+            <img class="w-full" src="../assets/img/product-page-slashed-out-price.png" />
+        </figure>
+        <div class="card-body blog-post-card-body">
+            <p class="italic text-sm text-center">Product page with slashed-out price.</p>
+        </div>
+        </div>
+    </div>
+    <div class="w-full md:w-[49%] lg:w-[32%]">
+        <div class="card bg-base-100 w-full shadow-xl mb-8">
+        <figure class="w-full">
+            <img class="w-full" src="../assets/img/cart-slashed-out-price.png" />
+        </figure>
+        <div class="card-body blog-post-card-body">
+            <p class="italic text-sm text-center">Cart with slashed-out price.</p>
+        </div>
+        </div>
+    </div>
+    <div class="w-full md:w-[49%] lg:w-[32%]">
+        <div class="card bg-base-100 w-full shadow-xl mb-8">
+        <figure class="w-full">
+            <img class="w-full" src="../assets/img/checkout-page-slashed-out-price.png" />
+        </figure>
+        <div class="card-body blog-post-card-body">
+            <p class="italic text-sm text-center">Checkout with slashed-out price.</p>
+        </div>
+        </div>
+    </div>
+  </div>
+  <h3 class="font-serif font-bold text-xl">
+    Optional: Scheduling Your Sale for a Future Date
+  </h3>
+  <p class="my-4">
+    Sometimes merchants want to schedule a sale to start at a specific time in the future—maybe overnight or on a weekend. To achieve this while using the sale implementation method described above, two additional steps are required:
+  </p>
+  <ol class="list-decimal list-outside ml-5 mb-4">
+    <li class="mb-4">
+      Schedule a start time for the automatic discount.This is easy to accomplish, as scheduled start and end times are built into Shopify's automatic discount feature.
+    </li>
+    <li class="mb-4">
+      Have a developer create a shop-level boolean metafield called "show discount prices" and set it to false. Then, using Shopify Flow, schedule a workflow that updates this metafield to <em>true</em> at the desired time. Finally, have the developer update the theme code to conditionally display the discount price only when (1) the "discount price" metafield is not blank, and (2) the shop-level "show discount prices" metafield is set to true. With this setup, all "discount price" variant metafields can be input in advance, and the theme will reveal them to customers only when the scheduled time arrives.
+    </li>
+  </ol>
+  <p class="mb-4">
+    I hope this helps you set up your Shopify store's next sale. If you'd like support implementing this type of sale, please feel free to comment or message me, and I'll make sure someone from the agency I work with gets in touch with you.
+  </p>
+  <p class="mb-4">
+    If you're a Shopify developer reading this, I'd love to hear your thoughts. Feel free to comment or reach out—I'm always interested in learning how other developers approach these challenges.
+  </p>
+  <p class="mb-4">
+    Thanks!
+  </p>
+  <p class="mb-4">
+    — Stephen
+  </p>
+  <p class="mb-4">
+    <em>(Strawberry photo credit: <a href="https://unsplash.com/photos/red-strawberry-fruit-with-white-background-xnRg3xDcNnE" title="Unsplash">Allec Gomes, Unsplash</a>.)</em>
+  </p>
+</div>

@@ -334,18 +334,28 @@ body.dark-mode .stars {
 /* End of dark mode stars */
 
 /* Projects section */
-.card figure img {
+.container .card figure img {
   transition: transform 0.3s ease-out;
 }
-.card:hover figure img {
+.container .card:hover figure img {
   transform: scale(1.03);
 }
-.card figure {
+.container .card figure {
   overflow: hidden;
 }
-.card:hover h3 {
+.container .card:hover h3 {
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+.container.blog-post .card figure img {
+  transform: none !important;
+  transition: none !important;
+}
+.container.blog-post .card:hover figure img {
+  transform: none !important;
+}
+.container.blog-post .blog-post-card-body {
+  padding: 0.75rem 1rem 1rem 1rem !important;
 }
 /* End of project sections */
 
