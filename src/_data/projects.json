@@ -1,25 +1,89 @@
 [
   {
-    "id": "003",
-    "title": "Mycelium Marketing",
-    "description": "I help small and medium-sized businesses grow and thrive online in my role as Shopify Developer and CRO Strategist at Mycelium Marketing.",
+    "id": "006",
+    "title": "Earth Runners Website",
+    "description": "I worked with the ad agency Mycelium Marketing to develop a custom Shopify theme for the minimalist sandal brand Earth Runners.",
     "link": "https://myceliummarketing.com/",
     "tags": [
       "Shopify",
       "Liquid",
       "JavaScript",
-      "TypeScript",
+      "Shopify Flow",
       "HTML",
       "CSS",
       "GraphQL",
       "CSV",
       "Github"
     ],
-    "image": "mycelium-marketing-2025.jpg"
+    "image": "earth-runners-theme.jpg"
+  },
+  {
+    "id": "005",
+    "title": "Compare at Checkout",
+    "description": "A Shopify app that allows merchants to display compare at prices at checkout—a setting that Shopify does not allow by default.",
+    "link": "/compare-at-checkout",
+    "tags": [
+      "Shopify",
+      "React",
+      "Polaris",
+      "JavaScript",
+      "GraphQL",
+      "JSON",
+      "CSV Bulk Uploads"
+    ],
+    "image": "compare-at-checkout.jpg"
+  },
+  {
+    "id": "004",
+    "title": "Italian Bakery Website",
+    "description": "An online shop designed for a medium-sized Italian bakery, built with a strong focus on CRO and modern Shopify development best practices.",
+    "link": "/italian-bakery",
+    "tags": [
+      "Shopify",
+      "Liquid",
+      "JavaScript",
+      "CSS",
+      "CSV Bulk Uploads",
+      "Third-Party App Integration"
+    ],
+    "image": "tre-mari-bakery-online-shop.jpg"
+  },
+  {
+    "id": "003",
+    "title": "Online Artwork Store",
+    "description": "I developed an ecommerce strategy for a photographer, prioritizing cost efficiency and a quick site launch by utilizing existing hosting contracts.",
+    "link": "https://www.francodeleo.com/",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "CSV",
+      "Google Sheets",
+      "Shopify",
+      "Cargo",
+      "Github"
+    ],
+    "image": "artwork-store-2025.jpg"
   },
   {
     "id": "002",
-    "title": "Fruit Stand Online Store",
+    "title": "TPL Barcode Generator",
+    "description": "This tool generates phone wallpapers that double as digital Toronto Public Library cards that can be used with barcode scanners.",
+    "link": "https://tplbarcode.com/",
+    "tags": [
+      "Remix",
+      "React",
+      "TypeScript",
+      "JsBarcode",
+      "Flowbite",
+      "Cloudflare Pages",
+      "Github"
+    ],
+    "image": "tpl-barcode-generator.jpg"
+  },
+  {
+    "id": "001",
+    "title": "Fruit Stand Theme",
     "description": "A custom Shopify theme designed for an online fruit market, built with a strong focus on CRO and modern development best practices.",
     "link": "/fruit-stand",
     "tags": [
@@ -33,20 +97,5 @@
       "CSV Bulk Uploads"
     ],
     "image": "fruit-stand-2025.jpg"
-  },
-  {
-    "id": "001",
-    "title": "Italian Bakery Website",
-    "description": "An online shop designed for a medium-sized Italian bakery, built with a strong focus on CRO and modern Shopify development best practices.",
-    "link": "/italian-bakery",
-    "tags": [
-      "Shopify",
-      "Liquid",
-      "JavaScript",
-      "CSS",
-      "CSV Bulk Uploads",
-      "Third-Party App Integration"
-    ],
-    "image": "tre-mari-bakery-online-shop.jpg"
   }
 ]

@@ -2568,22 +2568,6 @@ html {
   list-style-type: decimal;
 }
 
-.list-disc {
-  list-style-type: disc;
-}
-
-.list-\[PP\] {
-  list-style-type: PP;
-}
-
-.list-\[h\] {
-  list-style-type: h;
-}
-
-.list-\[m\] {
-  list-style-type: m;
-}
-
 .grid-flow-col {
   grid-auto-flow: column;
 }
@@ -3186,6 +3170,7 @@ body.dark-mode .stars {
   text-underline-offset: 2px;
 }
 
+#about img,
 .container.blog-post .card figure img {
   transform: none !important;
   transition: none !important;

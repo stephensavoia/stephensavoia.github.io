@@ -347,6 +347,7 @@ body.dark-mode .stars {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+#about img,
 .container.blog-post .card figure img {
   transform: none !important;
   transition: none !important;
