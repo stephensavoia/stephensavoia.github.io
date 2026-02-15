@@ -24,11 +24,10 @@
     "link": "/coming-soon",
     "tags": [
       "Shopify",
-      "React",
+      "React Router 7",
       "Polaris",
       "JavaScript",
       "GraphQL",
-      "JSON",
       "Google Cloud Run"
     ],
     "image": "compare-at-checkout.jpg"
