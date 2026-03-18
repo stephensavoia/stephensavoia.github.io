@@ -21,7 +21,7 @@
     "id": "005",
     "title": "Compare at Checkout",
     "description": "A Shopify app that allows merchants to display compare at prices at checkout—a setting that Shopify does not allow by default.",
-    "link": "/coming-soon",
+    "link": "https://apps.shopify.com/avp-compare-at-checkout",
     "tags": [
       "Shopify",
       "React Router 7",
