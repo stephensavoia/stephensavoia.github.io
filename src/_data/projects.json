@@ -13,13 +13,17 @@
   },
   {
     "id": "005",
-    "title": "Raw Cacao Website",
-    "description": "Upgraded a theme to Shopify 2.0 website following, utilizing CRO best practices.",
-    "link": "https://aylabag.com/",
+    "title": "Compare at Checkout",
+    "description": "A Shopify app that allows merchants to display compare at prices at checkout—a setting that Shopify does not allow by default.",
+    "link": "/compare-at-checkout",
     "tags": [
-      "Shopify 2.0",
-      "Theme Upgrade",
-      "Conversion Rate Optimization"
+      "Shopify",
+      "React",
+      "Polaris",
+      "JavaScript",
+      "GraphQL",
+      "JSON",
+      "CSV Bulk Uploads"
     ],
     "image": "elements-for-life.jpg"
   },
