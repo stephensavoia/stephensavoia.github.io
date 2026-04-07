@@ -2488,6 +2488,14 @@ html {
   margin-top: 1rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mt-2\.5 {
+  margin-top: 0.625rem;
+}
+
 .flex {
   display: flex;
 }
@@ -2628,6 +2636,10 @@ html {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .text-balance {
