@@ -1,23 +1,5 @@
 [
   {
-    "id": "006",
-    "title": "Earth Runners Website",
-    "description": "I worked with the ad agency Mycelium Marketing to develop a custom Shopify theme for the minimalist sandal brand Earth Runners.",
-    "link": "https://myceliummarketing.com/",
-    "tags": [
-      "Shopify",
-      "Liquid",
-      "JavaScript",
-      "Shopify Flow",
-      "HTML",
-      "CSS",
-      "GraphQL",
-      "CSV",
-      "Github"
-    ],
-    "image": "earth-runners-theme.jpg"
-  },
-  {
     "id": "005",
     "title": "Compare at Checkout",
     "description": "A Shopify app that allows merchants to display compare at prices at checkout—a setting that Shopify does not allow by default.",
