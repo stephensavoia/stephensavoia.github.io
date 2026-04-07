@@ -13,17 +13,13 @@
   },
   {
     "id": "005",
-    "title": "Compare at Checkout",
-    "description": "A Shopify app that allows merchants to display compare at prices at checkout—a setting that Shopify does not allow by default.",
-    "link": "/compare-at-checkout",
+    "title": "Raw Cacao Website",
+    "description": "Upgraded an online store to Shopify 2.0, utilizing best practices for conversion.",
+    "link": "https://elementsforlife.co.uk/",
     "tags": [
-      "Shopify",
-      "React",
-      "Polaris",
-      "JavaScript",
-      "GraphQL",
-      "JSON",
-      "CSV Bulk Uploads"
+      "Shopify 2.0",
+      "Theme Upgrade",
+      "Conversion Rate Optimization"
     ],
     "image": "elements-for-life.jpg"
   },
