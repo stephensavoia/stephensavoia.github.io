@@ -1,6 +1,6 @@
 [
   {
-    "id": "006",
+    "id": "009",
     "title": "Earth Runners Website",
     "description": "Worked with the ad agency Mycelium Marketing to build a theme that lifted sales 31%.",
     "link": "https://earthrunners.com/",
@@ -12,7 +12,7 @@
     "image": "earth-runners-theme.jpg"
   },
   {
-    "id": "005",
+    "id": "008",
     "title": "Raw Cacao Website",
     "description": "Upgraded an online store to Shopify 2.0, utilizing best practices for conversion.",
     "link": "https://elementsforlife.co.uk/",
@@ -24,7 +24,7 @@
     "image": "elements-for-life.jpg"
   },
   {
-    "id": "004",
+    "id": "007",
     "title": "Ayla & Co. Website",
     "description": "Worked with the ad agency Mycelium Marketing to build a theme based on Prestige.",
     "link": "https://aylabag.com/",
@@ -36,10 +36,22 @@
     "image": "ayla-bag.jpg"
   },
   {
-    "id": "003",
+    "id": "006",
+    "title": "Badesofa Website",
+    "description": "Worked with the ad agency Mycelium Marketing to provide development support.",
+    "link": "https://badesofa.com/",
+    "tags": [
+      "Shopify Plus",
+      "Ongoing Support",
+      "Conversion Rate Optimization"
+    ],
+    "image": "badesofa.jpg"
+  },
+  {
+    "id": "005",
     "title": "Italian Bakery Website",
     "description": "Built an online shop for a medium-sized Italian bakery with a large product catalogue.",
-    "link": "/italian-bakery",
+    "link": "https://www.tremari.ca/",
     "tags": [
       "Shopify 2.0",
       "Theme Upgrade",
@@ -48,7 +60,7 @@
     "image": "tre-mari-bakery-online-shop.jpg"
   },
   {
-    "id": "002",
+    "id": "004",
     "title": "Online Artwork Store",
     "description": "Developed an ecommerce strategy for a photographer, prioritizing low cost and speed.",
     "link": "https://www.francodeleo.com/",
@@ -58,6 +70,35 @@
       "CSV Bulk Uploads"
     ],
     "image": "artwork-store-2025.jpg"
+  },
+  {
+    "id": "003",
+    "title": "Simple Product Quiz",
+    "description": "Built free, open-source product recommendation quiz to allow Shopify stores to boost CRO.",
+    "link": "https://github.com/stephensavoia/simple-shopify-product-quiz",
+    "tags": [
+      "Shopify 2.0",
+      "Claude Opus 4.6",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "simple-shopify-product-quiz.png"
+  },
+  {
+    "id": "002",
+    "title": "Compare at Checkout",
+"description": "Built a checkout conversion optimization app published on the Shopify App Store.",
+    "link": "https://apps.shopify.com/avp-compare-at-checkout",
+    "tags": [
+      "Shopify",
+      "React",
+      "GraphQL",
+      "Polaris",
+      "GitHub",
+      "Fly.io"
+    ],
+    "image": "compare-at-checkout.jpg"
   },
   {
     "id": "001",
