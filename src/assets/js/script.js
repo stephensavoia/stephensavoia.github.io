@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const toggleBtn = document.getElementById("darkModeToggle");
   const iconMoon = document.getElementById("iconMoon");
   const iconSun = document.getElementById("iconSun");
+  const heroAvatar = document.getElementById("heroAvatar");
 
   if (!toggleBtn) return;
 
@@ -99,10 +100,12 @@ document.addEventListener("DOMContentLoaded", function () {
       body.classList.add("dark-mode");
       iconMoon.classList.add("hidden");
       iconSun.classList.remove("hidden");
+      if (heroAvatar) heroAvatar.src = "/assets/img/profile-dark-mode.jpg";
     } else {
       body.classList.remove("dark-mode");
       iconMoon.classList.remove("hidden");
       iconSun.classList.add("hidden");
+      if (heroAvatar) heroAvatar.src = "/assets/img/profile.jpg";
     }
   }
 
@@ -112,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
     try { localStorage.setItem("avp-theme", isDark ? "dark" : "light"); } catch (e) {}
   });
 
-  // Restore saved preference
+  // Restore saved preference (default: light mode)
   var saved;
   try { saved = localStorage.getItem("avp-theme"); } catch (e) {}
   if (saved === "dark") {
