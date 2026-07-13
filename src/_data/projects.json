@@ -1,62 +1,116 @@
 [
   {
-    "id": "006",
-    "title": "enCore Guards",
-    "description": "I upgraded an existing storefront to Shopify 2.0 and developed a conversion rate optimization strategy using a limited asset library for the night guard brand enCore Guards.",
-    "link": "https://www.encoreguards.com/",
+    "id": "009",
+    "title": "Earth Runners Website",
+    "description": "Worked with the ad agency Mycelium Marketing to build a theme that lifted sales 31%.",
+    "link": "https://earthrunners.com/",
     "tags": [
-      "⌛ A/B Testing in Progress"
+      "Shopify Plus",
+      "Theme Upgrade",
+      "Conversion Rate Optimization"
     ],
     "image": "encore-guards.png"
   },
   {
-    "id": "005",
-    "title": "Elements for Life",
-    "description": "I upgraded an existing Shopify theme and implemented a site-wide conversion rate optimization strategy based on best practices for the raw cacao brand Elements for Life.",
-    "link": "https://www.elementsforlife.co.uk/",
+    "id": "008",
+    "title": "Raw Cacao Website",
+    "description": "Upgraded an online store to Shopify 2.0, utilizing best practices for conversion.",
+    "link": "https://elementsforlife.co.uk/",
     "tags": [
-      "📈 +6% YOY Revenue per Session"
+      "Shopify 2.0",
+      "Theme Upgrade",
+      "Conversion Rate Optimization"
     ],
     "image": "elements-for-life.jpg"
   },
   {
-    "id": "004",
-    "title": "Earth Runners",
-    "description": "I worked with the ad agency Mycelium Marketing to develop a custom, conversion-rate-optimized Shopify theme for the minimalist sandal brand Earth Runners.",
-    "link": "https://www.earthrunners.com/",
+    "id": "007",
+    "title": "Ayla & Co. Website",
+    "description": "Worked with the ad agency Mycelium Marketing to build a theme based on Prestige.",
+    "link": "https://aylabag.com/",
     "tags": [
-      "📈 +12.9% YOY Revenue per Session"
+      "Shopify Plus",
+      "Theme Upgrade",
+      "Maestrooo Themes (Prestige)"
     ],
-    "image": "earth-runners-theme.jpg"
+    "image": "ayla-bag.jpg"
   },
   {
-    "id": "003",
-    "title": "Badesofa",
-    "description": "I worked with the ad agency Mycelium Marketing to provide ongoing development and conversion rate optimization support to the luxury bath and spa pillow brand Badesofa.",
-    "link": "https://www.badesofa.com/",
+    "id": "006",
+    "title": "Badesofa Website",
+    "description": "Worked with the ad agency Mycelium Marketing to provide development support.",
+    "link": "https://badesofa.com/",
     "tags": [
-      "🛠️ Ongoing Dev & CRO Support"
+      "Shopify Plus",
+      "Ongoing Support",
+      "Conversion Rate Optimization"
     ],
     "image": "badesofa.jpg"
   },
   {
-    "id": "002",
-    "title": "Tre Mari Bakery",
-    "description": "I built an online shop, designed with a strong focus on conversion rate optimization and modern Shopify development best practices, for a medium-sized Italian bakery.",
-    "link": "/italian-bakery",
+    "id": "005",
+    "title": "Italian Bakery Website",
+    "description": "Built an online shop for a medium-sized Italian bakery with a large product catalogue.",
+    "link": "https://www.tremari.ca/",
     "tags": [
-      "📈 +115% YOY Revenue"
+      "Shopify 2.0",
+      "Theme Upgrade",
+      "Third-Party App Integrations"
     ],
-    "image": "tre-mari-bakery-online-shop.jpg"
+    "image": "earth-runners-theme.jpg"
+  },
+  {
+    "id": "004",
+    "title": "Online Artwork Store",
+    "description": "Developed an ecommerce strategy for a photographer, prioritizing low cost and speed.",
+    "link": "https://www.francodeleo.com/",
+    "tags": [
+      "Cargo",
+      "Shopify Starter Plan",
+      "CSV Bulk Uploads"
+    ],
+    "image": "badesofa.jpg"
+  },
+  {
+    "id": "003",
+    "title": "Simple Product Quiz",
+    "description": "Built free, open-source product recommendation quiz to allow Shopify stores to boost CRO.",
+    "link": "https://github.com/stephensavoia/simple-shopify-product-quiz",
+    "tags": [
+      "Shopify 2.0",
+      "Claude Opus 4.6",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "simple-shopify-product-quiz.png"
+  },
+  {
+    "id": "002",
+    "title": "Compare at Checkout",
+"description": "Built a checkout conversion optimization app published on the Shopify App Store.",
+    "link": "https://apps.shopify.com/avp-compare-at-checkout",
+    "tags": [
+      "Shopify",
+      "React",
+      "GraphQL",
+      "Polaris",
+      "GitHub",
+      "Fly.io"
+    ],
+    "image": "compare-at-checkout.jpg"
   },
   {
     "id": "001",
-    "title": "Franco Deleo Photography",
-    "description": "I developed an ecommerce strategy for a photographer, prioritizing cost efficiency and a quick site launch by utilizing existing hosting contracts.",
-    "link": "https://www.francodeleo.com/",
+    "title": "TPL Barcode Generator",
+    "description": "Built a tool that generates phone wallpapers that double as digital librarycards.",
+    "link": "https://tplbarcode.com/",
     "tags": [
-      "⬆️ Website Up in 1 Week"
+      "JavaScript",
+      "Flowbite",
+      "Cloudflare Pages",
+      "Github"
     ],
-    "image": "artwork-store-2025.jpg"
+    "image": "tpl-barcode-generator.jpg"
   }
 ]
