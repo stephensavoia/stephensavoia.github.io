@@ -1,84 +1,51 @@
 [
   {
     "id": "006",
-    "title": "Earth Runners",
-    "description": "I worked with the ad agency Mycelium Marketing to develop a custom Shopify theme for the minimalist sandal brand Earth Runners.",
-    "link": "https://www.earthrunners.com/",
+    "title": "enCore Guards",
+    "description": "I upgraded an existing storefront to Shopify 2.0 and developed a conversion rate optimization strategy using a limited asset library for the night guard brand enCore Guards.",
+    "link": "https://www.encoreguards.com/",
     "tags": [
-      "Shopify",
-      "Liquid",
-      "JavaScript",
-      "Shopify Flow",
-      "HTML",
-      "CSS",
-      "GraphQL",
-      "CSV",
-      "Github"
+      "⌛ A/B Testing in Progress"
     ],
-    "image": "earth-runners-theme.jpg"
+    "image": "encore-guards.png"
   },
   {
     "id": "005",
+    "title": "Elements for Life",
+    "description": "I upgraded an existing Shopify theme and implemented a site-wide conversion rate optimization strategy based on best practices for the raw cacao brand Elements for Life.",
+    "link": "https://www.elementsforlife.co.uk/",
+    "tags": [
+      "📈 +6% YOY Revenue per Session"
+    ],
+    "image": "elements-for-life.jpg"
+  },
+  {
+    "id": "004",
     "title": "Earth Runners",
-    "description": "I worked with the ad agency Mycelium Marketing to develop a custom Shopify theme for the minimalist sandal brand Earth Runners.",
+    "description": "I worked with the ad agency Mycelium Marketing to develop a custom, conversion-rate-optimized Shopify theme for the minimalist sandal brand Earth Runners.",
     "link": "https://www.earthrunners.com/",
     "tags": [
-      "Shopify",
-      "Liquid",
-      "JavaScript",
-      "Shopify Flow",
-      "HTML",
-      "CSS",
-      "GraphQL",
-      "CSV",
-      "Github"
+      "📈 +12.9% YOY Revenue per Session"
     ],
     "image": "earth-runners-theme.jpg"
   },
   {
-    "id": "004",
-    "title": "Elements for Life",
-    "description": "An online shop designed for a medium-sized Italian bakery, built with a strong focus on CRO and modern Shopify development best practices.",
-    "link": "https://www.elementsforlife.co.uk/",
-    "tags": [
-      "Shopify",
-      "Liquid",
-      "JavaScript",
-      "CSS",
-      "CSV Bulk Uploads",
-      "Third-Party App Integration"
-    ],
-    "image": "tre-mari-bakery-online-shop.jpg"
-  },
-  {
     "id": "003",
-    "title": "Elements for Life",
-    "description": "I developed an ecommerce strategy for a photographer, prioritizing cost efficiency and a quick site launch by utilizing existing hosting contracts.",
-    "link": "https://www.elementsforlife.co.uk/",
+    "title": "Badesofa",
+    "description": "I worked with the ad agency Mycelium Marketing to provide ongoing development and conversion rate optimization support to the luxury bath and spa pillow brand Badesofa.",
+    "link": "https://www.badesofa.com/",
     "tags": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "CSV",
-      "Google Sheets",
-      "Shopify",
-      "Cargo",
-      "Github"
+      "🛠️ Ongoing Dev & CRO Support"
     ],
-    "image": "elements-for-life-online-shop.jpg"
+    "image": "badesofa.jpg"
   },
   {
     "id": "002",
     "title": "Tre Mari Bakery",
-    "description": "An online shop designed for a medium-sized Italian bakery, built with a strong focus on CRO and modern Shopify development best practices.",
+    "description": "I built an online shop, designed with a strong focus on conversion rate optimization and modern Shopify development best practices, for a medium-sized Italian bakery.",
     "link": "/italian-bakery",
     "tags": [
-      "Shopify",
-      "Liquid",
-      "JavaScript",
-      "CSS",
-      "CSV Bulk Uploads",
-      "Third-Party App Integration"
+      "📈 +115% YOY Revenue"
     ],
     "image": "tre-mari-bakery-online-shop.jpg"
   },
@@ -88,14 +55,7 @@
     "description": "I developed an ecommerce strategy for a photographer, prioritizing cost efficiency and a quick site launch by utilizing existing hosting contracts.",
     "link": "https://www.francodeleo.com/",
     "tags": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "CSV",
-      "Google Sheets",
-      "Shopify",
-      "Cargo",
-      "Github"
+      "⬆️ Website Up in 1 Week"
     ],
     "image": "artwork-store-2025.jpg"
   }
