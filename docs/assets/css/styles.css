@@ -176,6 +176,7 @@ button { font-family: inherit; cursor: pointer; }
 .pillar-list { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
 .pillar-list li { font-size: 0.875rem; color: var(--dark-muted); padding-left: 1.25rem; position: relative; line-height: 1.5; }
 .pillar-list li::before { content: '-'; position: absolute; left: 0; color: var(--accent); }
+.pillars .pillar p { font-size: 0.875rem; color: var(--dark-muted); line-height: 1.5; margin: 0; }
 @media (max-width: 820px) { .pillars-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
 @media (max-width: 540px) { .pillars-grid { grid-template-columns: 1fr; gap: 28px; } }
 
