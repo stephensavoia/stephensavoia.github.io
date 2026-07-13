@@ -1,32 +1,40 @@
-﻿// ============================================================
-// HAMBURGER MENU
-// ============================================================
-document.addEventListener("DOMContentLoaded", function () {
-  const menuBtn = document.getElementById("menuBtn");
-  const mobileMenu = document.getElementById("mobileMenu");
+// REMOVE FOCUS FROM MENU
+// (i.e. close menu, because that's how daisyui works),
+// when the menu button is clicked after it is already in focus (i.e. opened)
 
-  if (!menuBtn || !mobileMenu) return;
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
+let menuShouldClose = false;
 
-  menuBtn.addEventListener("click", function () {
-    const isOpen = mobileMenu.classList.toggle("open");
-    menuBtn.setAttribute("aria-expanded", String(isOpen));
-  });
-
-  mobileMenu.querySelectorAll("a").forEach(function (link) {
-    link.addEventListener("click", function () {
-      mobileMenu.classList.remove("open");
-      menuBtn.setAttribute("aria-expanded", "false");
-    });
-  });
+menuBtn.addEventListener("mousedown", () => {
+  if (
+    document.activeElement === menuBtn ||
+    menu.contains(document.activeElement)
+  ) {
+    menuShouldClose = true;
+  }
 });
 
-// ============================================================
+menuBtn.addEventListener("click", () => {
+  if (menuShouldClose) {
+    document.activeElement.blur();
+  }
+});
+
+menuBtn.addEventListener("blur", () => {
+  menuShouldClose = false;
+});
+
+document.querySelectorAll("#menu a").forEach((link) => {
+  link.addEventListener("click", () => {
+    document.activeElement.blur();
+  });
+});
+// END OF REMOVE FOCUS FROM MENU
+
 // CONTACT FORM
-// ============================================================
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("form");
-  if (!form) return;
-
   const submitButton = document.getElementById("submitButton");
   const successAlert = document.getElementById("successAlert");
   const successMessage = document.getElementById("successMessage");
@@ -34,16 +42,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const errorMessage = document.getElementById("errorMessage");
 
   form.addEventListener("submit", function (e) {
-    e.preventDefault();
     const formData = new FormData(form);
+    e.preventDefault();
     var object = {};
-    formData.forEach(function (value, key) {
+    formData.forEach((value, key) => {
       object[key] = value;
     });
     var json = JSON.stringify(object);
-
     submitButton.disabled = true;
-    submitButton.textContent = "Sending\u2026";
+    submitButton.innerHTML = "Submitting...";
 
     fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -53,74 +60,53 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       body: json,
     })
-      .then(function (response) {
-        return response.json().then(function (data) {
-          return { status: response.status, data: data };
-        });
-      })
-      .then(function (result) {
-        if (result.status === 200) {
+      .then(async (response) => {
+        let json = await response.json();
+        if (response.status == 200) {
           errorAlert.classList.add("hidden");
           successAlert.classList.remove("hidden");
-          successMessage.textContent = result.data.message || "Message sent successfully.";
+          successMessage.innerHTML = json.message;
         } else {
+          console.log(response);
           successAlert.classList.add("hidden");
           errorAlert.classList.remove("hidden");
-          errorMessage.textContent = result.data.message || "Something went wrong.";
+          errorMessage.innerHTML = json.message;
         }
       })
-      .catch(function (error) {
-        console.error(error);
+      .catch((error) => {
+        console.log(error);
         successAlert.classList.add("hidden");
         errorAlert.classList.remove("hidden");
-        errorMessage.textContent = "Error! Message was not sent.";
+        errorMessage.innerHTML = "Error! Message was not sent.";
       })
-      .finally(function () {
+      .then(function () {
         form.reset();
         submitButton.disabled = false;
-        submitButton.textContent = "Send Message";
+        submitButton.innerHTML = "Submit";
       });
   });
 });
+// END OF CONTACT FORM
 
-// ============================================================
 // DARK MODE TOGGLE
-// ============================================================
+
 document.addEventListener("DOMContentLoaded", function () {
   const body = document.body;
-  const toggleBtn = document.getElementById("darkModeToggle");
-  const iconMoon = document.getElementById("iconMoon");
-  const iconSun = document.getElementById("iconSun");
-  const heroAvatar = document.getElementById("heroAvatar");
+  const themeController = document.getElementById("themeController");
+  const profileLightMode = document.getElementById("profileLightMode");
+  const profileDarkMode = document.getElementById("profileDarkMode");
 
-  if (!toggleBtn) return;
-
-  function applyTheme(isDark) {
-    if (isDark) {
+  themeController.addEventListener("change", function () {
+    if (themeController.checked) {
       body.classList.add("dark-mode");
-      iconMoon.classList.add("hidden");
-      iconSun.classList.remove("hidden");
-      if (heroAvatar) heroAvatar.src = "/assets/img/profile-dark-mode.jpg";
+      profileDarkMode.classList.remove("hidden");
+      profileLightMode.classList.add("hidden");
     } else {
       body.classList.remove("dark-mode");
-      iconMoon.classList.remove("hidden");
-      iconSun.classList.add("hidden");
-      if (heroAvatar) heroAvatar.src = "/assets/img/profile.jpg";
+      profileLightMode.classList.remove("hidden");
+      profileDarkMode.classList.add("hidden");
     }
-  }
-
-  toggleBtn.addEventListener("click", function () {
-    var isDark = !body.classList.contains("dark-mode");
-    applyTheme(isDark);
-    try { localStorage.setItem("avp-theme", isDark ? "dark" : "light"); } catch (e) {}
   });
-
-  // Restore saved preference (default: light mode)
-  var saved;
-  try { saved = localStorage.getItem("avp-theme"); } catch (e) {}
-  if (saved === "dark") {
-    applyTheme(true);
-  } else {
-    applyTheme(false);
-  }
 });
+
+// END OF DARK MODE TOGGLE

@@ -7,33 +7,32 @@ pagination:
   addAllPagesToCollections: true
 permalink: "{{ project.id }}.html"
 ---
-<div class="project-page">
-  <div class="container">
-    <div class="project-page-header">
-      <a href="/#projects" class="project-back">&larr; Back to Projects</a>
-    </div>
-    {% for section in project.sections %}
-    <div class="project-section">
-      <h2 class="project-section-title">{{ section.title }}</h2>
-      <p class="project-section-desc">{{ section.content }}</p>
-      <video
-        src="/assets/videos/{{ section.video }}"
-        class="project-video"
-        width="{{ section.videoWidth }}"
-        height="{{ section.videoHeight }}"
-        autoplay
-        loop
-        muted
-        playsinline
-      >
-        Your browser does not support the video tag.
-      </video>
-      <div class="project-section-tags">
+{% for section in project.sections %}
+<div class="hero project-hero bg-base-200 mt-3 mb-8 py-4 lg:py-6 px-2 lg:px-6">
+  <div class="hero-content flex-col w-full gap-10 justify-evenly lg:flex-row{% if loop.index is odd %}-reverse{% endif %}">
+  <video
+    src="/assets/videos/{{section.video}}"
+    class="{% if project.title == 'Italian Bakery' %}mobile-video{% else %}lg:max-w-lg{% endif %} rounded-lg shadow-2xl"
+    width="{{section.videoWidth}}"
+    height="{{section.videoHeight}}"
+    autoplay
+    loop
+    muted
+    playsinline
+>
+    Your browser does not support the video tag.
+</video>
+    <div>
+      <h1 class="text-2xl max-w-sm font-bold font-serif text-balance text-center lg:text-left">{{ section.title }}</h1>
+      <p class="py-4 max-w-sm text-center lg:text-left">
+        {{ section.content }}
+      </p>
+      <div class="card-actions justify-center max-w-sm lg:justify-start mt-2">
         {% for tag in section.tags %}
-        <span class="tag">{{ tag }}</span>
+        <div class="badge badge-outline project-badge">{{tag}}</div>
         {% endfor %}
-      </div>
     </div>
-    {% endfor %}
+    </div>
   </div>
 </div>
+{% endfor %}

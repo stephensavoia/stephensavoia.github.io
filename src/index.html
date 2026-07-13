@@ -1,4 +1,4 @@
-﻿---
+---
 layout: "layouts/base.html"
 ---
 
@@ -32,268 +32,228 @@ layout: "layouts/base.html"
         </a>
       </div>
     </div>
+    <figure class="w-full lg:w-2/5 p-12">
+      <img
+        id="profileLightMode"
+        class="mask mask-circle lg:mr-4"
+        src="assets/img/profile.jpg"
+        alt="Me"
+      />
+      <img
+        id="profileDarkMode"
+        class="mask mask-circle lg:mr-4 hidden"
+        src="assets/img/profile-dark-mode.jpg"
+        alt="Me, at night"
+      />
+    </figure>
   </div>
-</section>
+</div>
 
-<!-- ============================================================
-     STATS BAR
-     ============================================================ -->
-<div class="stats-bar">
-  <div class="container">
-    <div class="stats-inner">
-      <div class="stat-item">
-        <div class="stat-number">96+</div>
-        <div class="stat-label">Projects Completed</div>
+<div id="projects" class="flex w-full flex-col my-4">
+  <div
+    class="divider divider-start divider-neutral font-serif font-bold text-2xl"
+  >
+    PROJECTS
+  </div>
+</div>
+<div class="container flex flex-wrap max-w-[1024px] mx-auto justify-between">
+  {% for project in projects %}
+  <a class="w-full md:w-[49%] lg:w-[32%]" href="{{project.link}}">
+    <div class="card bg-base-100 w-full shadow-xl mb-8">
+      <figure class="w-full">
+          <img class="w-full" src="assets/img/{{project.image}}" />
+      </figure>
+      <div class="card-body">
+        <h3 class="font-serif font-bold text-xl">{{project.title}}</h3>
+        <p>{{project.description | safe}}</p>
+        <div class="card-actions justify-start mt-4">
+          {% for tag in project.tags %}
+          <div class="badge badge-outline">{{tag}}</div>
+          {% endfor %}
+        </div>
       </div>
-      <div class="stat-item">
-        <div class="stat-number">8+</div>
-        <div class="stat-label">Years of Experience</div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+<!--
+<div id="skills" class="flex w-full flex-col my-4">
+  <div
+    class="divider divider-start divider-neutral font-serif font-bold text-2xl"
+  >
+    TECHNICAL SKILLS
+  </div>
+</div>
+
+<div class="container flex flex-wrap mx-auto justify-between">
+  <div class="card bg-base-100 w-full lg:w-[32%] mb-8">
+    <div class="card-body overflow-hidden">
+      <h3 class="font-serif font-bold text-xl">Highly Skilled In...</h3>
+      <ul class="steps">
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+      </ul>
+      <div class="card-actions justify-start mt-1">
+        <div class="badge badge-outline">HTML</div>
+        <div class="badge badge-outline">CSS</div>
+        <div class="badge badge-outline">Liquid</div>
+        <div class="badge badge-outline">JSON</div>
+        <div class="badge badge-outline">Front End JavaScript</div>
+        <div class="badge badge-outline">REST</div>
+        <div class="badge badge-outline">Shopify Admin</div>
+        <div class="badge badge-outline">Excel/Sheets</div>
       </div>
-      <div class="stat-item">
-        <div class="stat-number">5</div>
-        <div class="stat-label">Star Rating</div>
+    </div>
+  </div>
+  <div class="card bg-base-100 w-full lg:w-[32%] mb-8">
+    <div class="card-body overflow-hidden">
+      <h3 class="font-serif font-bold text-xl">Experienced In...</h3>
+      <ul class="steps">
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-empty"></li>
+        <li data-content="" class="step step-empty"></li>
+      </ul>
+      <div class="card-actions justify-start mt-1">
+        <div class="badge badge-outline">Remix</div>
+        <div class="badge badge-outline">React</div>
+        <div class="badge badge-outline">TypeScript</div>
+        <div class="badge badge-outline">Full Stack JavaScript</div>
+        <div class="badge badge-outline">Tailwind</div>
+        <div class="badge badge-outline">11ty</div>
+        <div class="badge badge-outline">Git/Github</div>
+        <div class="badge badge-outline">Cloudflare</div>
+        <div class="badge badge-outline">npm</div>
       </div>
-      <div class="stat-item">
-        <div class="stat-number">100%</div>
-        <div class="stat-label">Client Satisfaction</div>
+    </div>
+  </div>
+  <div class="card bg-base-100 w-full lg:w-[32%] mb-8">
+    <div class="card-body overflow-hidden">
+      <h3 class="font-serif font-bold text-xl">Familiar With...</h3>
+      <ul class="steps">
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-neutral"></li>
+        <li data-content="" class="step step-empty"></li>
+        <li data-content="" class="step step-empty"></li>
+        <li data-content="" class="step step-empty"></li>
+      </ul>
+      <div class="card-actions justify-start mt-1">
+        <div class="badge badge-outline">SQL</div>
+        <div class="badge badge-outline">Python/Pandas</div>
+        <div class="badge badge-outline">R</div>
+        <div class="badge badge-outline">GraphQL</div>
+        <div class="badge badge-outline">Meta Ads Manager</div>
+        <div class="badge badge-outline">Google Ads</div>
+        <div class="badge badge-outline">Prisma</div>
+        <div class="badge badge-outline">WordPress</div>
       </div>
     </div>
   </div>
 </div>
+-->
 
-<!-- ============================================================
-     SERVICES
-     ============================================================ -->
-<section class="services" id="services">
-  <div class="container">
-    <div class="services-header">
-      <div>
-        <div class="section-tag">What I Build</div>
-        <h2 class="section-heading">Pages that do<br>the selling for you.</h2>
-      </div>
-      <!-- <p class="section-subtext">
-        One deliverable at a time, or the full store. Every project starts with a hard look at what&rsquo;s working and what isn&rsquo;t, plus a clear scope. From there, it&rsquo;s total focus on the results that matter.
-      </p> -->
-    </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-num">01</div>
-        <h3 class="service-title">Theme Development</h3>
-        <p class="service-desc">Custom Shopify themes, built from scratch or adapted from a base theme, optimized for conversion on mobile and desktop.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-num">02</div>
-        <h3 class="service-title">Landing Page Development</h3>
-        <p class="service-desc">Conversion-focused redesigns of the pages that matter most&mdash;the product, collection, or landing page you&rsquo;re sending ad traffic to.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-num">03</div>
-        <h3 class="service-title">A/B Testing</h3>
-        <p class="service-desc">Theme and page tests run through Intelligems or Shopify Rollouts, with results shared via a dashboard and&#47;or PDF report.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-num">04</div>
-        <h3 class="service-title">CRO Audits</h3>
-        <p class="service-desc">Concise, actionable audits for merchants who want expert direction, with in-house teams handling the design and development.</p>
-      </div>
-    </div>
+<div id="contact" class="flex w-full flex-col my-4">
+  <div
+    class="divider divider-start divider-neutral font-serif font-bold text-2xl"
+  >
+    CONTACT
   </div>
-</section>
+</div>
 
-<!-- ============================================================
-     PILLARS (dark section)
-     ============================================================ -->
-<section class="pillars" id="about">
-  <div class="container">
-    <div class="pillars-header">
-      <div class="section-tag">My Approach</div>
-      <h2 class="section-heading">Built on three pillars.</h2>
-    </div>
-    <div class="pillars-grid">
-      <div class="pillar">
-        <div class="pillar-num">01</div>
-        <h3 class="pillar-title">Creative Assets</h3>
-        <ul class="pillar-list">
-          <li>Strong, on-brand assets &mdash; never generic stock or obviously AI-generated</li>
-          <li>A polished, professional logo that reflects the brand's identity and stands out</li>
-          <li>Professional product photography, including standalone product shots and lifestyle images</li>
-          <li>Clean diagrams that break down key selling points into simple, scannable text</li>
-        </ul>
-      </div>
-      <div class="pillar">
-        <div class="pillar-num">02</div>
-        <h3 class="pillar-title">UX/UI Design</h3>
-        <ul class="pillar-list">
-          <li>Thoughtful hierarchy and spacing that make key content easy to scan</li>
-          <li>Modern, polished, mobile-first interfaces that build trust and credibility</li>
-          <li>Intuitive user flows and focused calls to action that guide visitors straight to checkout</li>
-          <li>Mobile-first, responsive layouts designed for a seamless experience on any device</li>
-        </ul>
-      </div>
-      <div class="pillar">
-        <div class="pillar-num">03</div>
-        <h3 class="pillar-title">Sales Pitch</h3>
-        <ul class="pillar-list">
-          <li>Clear, above-the-fold messaging that makes the case for buying in seconds</li>
-          <li>Strong social proof &mdash; ratings, reviews, and real customer validation</li>
-          <li>Certifications and manufacturing standards that set the product apart</li>
-          <li>Return policies and guarantees that remove any doubt before purchase</li>
-        </ul>
-      </div>
-    </div>
+<form
+  class="flex flex-col space-y-4 items-center"
+  aria-labelledby="contact-heading"
+  method="POST"
+  action="https://api.web3forms.com/submit"
+  id="form"
+>
+  <input
+    type="hidden"
+    name="access_key"
+    value="5edb3956-c25d-4ce8-9149-6794d20835b2"
+  />
+  <h2 id="contact-heading" class="sr-only">Contact Form</h2>
+
+  <label for="name" class="sr-only">Name</label>
+  <input
+    type="text"
+    id="name"
+    name="name"
+    placeholder="Name"
+    class="input input-bordered input-primary w-full max-w-sm"
+    aria-label="Name"
+    aria-required="true"
+    required
+  />
+
+  <label for="email" class="sr-only">Email</label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Email"
+    class="input input-bordered input-primary w-full max-w-sm"
+    aria-label="Email"
+    aria-required="true"
+    required
+  />
+
+  <label for="message" class="sr-only">Message</label>
+  <textarea
+    id="message"
+    name="message"
+    placeholder="Message"
+    class="textarea textarea-bordered textarea-primary w-full max-w-sm text-[1rem]"
+    aria-label="Message"
+    aria-required="true"
+    rows="5"
+    required
+  ></textarea>
+  <button
+    id="submitButton"
+    type="submit"
+    class="btn btn-primary w-full max-w-sm"
+  >
+    Submit
+  </button>
+  <div
+    id="successAlert"
+    role="alert"
+    class="alert alert-success max-w-sm hidden"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6 shrink-0 stroke-current"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+    </svg>
+    <span id="successMessage">Success!</span>
   </div>
-</section>
-
-<!-- ============================================================
-     PROCESS
-     ============================================================ -->
-<section class="process" id="process">
-  <div class="container">
-    <div class="process-header">
-      <div class="section-tag">How It Works</div>
-      <h2 class="section-heading">A process designed<br>to get you results.</h2>
-    </div>
-    <div class="process-steps">
-      <div class="process-step">
-        <div class="step-num">01</div>
-        <h3 class="step-title">Discover</h3>
-        <p class="step-desc">We start by understanding your store, your goals, and the friction points holding back your conversion rate.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-num">02</div>
-        <h3 class="step-title">Plan</h3>
-        <p class="step-desc">I build a conversion rate optimization strategy tailored to your store&mdash;prioritizing the changes that will move the needle most.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-num">03</div>
-        <h3 class="step-title">Build</h3>
-        <p class="step-desc">I get to work bringing the strategy to life, with regular check-ins and progress updates. You approve each step before it goes live.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-num">04</div>
-        <h3 class="step-title">Launch</h3>
-        <p class="step-desc">I deploy, test, and verify everything is working. Post-launch support is included to catch any issues that may arise.</p>
-      </div>
-    </div>
+  <div role="alert" id="errorAlert" class="alert alert-error max-w-sm hidden">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6 shrink-0 stroke-current"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+    </svg>
+    <span id="errorMessage">Error!</span>
   </div>
-</section>
-
-<!-- ============================================================
-     PROJECTS
-     ============================================================ -->
-<section class="projects" id="projects">
-  <div class="container">
-    <div class="projects-header">
-      <div class="section-tag">My Work</div>
-      <h2 class="section-heading">Results that speak<br>louder than mockups.</h2>
-    </div>
-    <div class="projects-grid">
-      {% for project in projects %}
-      <a
-        class="project-card"
-        href="{{ project.link }}"
-        {% if "http" in project.link %}target="_blank" rel="noopener noreferrer"{% endif %}
-      >
-        <img
-          class="project-card-img"
-          src="assets/img/{{ project.image }}"
-          alt="{{ project.title }}"
-          loading="lazy"
-        />
-        <div class="project-card-body">
-          <h3 class="project-card-title">{{ project.title }}</h3>
-          <p class="project-card-desc">{{ project.description | safe }}</p>
-          <div class="project-tags">
-            {% for tag in project.tags %}
-            <span class="tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
-        </div>
-      </a>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     CONTACT (dark section)
-     ============================================================ -->
-<section class="contact" id="contact">
-  <div class="container">
-    <div class="contact-inner">
-      <div class="contact-left">
-        <div class="contact-tag">Get in Touch</div>
-        <h2 class="contact-heading">
-          Let&rsquo;s find out what<br>
-          your store is leaving<br>
-          on the table.
-        </h2>
-        <p class="contact-sub">
-          Tell me about your store, your goals, and what&rsquo;s holding you
-          back. I&rsquo;ll respond within one business day.
-        </p>
-      </div>
-
-      <div class="contact-right">
-        <div id="successAlert" class="form-alert form-success hidden">
-          <p id="successMessage">Your message was sent successfully.</p>
-        </div>
-        <div id="errorAlert" class="form-alert form-error hidden">
-          <p id="errorMessage">Something went wrong. Please try again.</p>
-        </div>
-
-        <form
-          class="contact-form"
-          method="POST"
-          action="https://api.web3forms.com/submit"
-          id="form"
-          aria-labelledby="contact-heading"
-        >
-          <h2 id="contact-heading" class="sr-only">Contact Form</h2>
-          <input type="hidden" name="access_key" value="5edb3956-c25d-4ce8-9149-6794d20835b2" />
-
-          <label for="name" class="sr-only">Your Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your name"
-            aria-required="true"
-            required
-          />
-
-          <label for="email" class="sr-only">Email Address</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email address"
-            aria-required="true"
-            required
-          />
-
-          <label for="store-url" class="sr-only">Shopify Store URL</label>
-          <input
-            type="url"
-            id="store-url"
-            name="store-url"
-            placeholder="Shopify store URL (optional)"
-          />
-
-          <label for="message" class="sr-only">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="What do you need help with?"
-            aria-required="true"
-            required
-          ></textarea>
-
-          <button type="submit" id="submitButton" class="btn btn-submit">
-            Send Message
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+</form>
