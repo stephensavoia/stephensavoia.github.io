@@ -186,8 +186,9 @@ button { font-family: inherit; cursor: pointer; }
 .process { padding: var(--section-pad) 0; }
 .process-header { margin-bottom: 56px; }
 .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--border); }
-.process-step { padding: 40px 28px; border-right: 1px solid var(--border); }
+.process-step { padding: 40px 28px; border-right: 1px solid var(--border); transition: background 0.2s ease; }
 .process-step:last-child { border-right: none; }
+.process-step:hover { background: var(--bg-card-hover); }
 .step-num { font-size: 1.75rem; font-weight: 700; color: var(--border); line-height: 1; margin-bottom: 1.25rem; letter-spacing: -0.02em; }
 .step-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.65rem; }
 .step-desc { font-size: 0.875rem; color: var(--text-muted); line-height: 1.75; }
