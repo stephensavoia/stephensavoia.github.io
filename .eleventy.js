@@ -6,8 +6,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("r/parks/parks.html");
   eleventyConfig.addPassthroughCopy("pandas/bikeshare");
 
-  eleventyConfig.addWatchTarget("./src/**/*/styles.css");
-  eleventyConfig.addWatchTarget("tailwind.config.js");
+  eleventyConfig.addWatchTarget("./src/assets/css/styles.css");
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
